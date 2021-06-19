@@ -1,0 +1,81 @@
+@import "minima/syntax-highlighting"
+
+/*Base*/
+$font-size: 20px
+$line-height: 150%
+$site-width: 1024px
+
+/*Colors*/
+$primary: #101010
+
+/*Aux*/
+$db: 1px solid $primary
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+body, html
+  font-family: Raleway, sans-serif
+  font-size: $font-size
+  line-height: $line-height
+a
+  text-decoration: none
+
+body
+  display: flex
+  flex-direction: column
+
+.header, .footer
+  border-bottom: $db
+  line-height: 2.5rem
+  &__wrapper
+    max-width: $site-width
+    margin: auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__logo,
+  &__link
+    color: $primary
+    &:visited
+      color: $primary
+  &__nav
+    display: flex
+  &__link
+.footer
+  border-top: $db
+  border-bottom: none
+  &__wrapper
+    flex-wrap: wrap
+  &__copyright
+    margin-top: 8px
+    width: 100%
+  &__social
+    margin-bottom: 0.5rem
+    margin-top: 8px
+  &__social-item
+    margin-bottom: 8px
+    a
+      display: flex
+    svg
+      width: 16px
+      height: 16px
+      margin-right: 8px
+    span
+      line-height: 16px
+      font-size: 16px
+      height: 16px
+      width: 100%
+.main
+  display: flex
+  max-width: $site-width
+  width: 100%
+  margin: auto
+  &__content
+    background-color: #fdfdfd
+    flex-grow: 1
+  &__aside
+    background-color: #fcfcfc
+    flex-basis: 20%
