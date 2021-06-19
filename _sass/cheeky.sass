@@ -1,17 +1,17 @@
 @import "minima/syntax-highlighting"
 
-/*Base*/
+/* ----- Base ----- */
 $font-size: 20px
 $line-height: 150%
 $site-width: 1024px
 
-/*Colors*/
+/* ----- Colors ----- */
 $primary: #101010
 
-/*Aux*/
+/* ----- Aux ----- */
 $db: 1px solid $primary
 
-
+/* ----- Whole page elements ----- */
 *
   box-sizing: border-box
   margin: 0
@@ -26,6 +26,8 @@ a
 body
   display: flex
   flex-direction: column
+
+/* ----- Header and footer ----- */
 
 .header, .footer
   border-bottom: $db
@@ -68,6 +70,9 @@ body
       font-size: 16px
       height: 16px
       width: 100%
+
+/* ----- Main ----- */
+
 .main
   display: flex
   max-width: $site-width
@@ -79,3 +84,43 @@ body
   &__aside
     background-color: #fcfcfc
     flex-basis: 20%
+
+/* ----- Homepage ----- */
+
+.homepage
+  &__heading
+
+.posts
+  &__heading
+  &__list
+
+.card
+  position: relative
+  &__heading
+  &__meta
+  &__image
+    max-width: 150px
+    max-height: 100px
+  &__overlay
+    top: 0
+    left: 0
+    position: absolute
+    width: 100%
+    height: 100%
+
+.rss
+  &__link
+/* ----- Post ----- */
+
+.post-content
+
+/* ----- Drop Cap ----- */
+.post-content::first-letter
+  border: 0.25rem solid $primary
+  padding: 0.25rem
+  font-size: 3rem
+  line-height: 3rem
+  margin-right: 1rem
+  margin-bottom: 0.25rem
+  float: left
+  vertical-align: bottom

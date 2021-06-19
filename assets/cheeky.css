@@ -200,9 +200,10 @@
   color: #099;
 }
 
-/*Base*/
-/*Colors*/
-/*Aux*/
+/* ----- Base ----- */
+/* ----- Colors ----- */
+/* ----- Aux ----- */
+/* ----- Whole page elements ----- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -224,6 +225,7 @@ body {
   flex-direction: column;
 }
 
+/* ----- Header and footer ----- */
 .header, .footer {
   border-bottom: 1px solid #101010;
   line-height: 2.5rem;
@@ -277,6 +279,7 @@ body {
   width: 100%;
 }
 
+/* ----- Main ----- */
 .main {
   display: flex;
   max-width: 1024px;
@@ -290,6 +293,35 @@ body {
 .main__aside {
   background-color: #fcfcfc;
   flex-basis: 20%;
+}
+
+/* ----- Homepage ----- */
+.card {
+  position: relative;
+}
+.card__image {
+  max-width: 150px;
+  max-height: 100px;
+}
+.card__overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----- Post ----- */
+/* ----- Drop Cap ----- */
+.post-content::first-letter {
+  border: 0.25rem solid #101010;
+  padding: 0.25rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 0.25rem;
+  float: left;
+  vertical-align: bottom;
 }
 
 /*# sourceMappingURL=cheeky.css.map */
