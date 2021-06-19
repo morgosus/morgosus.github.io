@@ -1,5 +1,16 @@
 @import "minima/syntax-highlighting"
 
+.sr-only
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0, 0, 0, 0)
+  white-space: nowrap
+  border: 0
+
 /* ----- Base ----- */
 $font-size: 20px
 $line-height: 150%
@@ -30,8 +41,8 @@ body
 /* ----- Header and footer ----- */
 
 .header, .footer
-  border-bottom: $db
   line-height: 2.5rem
+  background-color: #efeff6
   &__wrapper
     max-width: $site-width
     margin: auto
@@ -41,14 +52,16 @@ body
   &__logo,
   &__link
     color: $primary
+    margin-right: 1rem
     &:visited
       color: $primary
+    &:last-of-type
+      margin-right: 0
   &__nav
     display: flex
   &__link
+
 .footer
-  border-top: $db
-  border-bottom: none
   &__wrapper
     flex-wrap: wrap
   &__copyright
@@ -61,6 +74,8 @@ body
     margin-bottom: 8px
     a
       display: flex
+      &:hover
+        text-decoration: underline
     svg
       width: 16px
       height: 16px
@@ -79,12 +94,13 @@ body
   width: 100%
   margin: auto
   &__content
-    background-color: #fdfdfd
     flex-grow: 1
+    padding-top: 1rem
   &__aside
-    background-color: #fcfcfc
+    padding-top: 1rem
     margin-left: 1rem
-    min-width: 10rem
+    min-width: 12rem
+    //background-color: #f8f8f8
 
 /* ----- Homepage ----- */
 
@@ -101,14 +117,20 @@ body
   align-items: center
   margin-bottom: 1rem
   &__content
+    align-self: baseline
     display: flex
     flex-direction: column
+    text-align: justify
+    font-size: 0.8rem
+    line-height: 1.4rem
   &__heading
+    font-size: 1rem
     margin-bottom: 0.25rem
+    font-weight: bold
   &__meta
-    margin-bottom: 0.75rem
+    margin-bottom: 0.25rem
   &__image
-    margin-right: 0.5rem
+    margin-right: 1rem
     min-width: 300px
     max-height: 200px
     background-size: cover
@@ -119,9 +141,21 @@ body
     position: absolute
     width: 100%
     height: 100%
+  &--aside
+    flex-direction: column
+    .card__image
+      min-width: 12rem
+      max-height: 8rem
+      margin-right: 0
+    .card__content
+      width: 100%
+    .card__heading
+      text-align: left
 
 .rss
   &__link
+    &:hover
+      text-decoration: underline
 /* ----- Post ----- */
 
 .post-content
