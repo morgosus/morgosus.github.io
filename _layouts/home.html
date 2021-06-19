@@ -1,0 +1,48 @@
+---
+layout: default
+
+---
+
+<div class="homepage">
+  {%- if page.title -%}
+    <h1 class="homepage__heading">{{ page.title | default: "Newest Posts" }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+  <section class="homepage__posts posts">
+    <h2 class="posts__heading">{{ page.list_title | default: "Newest Posts" }}</h2>
+    <ul class="posts__list">
+      {%- for post in site.posts -%}
+        {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
+        {% if site.minima.date_format != true %}
+          {% case day_posted %}
+            {% when '01', '21', '31' %}
+              {% assign ordinal_format = '%-dst %B %Y' %}
+            {% when '02', '22' %}
+              {% assign ordinal_format = '%-dnd %B %Y' %}
+            {% when '03', '23' %}
+              {% assign ordinal_format = '%-drd %B %Y' %}
+            {% else %}
+              {% assign ordinal_format = '%-dth %B %Y' %}
+          {% endcase %}
+        {% endif %}
+        {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
+      <!-- TODO: Consider a READ MORE button-->
+      <li class="posts__card card">
+        <h3 class="card__heading">{{ post.title | escape }}</h3>
+        <span class="card__meta">{{ post.date | date: date_format }}</span>
+        <img class="card__image" src="/assets/{{post.thumbnail}}.jpg" alt="{{post.thumbnail-alt}}">
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+        <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+    <p class="rss">subscribe <a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+</div>
