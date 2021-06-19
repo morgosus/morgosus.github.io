@@ -83,7 +83,8 @@ body
     flex-grow: 1
   &__aside
     background-color: #fcfcfc
-    flex-basis: 20%
+    margin-left: 1rem
+    min-width: 10rem
 
 /* ----- Homepage ----- */
 
@@ -96,11 +97,22 @@ body
 
 .card
   position: relative
+  display: flex
+  align-items: center
+  margin-bottom: 1rem
+  &__content
+    display: flex
+    flex-direction: column
   &__heading
+    margin-bottom: 0.25rem
   &__meta
+    margin-bottom: 0.75rem
   &__image
-    max-width: 150px
-    max-height: 100px
+    margin-right: 0.5rem
+    min-width: 300px
+    max-height: 200px
+    background-size: cover
+    object-fit: cover
   &__overlay
     top: 0
     left: 0

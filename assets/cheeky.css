@@ -292,16 +292,33 @@ body {
 }
 .main__aside {
   background-color: #fcfcfc;
-  flex-basis: 20%;
+  margin-left: 1rem;
+  min-width: 10rem;
 }
 
 /* ----- Homepage ----- */
 .card {
   position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+.card__heading {
+  margin-bottom: 0.25rem;
+}
+.card__meta {
+  margin-bottom: 0.75rem;
 }
 .card__image {
-  max-width: 150px;
-  max-height: 100px;
+  margin-right: 0.5rem;
+  min-width: 300px;
+  max-height: 200px;
+  background-size: cover;
+  object-fit: cover;
 }
 .card__overlay {
   top: 0;
