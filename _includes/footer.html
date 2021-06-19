@@ -1,0 +1,9 @@
+<footer class="footer">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="footer__wrapper">
+    {%- if site.author -%}
+    <div class="footer__copyright">©  {{ 'now' | date: "%Y" }} {{ site.author | escape }}</div>
+    {%- endif -%}
+    {%- include social.html -%}
+  </div>
+</footer>
