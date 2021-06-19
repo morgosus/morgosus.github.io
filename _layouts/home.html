@@ -31,13 +31,15 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
       <!-- TODO: Consider a READ MORE button-->
       <li class="posts__card card">
-        <h3 class="card__heading">{{ post.title | escape }}</h3>
-        <span class="card__meta">{{ post.date | date: date_format }}</span>
         <img class="card__image" src="/assets/{{post.thumbnail}}.jpg" alt="{{post.thumbnail-alt}}">
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        <div class="card__content">
+          <h3 class="card__heading">{{ post.title | escape }}</h3>
+          <span class="card__meta">{{ post.date | date: date_format }}</span>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt | truncate: site.excerpt_length }}
+          {%- endif -%}
         <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
+        </div>
       </li>
       {%- endfor -%}
     </ul>
