@@ -3,6 +3,8 @@ layout: post
 title:  "Super long Obama ipsum text for testing purposes"
 date:   2021-06-02 23:36:23 +0200
 categories: test features
+thumbnail: "placeholder-3-2"
+thumbnail-alt: "A photo of nature near a river."
 ---
 My father was a foreign student, born and raised in a small village in Kenya. The man I met more than twenty years ago is a man who helped introduce me to my Christian faith, a man who spoke to me about our obligations to love one another; to care for the sick and lift up the poor. You make a big election about small things. But my personal story is not so unique. We cannot disguise hostility towards any religion behind the pretense of liberalism.
 

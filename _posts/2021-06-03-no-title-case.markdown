@@ -3,6 +3,8 @@ layout: post
 title:  "There's no title case"
 date:   2021-06-03 23:36:23 +0200
 categories: features
+thumbnail: "placeholder-3-2"
+thumbnail-alt: "A photo of nature near a river."
 ---
 Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? 
 
