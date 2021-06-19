@@ -12,7 +12,37 @@
         {{ content }}
       </div>
       <aside class="main__aside">
-        This will contain call to action, meta etc.
+        <h2 class="posts__heading sr-only">{{ page.list_title | default: "Featured Posts" }}</h2>
+        <ul class="posts__list">
+        {%- for post in site.posts -%}
+          {% if post.featured == true %}
+
+            {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
+            {% if site.minima.date_format != true %}
+              {% case day_posted %}
+                {% when '01', '21', '31' %}
+                  {% assign ordinal_format = '%-dst %B %Y' %}
+                {% when '02', '22' %}
+                  {% assign ordinal_format = '%-dnd %B %Y' %}
+                {% when '03', '23' %}
+                  {% assign ordinal_format = '%-drd %B %Y' %}
+                {% else %}
+                  {% assign ordinal_format = '%-dth %B %Y' %}
+              {% endcase %}
+            {% endif %}
+  
+            {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
+          <!-- TODO: Consider a READ MORE button-->
+          <li class="posts__card card card--aside">
+            <img class="card__image" src="/assets/{{post.thumbnail}}.jpg" alt="{{post.thumbnail-alt}}">
+            <div class="card__content">
+              <h3 class="card__heading">{{ post.title | escape }}</h3>
+              <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
+            </div>
+          </li>
+          {% endif post.featured == true %}
+        {%- endfor -%}
+      </ul>
       </aside>
     </main>
 
