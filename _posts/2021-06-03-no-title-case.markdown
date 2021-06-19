@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "There's no title case"
-date:   2021-06-17 23:36:23 +0200
-categories: jekyll update
+date:   2021-06-03 23:36:23 +0200
+categories: features
 ---
 Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? 
 
