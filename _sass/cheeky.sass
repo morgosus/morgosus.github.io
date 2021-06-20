@@ -13,11 +13,12 @@
 
 /* ----- Base ----- */
 $font-size: 20px
-$line-height: 150%
+$line-height: 36px
 $site-width: 1024px
 
 /* ----- Colors ----- */
 $primary: #101010
+$header: #F0F0FD
 
 /* ----- Aux ----- */
 $db: 1px solid $primary
@@ -33,16 +34,16 @@ body, html
   line-height: $line-height
 a
   text-decoration: none
-
 body
   display: flex
   flex-direction: column
+  overflow-x: hidden
 
 /* ----- Header and footer ----- */
 
 .header, .footer
   line-height: 2.5rem
-  background-color: #efeff6
+  background-color: $header
   &__wrapper
     max-width: $site-width
     margin: auto
@@ -98,9 +99,19 @@ body
     padding-top: 1rem
   &__aside
     padding-top: 1rem
+    padding-left: 1rem
     margin-left: 1rem
-    min-width: 12rem
-    //background-color: #f8f8f8
+    min-width: 13rem
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      background-color: #f8f8fE
+      width: 100vw
+      height: 100%
 
 /* ----- Homepage ----- */
 
@@ -135,6 +146,8 @@ body
     max-height: 200px
     background-size: cover
     object-fit: cover
+    border-radius: 0.25rem
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%)
   &__overlay
     top: 0
     left: 0
@@ -150,15 +163,65 @@ body
     .card__content
       width: 100%
     .card__heading
-      text-align: left
+      margin-top: 0.5rem
+      font-weight: normal
+      text-align: center
 
 .rss
+  margin-bottom: 1rem
   &__link
     &:hover
       text-decoration: underline
+
+.highlight
+  font-family: monospace
+  margin-bottom: 1rem
+  line-height: 1.5rem
+  padding: 0.25rem 0 0.25rem 1rem
+  border-radius: 0.25rem
+  border-left: 1px solid $header
+  box-shadow:  inset 5px 0 5px -5px $header, -5px 0 5px -5px $header
+
+blockquote
+  padding: 0.25rem 0 0.25rem 1rem
+  border-radius: 0.25rem
+  border-left: 1px solid $header
+  font-style: italic
+  box-shadow:  inset 5px 0 5px -5px $header, -5px 0 5px -5px $header
+  &:first-line
+    font-style: normal
+    font-size: 1rem
+  p
+    margin-bottom: 0 !important
+
 /* ----- Post ----- */
 
-.post-content
+.post
+  .post-header
+    display: flex
+    margin-bottom: 1rem
+    flex-grow: 1
+    .post-title
+      font-weight: bold
+    .post-meta
+      margin-right: 0
+      margin-left: auto
+      .dt-published
+      .p-author
+  .post-thumbnail
+    object-fit: cover
+    width: 100%
+    max-height: 70vh
+    border-radius: 0.25rem
+    margin-bottom: 1rem
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%)
+  .post-content
+    clear: both
+    p
+      text-align: justify
+      margin-bottom: 1rem
+      hyphens: auto
+  .u-url
 
 /* ----- Drop Cap ----- */
 .post-content::first-letter
@@ -166,7 +229,9 @@ body
   padding: 0.25rem
   font-size: 3rem
   line-height: 3rem
-  margin-right: 1rem
+  margin-right: 0.75rem
   margin-bottom: 0.25rem
   float: left
   vertical-align: bottom
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%)
+  border-radius: 0.25rem
