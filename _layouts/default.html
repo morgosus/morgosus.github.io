@@ -15,8 +15,7 @@
         <h2 class="posts__heading sr-only">{{ page.list_title | default: "Featured Posts" }}</h2>
         <ul class="posts__list">
         {%- for post in site.posts -%}
-          {% if post.featured == true %}
-
+          {% if post.featured == true and post.title != page.title %}
             {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
             {% if site.minima.date_format != true %}
               {% case day_posted %}
