@@ -1,14 +1,15 @@
-MIT License
+# MIT License
 
 Copyright (c) 2021 Martin Toms
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software") 
 **with the exclusion of all posts, photos, images, videos and website
-content within this repository, to deal in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+content within this repository**, to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, 
+publish, distribute, sublicense, and/or sell copies of the Software, 
+and to permit persons to whom the Software is furnished to do so, 
+subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
@@ -21,11 +22,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Proprietary license
+# Proprietary license
 
 Copyright (c) 2021 Martin Toms
 
-All posts, photos, images, videos, website content are not subject to the above granted MIT license.
-They are fully owned by Martin Toms and no permission is given to modify, sell, distribute or in any 
-other way affect them or incorporate them into other websites without the explicit written permission 
-of their owner beyond the scope permitted by laws.
+All posts, photos, images, videos, website content are not subject to the above 
+granted MIT license. They are fully owned by Martin Toms and no permission is 
+given to modify, sell, distribute or in any other way affect them or incorporate 
+them into other websites without the explicit written permission of their owner 
+beyond the scope permitted by laws.
