@@ -62,7 +62,13 @@ body
     display: flex
   &__link
 
+.header
+  box-shadow: 0 5px 5px -5px $header
+  z-index: 6
+
 .footer
+  z-index: 6
+  box-shadow: 0 5px 5px 5px $header
   &__wrapper
     flex-wrap: wrap
   &__copyright
@@ -103,6 +109,7 @@ body
     margin-left: 1rem
     min-width: 13rem
     position: relative
+    box-shadow:  -5px 0 5px -5px $header
     &:before
       content: ""
       position: absolute
@@ -137,7 +144,6 @@ body
   &__heading
     font-size: 1rem
     margin-bottom: 0.25rem
-    font-weight: bold
   &__meta
     margin-bottom: 0.25rem
   &__image
@@ -168,31 +174,15 @@ body
       text-align: center
 
 .rss
+  display: flex
+  align-items: center
   margin-bottom: 1rem
+  &__icon
+    width: 1rem
+    height: 1rem
   &__link
     &:hover
       text-decoration: underline
-
-.highlight
-  font-family: monospace
-  margin-bottom: 1rem
-  line-height: 1.5rem
-  padding: 0.25rem 0 0.25rem 1rem
-  border-radius: 0.25rem
-  border-left: 1px solid $header
-  box-shadow:  inset 5px 0 5px -5px $header, -5px 0 5px -5px $header
-
-blockquote
-  padding: 0.25rem 0 0.25rem 1rem
-  border-radius: 0.25rem
-  border-left: 1px solid $header
-  font-style: italic
-  box-shadow:  inset 5px 0 5px -5px $header, -5px 0 5px -5px $header
-  &:first-line
-    font-style: normal
-    font-size: 1rem
-  p
-    margin-bottom: 0 !important
 
 /* ----- Post ----- */
 
@@ -202,10 +192,14 @@ blockquote
     margin-bottom: 1rem
     flex-grow: 1
     .post-title
+      font-size: 1.5rem
       font-weight: bold
+      text-shadow: 0px 0px 5px gray
     .post-meta
       margin-right: 0
       margin-left: auto
+      min-width: 30%
+      text-align: right
       .dt-published
       .p-author
   .post-thumbnail
@@ -217,14 +211,90 @@ blockquote
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%)
   .post-content
     clear: both
+    & > *
+      margin-bottom: 1rem
     p
       text-align: justify
-      margin-bottom: 1rem
+      //margin-bottom: 1rem
       hyphens: auto
+    a:hover
+      text-decoration: underline
   .u-url
 
+  .highlight, blockquote, table, .post-content > ul, .post-content > ol
+    //margin-bottom: 1rem
+
+  .post-content ul
+    list-style: initial
+    list-style-position: inside
+    & ul
+      text-indent: 1rem
+      & ul
+        text-indent: 2rem
+        & ul
+          text-indent: 3rem
+          & ul
+            text-indent: 4rem
+            & ul
+              text-indent: 5rem
+
+  .post-content > ol
+    list-style: numeric
+    list-style-position: inside
+  .highlight:not(pre)
+    font-family: monospace
+    line-height: 1.5rem
+    padding: 0.25rem 0 0.25rem 1rem
+    border-radius: 0.25rem
+    border-left: 1px solid $header
+    border-right: 1px solid $header
+    box-shadow:  inset 5px 0 5px -5px $header, -5px 0 5px -5px $header, inset -5px 0 5px -5px $header, 5px 0 5px -5px $header
+    background-color: white
+    pre
+      background-color: white
+  code
+    font-family: monospace
+  table
+    margin: auto
+    //margin-bottom: 1rem
+    font-size: 0.8rem
+    line-height: 0.8rem
+    font-family: monospace
+    thead
+      tr
+        th
+
+          text-align: center
+          font-weight: bold
+          border: 1px solid black
+          padding: 0.5rem 1rem
+          text-transform: uppercase
+    tbody
+      tr
+        td
+          text-align: center
+          border: 1px solid black
+          padding: 0.5rem 1rem
+  .task-list
+    list-style: none !important
+    .task-list-item-checkbox
+      margin-right: 1rem
+  blockquote
+    padding: 0.25rem 0 0.25rem 1rem
+    border-radius: 0.25rem
+    border-left: 1px solid $header
+    font-style: italic
+    border-right: 1px solid $header
+    box-shadow:  inset 5px 0 5px -5px $header, -5px 0 5px -5px $header, inset -5px 0 5px -5px $header, 5px 0 5px -5px $header
+    &:first-line
+      //font-style: normal
+    p
+      //margin-bottom: 0 !important
+  .blue /*TODO: Remove*/
+    color: blue
 /* ----- Drop Cap ----- */
 .post-content::first-letter
+  margin-top: 0.25rem
   border: 0.25rem solid $primary
   padding: 0.25rem
   font-size: 3rem
@@ -233,5 +303,6 @@ blockquote
   margin-bottom: 0.25rem
   float: left
   vertical-align: bottom
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%)
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%), inset 0 2px 4px 0 rgb(0 0 0 / 20%), inset 0 3px 10px 0 rgb(0 0 0 / 19%)
   border-radius: 0.25rem
+  text-shadow: 0 0 5px gray
