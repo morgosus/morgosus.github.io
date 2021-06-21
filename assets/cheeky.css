@@ -263,6 +263,15 @@ body {
 .header__nav, .footer__nav {
   display: flex;
 }
+.header {
+  box-shadow: 0 5px 5px -5px #F0F0FD;
+  z-index: 6;
+}
+
+.footer {
+  z-index: 6;
+  box-shadow: 0 5px 5px 5px #F0F0FD;
+}
 .footer__wrapper {
   flex-wrap: wrap;
 }
@@ -312,6 +321,7 @@ body {
   margin-left: 1rem;
   min-width: 13rem;
   position: relative;
+  box-shadow: -5px 0 5px -5px #F0F0FD;
 }
 .main__aside:before {
   content: "";
@@ -342,7 +352,6 @@ body {
 .card__heading {
   font-size: 1rem;
   margin-bottom: 0.25rem;
-  font-weight: bold;
 }
 .card__meta {
   margin-bottom: 0.25rem;
@@ -381,35 +390,16 @@ body {
 }
 
 .rss {
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
+}
+.rss__icon {
+  width: 1rem;
+  height: 1rem;
 }
 .rss__link:hover {
   text-decoration: underline;
-}
-
-.highlight {
-  font-family: monospace;
-  margin-bottom: 1rem;
-  line-height: 1.5rem;
-  padding: 0.25rem 0 0.25rem 1rem;
-  border-radius: 0.25rem;
-  border-left: 1px solid #F0F0FD;
-  box-shadow: inset 5px 0 5px -5px #F0F0FD, -5px 0 5px -5px #F0F0FD;
-}
-
-blockquote {
-  padding: 0.25rem 0 0.25rem 1rem;
-  border-radius: 0.25rem;
-  border-left: 1px solid #F0F0FD;
-  font-style: italic;
-  box-shadow: inset 5px 0 5px -5px #F0F0FD, -5px 0 5px -5px #F0F0FD;
-}
-blockquote:first-line {
-  font-style: normal;
-  font-size: 1rem;
-}
-blockquote p {
-  margin-bottom: 0 !important;
 }
 
 /* ----- Post ----- */
@@ -419,11 +409,15 @@ blockquote p {
   flex-grow: 1;
 }
 .post .post-header .post-title {
+  font-size: 1.5rem;
   font-weight: bold;
+  text-shadow: 0px 0px 5px gray;
 }
 .post .post-header .post-meta {
   margin-right: 0;
   margin-left: auto;
+  min-width: 30%;
+  text-align: right;
 }
 .post .post-thumbnail {
   object-fit: cover;
@@ -436,13 +430,94 @@ blockquote p {
 .post .post-content {
   clear: both;
 }
+.post .post-content > * {
+  margin-bottom: 1rem;
+}
 .post .post-content p {
   text-align: justify;
-  margin-bottom: 1rem;
   hyphens: auto;
 }
+.post .post-content a:hover {
+  text-decoration: underline;
+}
+.post .post-content ul {
+  list-style: initial;
+  list-style-position: inside;
+}
+.post .post-content ul ul {
+  text-indent: 1rem;
+}
+.post .post-content ul ul ul {
+  text-indent: 2rem;
+}
+.post .post-content ul ul ul ul {
+  text-indent: 3rem;
+}
+.post .post-content ul ul ul ul ul {
+  text-indent: 4rem;
+}
+.post .post-content ul ul ul ul ul ul {
+  text-indent: 5rem;
+}
+.post .post-content > ol {
+  list-style: numeric;
+  list-style-position: inside;
+}
+.post .highlight:not(pre) {
+  font-family: monospace;
+  line-height: 1.5rem;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-radius: 0.25rem;
+  border-left: 1px solid #F0F0FD;
+  border-right: 1px solid #F0F0FD;
+  box-shadow: inset 5px 0 5px -5px #F0F0FD, -5px 0 5px -5px #F0F0FD, inset -5px 0 5px -5px #F0F0FD, 5px 0 5px -5px #F0F0FD;
+  background-color: white;
+}
+.post .highlight:not(pre) pre {
+  background-color: white;
+}
+.post code {
+  font-family: monospace;
+}
+.post table {
+  margin: auto;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-family: monospace;
+}
+.post table thead tr th {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+.post table tbody tr td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+.post .task-list {
+  list-style: none !important;
+}
+.post .task-list .task-list-item-checkbox {
+  margin-right: 1rem;
+}
+.post blockquote {
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-radius: 0.25rem;
+  border-left: 1px solid #F0F0FD;
+  font-style: italic;
+  border-right: 1px solid #F0F0FD;
+  box-shadow: inset 5px 0 5px -5px #F0F0FD, -5px 0 5px -5px #F0F0FD, inset -5px 0 5px -5px #F0F0FD, 5px 0 5px -5px #F0F0FD;
+}
+.post .blue {
+  color: blue;
+}
+
 /* ----- Drop Cap ----- */
 .post-content::first-letter {
+  margin-top: 0.25rem;
   border: 0.25rem solid #101010;
   padding: 0.25rem;
   font-size: 3rem;
@@ -451,8 +526,9 @@ blockquote p {
   margin-bottom: 0.25rem;
   float: left;
   vertical-align: bottom;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19), inset 0 2px 4px 0 rgba(0, 0, 0, 0.2), inset 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.25rem;
+  text-shadow: 0 0 5px gray;
 }
 
 /*# sourceMappingURL=cheeky.css.map */
