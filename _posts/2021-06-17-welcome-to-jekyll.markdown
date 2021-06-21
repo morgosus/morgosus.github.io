@@ -10,9 +10,88 @@ author: Jekyllrb.com
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod aliquet tempus. Suspendisse rhoncus sapien est, at cursus nulla luctus vel. Ut vitae luctus nulla. Donec porttitor condimentum dolor, sit amet euismod nibh convallis ac. Integer maximus volutpat ante, id finibus eros feugiat a. Morbi hendrerit condimentum ligula eu pharetra. Donec ac purus ac diam pretium fermentum. Morbi volutpat velit eu purus sollicitudin, non sodales eros pulvinar. Nam molestie, metus id feugiat bibendum, nisl justo mattis urna, sit amet mattis nunc ligula eget lectus.
 
+This should be blue class
+{: .blue}
+
+A list of items
+
+- One
+  - Indented?
+    - Indented?
+- Two
+- Three
+  - Indented?
+  - Indented?
+    - Indented?
+      - Indented?
+  - Indented?
+  - Indented?
+      - Indented?
+
+And numeric
+
+1. One
+2. Two
+3. Three
+
+**Bold** and *italic*, ***bold italic*** now, `code = 1 + 1`
+
+[title](https://www.example.com)
+
+| Heading 1 | Heading 2 | Th | Test |
+| ----------- | ----------- |
+| Header | Cell | Header | Cell |
+| Paragraph | Text | Header | Cell |
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+Here's a sentence with a footnote. [^1]
+Here's a sentence with a footnote. [^2]
+
+[^1]: This is the footnote. It will appear at the bottom.
+
+~~The world is flat.~~
+
+- [x] Write the press release
+- [ ] Update the website
+  - [x] Contact the media
+    - [x] Contact the media
+      - [x] Contact the media
+    - [x] Contact the media
+      - [x] Contact the media
+        - [x] Contact the media
+- [ ] Contact the media
+  - [ ] Contact the media
+  - [x] Contact the media
+    - [x] Contact the media
+
+term
+: definition
+
+### My Great Heading {#custom-id}
+
+---
+
+[^2]: This is the footnote.
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-> Jekyllrb.com states:  
+> Jekyllrb.com states:
+> 
 > Jekyll requires blog post files to be named according to the following format:  
 > `YEAR-MONTH-DAY-title.MARKUP`
 
@@ -33,3 +112,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
