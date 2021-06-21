@@ -6,7 +6,6 @@
   {% assign max = 999999999999 %}
   {% assign diff = max | minus: min %}
   {% assign randomBuildNumber = site.time | date: "%s" | modulo: diff | plus: min %}
-  {{ randomBuildNumber }}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
