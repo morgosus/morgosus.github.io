@@ -6,6 +6,9 @@ categories: test features
 thumbnail: "placeholder-alpha"
 thumbnail-alt: "An overgrown building."
 featured: true
+
+published: false
+
 ---
 My father was a foreign student, born and raised in a small village in Kenya. The man I met more than twenty years ago is a man who helped introduce me to my Christian faith, a man who spoke to me about our obligations to love one another; to care for the sick and lift up the poor. You make a big election about small things. But my personal story is not so unique. We cannot disguise hostility towards any religion behind the pretense of liberalism.
 

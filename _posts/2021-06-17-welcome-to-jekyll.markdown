@@ -7,6 +7,9 @@ thumbnail: "placeholder-2-3"
 thumbnail-alt: "A photo of a tree."
 featured: false
 author: Jekyllrb.com
+
+published: false
+
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod aliquet tempus. Suspendisse rhoncus sapien est, at cursus nulla luctus vel. Ut vitae luctus nulla. Donec porttitor condimentum dolor, sit amet euismod nibh convallis ac. Integer maximus volutpat ante, id finibus eros feugiat a. Morbi hendrerit condimentum ligula eu pharetra. Donec ac purus ac diam pretium fermentum. Morbi volutpat velit eu purus sollicitudin, non sodales eros pulvinar. Nam molestie, metus id feugiat bibendum, nisl justo mattis urna, sit amet mattis nunc ligula eget lectus.
 
