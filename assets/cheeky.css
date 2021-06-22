@@ -241,7 +241,8 @@ body {
 /* ----- Header and footer ----- */
 .header, .footer {
   line-height: 2.5rem;
-  background-color: #F0F0FD;
+  background-color: lightgray;
+  background-color: white;
 }
 .header__wrapper, .footer__wrapper {
   max-width: 1024px;
@@ -264,13 +265,13 @@ body {
   display: flex;
 }
 .header {
-  box-shadow: 0 5px 5px -5px #F0F0FD;
+  box-shadow: 0 5px 5px -5px lightgray;
   z-index: 6;
 }
 
 .footer {
   z-index: 6;
-  box-shadow: 0 5px 5px 5px #F0F0FD;
+  box-shadow: 0 5px 5px 5px lightgray;
 }
 .footer__wrapper {
   flex-wrap: wrap;
@@ -321,7 +322,7 @@ body {
   margin-left: 1rem;
   min-width: 13rem;
   position: relative;
-  box-shadow: -5px 0 5px -5px #F0F0FD;
+  box-shadow: -5px 0 5px -5px lightgray;
 }
 .main__aside:before {
   content: "";
@@ -330,6 +331,7 @@ body {
   right: 0;
   top: 0;
   background-color: #f8f8fE;
+  background-color: white;
   width: 100vw;
   height: 100%;
 }
@@ -472,9 +474,9 @@ body {
   line-height: 1.5rem;
   padding: 0.25rem 0 0.25rem 1rem;
   border-radius: 0.25rem;
-  border-left: 1px solid #F0F0FD;
-  border-right: 1px solid #F0F0FD;
-  box-shadow: inset 5px 0 5px -5px #F0F0FD, -5px 0 5px -5px #F0F0FD, inset -5px 0 5px -5px #F0F0FD, 5px 0 5px -5px #F0F0FD;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  box-shadow: inset 5px 0 5px -5px lightgray, -5px 0 5px -5px lightgray, inset -5px 0 5px -5px lightgray, 5px 0 5px -5px lightgray;
   background-color: white;
 }
 .post .highlight:not(pre) pre {
@@ -510,10 +512,10 @@ body {
 .post blockquote {
   padding: 0.25rem 0 0.25rem 1rem;
   border-radius: 0.25rem;
-  border-left: 1px solid #F0F0FD;
+  border-left: 1px solid lightgray;
   font-style: italic;
-  border-right: 1px solid #F0F0FD;
-  box-shadow: inset 5px 0 5px -5px #F0F0FD, -5px 0 5px -5px #F0F0FD, inset -5px 0 5px -5px #F0F0FD, 5px 0 5px -5px #F0F0FD;
+  border-right: 1px solid lightgray;
+  box-shadow: inset 5px 0 5px -5px lightgray, -5px 0 5px -5px lightgray, inset -5px 0 5px -5px lightgray, 5px 0 5px -5px lightgray;
 }
 .post .blue {
   color: blue;
