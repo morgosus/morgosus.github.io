@@ -27,15 +27,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  morgosus
-instagram_username:  morgosus
-youtube_username:  MartinToms-CzechRepublic
+github_username: morgosus
+instagram_username: morgosus
+youtube_username: MartinToms-CzechRepublic
 stackoverflow_username: morgosus
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
 
 # Own
 show_excerpts: true
