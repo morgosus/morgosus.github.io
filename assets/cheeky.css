@@ -315,6 +315,7 @@ body {
 .main__content {
   flex-grow: 1;
   padding-top: 1rem;
+  max-width: 100%;
 }
 .main__aside {
   padding-top: 1rem;
@@ -470,6 +471,7 @@ body {
   list-style-position: inside;
 }
 .post .highlight:not(pre) {
+  overflow-x: auto;
   font-family: monospace;
   line-height: 1.5rem;
   padding: 0.25rem 0 0.25rem 1rem;
