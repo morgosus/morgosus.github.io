@@ -23,35 +23,38 @@ Imagine that you have a search script, somewhere on some website. This script us
 
 ```php
 function remoteSearch($searchFor) {
-    //This is the location of the script
+    // This is the location of the script
     $url = 'https://www.example.com/search';
 
     $posts = [
-    'searchSubmit' => GO, //for the if clause around the script
-    'searchbar' => $searchFor //typed into the searchbar
+    // For the if clause around the script
+    'searchSubmit' => 'GO', 
+     // Typed into the searchbar
+    'searchbar' => $searchFor
     ];
 
-    //cURL handler
+    // A cURL handler
     $ch = curl_init();
 
-    //This sets the $url as our target
+    // This sets the $url as our target
     curl_setopt($ch, CURLOPT_URL, $url);
 
-    //we'll need POSTing
+    // We'll need POSTing
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($posts));
 
-    //if we're on a localhost machine or something, we won't verify https
-    //in reality, you'd usually want to check these
+    // If we're on a localhost machine or something,
+    // just testing, we won't verify https
+    // In reality, you'd usually want to check these
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 
-    //Enable redirects
+    // Enable redirects
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    //Up to 10 of them, if there are more, abort
+    // Up to 10 of them, if there are more, abort
     curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
 
-    //And of course, we want the results
+    // And of course, we want the results
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     return curl_exec($ch);
 }
@@ -64,24 +67,28 @@ It's kinda similar, however, we'll need to deal with cookies. You see, when you 
 ```php
 function remoteLogin($username, $password, $loginUrl, $getUrl) {
 
-//Create a cookie file, empty for now
+// Create a cookie file, empty for now
 file_put_contents('tmp/cookie.txt', '');
 
-//We'll be posting these
+// We'll be posting these
 $fields = [
     'loginSubmit' => true, 
     'username' => $username, 
     'password' => $password
 ];
 
-//curl handler, again
+// Handler, again
 $login = curl_init();
 
 curl_setopt($login, CURLOPT_URL, $loginUrl);
 
 curl_setopt($login, CURLOPT_COOKIESESSION, true);
-curl_setopt($login, CURLOPT_COOKIEFILE, realpath('tmp/cookie.txt'));//send cookies
-curl_setopt($login, CURLOPT_COOKIEJAR, realpath('tmp/cookie.txt'));//receive and save cookies
+
+// Send cookies
+curl_setopt($login, CURLOPT_COOKIEFILE, realpath('tmp/cookie.txt'));
+
+// Receive and save cookies
+curl_setopt($login, CURLOPT_COOKIEJAR, realpath('tmp/cookie.txt'));
 
 curl_setopt($login, CURLOPT_HEADER, 1);
 curl_setopt($login, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
@@ -102,17 +109,17 @@ curl_setopt($login, CURLOPT_URL, $getUrl);
 
 $result = curl_exec($login);
 
-//Now we have the cookie
+// Now we have the cookie
 curl_close($login);
 
-//We can easily grab the cookie into a variable...
+// We can easily grab the cookie into a variable...
 $pattern = "#Set-Cookie: (.*?; path=.*?;.*?)\n#";
 preg_match_all($pattern, $result, $matches);
 array_shift($matches);
 $cookie = implode("\n", $matches[0]);
 
 $get = curl_init($getUrl);
-//...And use it within another cURL
+// ...And use it within another cURL
 curl_setopt($get, CURLOPT_COOKIE, $cookie);
 
 curl_setopt($get, CURLOPT_COOKIESESSION, true);
@@ -164,7 +171,7 @@ echo curl_exec($checkForNothing) . '<br><br><h3>Form: (after login)</h3><br>';
 
 curl_close($checkForNothing);
 
-//note that if I were to send it just to user, it would redirect without the post
+// If I were to send it just to /user, it would redirect without the post
 $login = curl_init('https://toms.click/user/login');
 
 curl_setopt($login, CURLOPT_FOLLOWLOCATION, true);
@@ -173,7 +180,7 @@ curl_setopt($login, CURLOPT_MAXREDIRS, 15);
 curl_setopt($login, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($login, CURLOPT_SSL_VERIFYHOST, false);
 
-curl_setopt($login, CURLOPT_COOKIEFILE, realpath('tmp/tomsCookie.txt'));//send cookies curl_setopt($login, CURLOPT_COOKIEJAR, realpath('tmp/tomsCookie.txt'));//receive and save cookies
+curl_setopt($login, CURLOPT_COOKIEFILE, realpath('tmp/tomsCookie.txt'));
 
 curl_setopt($login, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
 
@@ -198,8 +205,10 @@ curl_setopt($checkForUserInfo, CURLOPT_MAXREDIRS, 15);
 curl_setopt($checkForUserInfo, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($checkForUserInfo, CURLOPT_SSL_VERIFYHOST, false);
 
-curl_setopt($checkForUserInfo, CURLOPT_COOKIEFILE, realpath('tmp/tomsCookie.txt'));//send cookies 
-curl_setopt($checkForUserInfo, CURLOPT_COOKIEJAR, realpath('tmp/tomsCookie.txt'));//receive and save cookies 
+// Send cookies
+curl_setopt($checkForUserInfo, CURLOPT_COOKIEFILE, realpath('tmp/tomsCookie.txt'));
+// Receive and save cookies 
+curl_setopt($checkForUserInfo, CURLOPT_COOKIEJAR, realpath('tmp/tomsCookie.txt'));
 
 return curl_exec($checkForUserInfo);}
 ```
