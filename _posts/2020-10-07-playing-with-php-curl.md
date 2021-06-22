@@ -19,7 +19,7 @@ I wrote this years ago and just found it within a 'playing-with-curl' repository
 
 ## Let's do something simple first
 
-Imagine that you have a search script, somewhere on some website. This script uses `php $_POST` parameters to return search results. For the sake of simplicity, let's say that the script is wrapped in `php if($_POST['searchSubmit'] === 'GO') {` and the value used in search is within `php $_POST['searchbar']`. This means we'll need a script that will a) reach the website, b) post data, c) return with the page that appears. HTML parsers are everywhere, so let's just grab the entire page.
+Imagine that you have a search script, somewhere on some website. This script uses `$_POST` parameters to return search results. For the sake of simplicity, let's say that the script is wrapped in `if($_POST['searchSubmit'] === 'GO') {` and the value used in search is within `$_POST['searchbar']`. This means we'll need a script that will a) reach the website, b) post data, c) return with the page that appears. HTML parsers are everywhere, so let's just grab the entire page.
 
 ```php
 function remoteSearch($searchFor) {

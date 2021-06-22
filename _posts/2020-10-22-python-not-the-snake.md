@@ -11,7 +11,7 @@ author: Martin Toms
 published: true
 
 ---
-Hiss there! Let's take a look at one of my favorite languages, which, admittedly, I don't use much lately. It's still neat. This will be, as usually, a very short article. I'll mention just the basics, just enough for a person to get to know the language. After installing Python, you may use it to interpret your code, for example in Linux: `bash python file.py`.
+Hiss there! Let's take a look at one of my favorite languages, which, admittedly, I don't use much lately. It's still neat. This will be, as usually, a very short article. I'll mention just the basics, just enough for a person to get to know the language. After installing Python, you may use it to interpret your code, for example in Linux: `file.py`.
 
 Python is a general purpose language, much like many other currently popular languages. It's often used for data science, partially for its integers. You may be asking, what's so special about Pythonic (In truth, this isn't the correct way to use this word. Pythonic means using Python code the way it was intended / the right way, maintainable etc.) integers? There's no upper bound! Well.. there is, but it's your memory size, so that doesn't count.
 
@@ -21,11 +21,11 @@ Python reminds me of C, probably because it's written in C. It's like a... bette
 
 ### Variables, Functions and all that jazz
 
-Now, variables, as I mentioned, only need names. `python a = 0` would create and initialize a variable, and you may use it within your code happily. Actually, if you create a variable like this within a function, you may use it later in code, even outside this very function. That's called implicit declaration. There's a multitude of generic data types available, everything from a bool to a dictionary.
+Now, variables, as I mentioned, only need names. `a = 0` would create and initialize a variable, and you may use it within your code happily. Actually, if you create a variable like this within a function, you may use it later in code, even outside this very function. That's called implicit declaration. There's a multitude of generic data types available, everything from a bool to a dictionary.
 
-I've mentioned functions, those are declared through the def word, like so: `python def something(parameter, anotherParameter):`. You may then call it with `python something()`
+I've mentioned functions, those are declared through the def word, like so: `def something(parameter, anotherParameter):`. You may then call it with `something()`
 
-Finally, you're able to output stuff using the `python print(1, "yes")` function. Print takes a string or variables and other arguments. Let's take a look at the three most common uses:
+Finally, you're able to output stuff using the `print(1, "yes")` function. Print takes a string or variables and other arguments. Let's take a look at the three most common uses:
 
 ```python
 a = 10
@@ -78,7 +78,7 @@ for a in range(3):
     print(a)
 ```
 
-This would give you something similar to PHP's `php for($i = 0; $i < 3; $i++) { echo $i; }`. Side note, you may use the keywords break and continue within your loops. Continue sends you back to the beginning of a loop, while break ends it prematurely. Useful when you invoke an infinite loop like `python while True:`
+This would give you something similar to PHP's `for($i = 0; $i < 3; $i++) { echo $i; }`. Side note, you may use the keywords break and continue within your loops. Continue sends you back to the beginning of a loop, while break ends it prematurely. Useful when you invoke an infinite loop like `while True:`
 
 ### Extension
 

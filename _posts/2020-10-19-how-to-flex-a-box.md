@@ -26,7 +26,7 @@ Most websites these days follow the basic structure of Header - Main - Footer in
 </div>
 ```
 
-In the past, you'd usually go for `css float: left;` and `css float: right;` or some form of `css display: inline-block;` and then you'd deal with making it look perfect, removing font-size of the parent to deal with any white space or adding comments for that, etc. Nowadays, a - in my opinion - better way to style these exists. Sure, there's compatibility with browsers to consider, but, let's be honest - most browsers are capable of utilizing Flexbox at least to the basic degree at this point.
+In the past, you'd usually go for `float: left;` and `float: right;` or some form of `display: inline-block;` and then you'd deal with making it look perfect, removing font-size of the parent to deal with any white space or adding comments for that, etc. Nowadays, a - in my opinion - better way to style these exists. Sure, there's compatibility with browsers to consider, but, let's be honest - most browsers are capable of utilizing Flexbox at least to the basic degree at this point.
 
 You may be thinking, what's styling a row and a column good for, Martin? Well, if you think about it, most websites are just collections of rows and columns. The page layout itself is a column, articles? Column. Headers and footers? Rows. Once you get used to Flexbox, you'll probably see these two elements everywhere.
 
@@ -34,9 +34,9 @@ You may be thinking, what's styling a row and a column good for, Martin? Well, i
 
 Very easily. Now, remember this - when you're using Flexbox, you're actually styling the elements inside of some wrapper (parent element). This will help you to understand where the properties should go quicker. I like to call it a wrapper, however it's really a flex container. Force of habit, excuse it.
 
-The entire thing stands on top of two main properties. Display and flex-direction. There are two main displays, that's `css display: flex;` and `css display: inline-flex;`. Flex is the equivalent of a block element, while inline-flex is an inline-block-like one. Both are able to use other Flexbox properties.
+The entire thing stands on top of two main properties. Display and flex-direction. There are two main displays, that's `display: flex;` and `display: inline-flex;`. Flex is the equivalent of a block element, while inline-flex is an inline-block-like one. Both are able to use other Flexbox properties.
 
-The second main property, flex-direction, merely states which direction elements within your wrapper should line up in. The available values are `css row` and `css column`. There are also `css row-revese` and a similar reversed column which merely change the element direction from left->right to right->left or top->bottom to bottom->top, however, for accessibility reasons, I don't use them. While it looks the way you want it to, the html structure doesn't reflect this - while your HTML would go 123, your reverse row would show as 321. For that reason I'm not even going to go into `css order: x;` You are, of course, welcome to use them if you wish to.
+The second main property, flex-direction, merely states which direction elements within your wrapper should line up in. The available values are `row` and `column`. There are also `row-revese` and a similar reversed column which merely change the element direction from left->right to right->left or top->bottom to bottom->top, however, for accessibility reasons, I don't use them. While it looks the way you want it to, the html structure doesn't reflect this - while your HTML would go 123, your reverse row would show as 321. For that reason I'm not even going to go into `order: x;` You are, of course, welcome to use them if you wish to.
 
 ### Imagine a Simple Page Like This
 
@@ -106,7 +106,7 @@ I've used a bunch of properties. Let me explain the justify-content further. Jus
 
 There's a whole lot more properites available to use, let me name a few of them - while justify-content aligns your content along the current direction, align-items (given to the wrapper) / align-self (given to the child) allows you to vertically or horizontally align your elements within the 'opposite' direction. What I mean is that in a row, it'll work vertically and it'll align horizontally in a column. Typically you'd be using center. You can also use flex-start or flex-end values.
 
-Another important feature is the flex-wrap. This neat property allows you to have multiple 'rows' of elements. Let's say you want 5 rows of articles, each should have 3. If the articles are wide enough so that only 3 fit on a line, `css flex-wrap: wrap` would (the opposite would be `css flex-wrap: nowrap`) make it so that your 15 elements break into 5 lines.
+Another important feature is the flex-wrap. This neat property allows you to have multiple 'rows' of elements. Let's say you want 5 rows of articles, each should have 3. If the articles are wide enough so that only 3 fit on a line, `flex-wrap: wrap` would (the opposite would be `flex-wrap: nowrap`) make it so that your 15 elements break into 5 lines.
 
 Speaking of width. That's flex-basis. Think of flex-basis as a sort of combination of width, max-width and min-width. It's more or less the ideal width this element should take up. The remaining free space is pretty much anything outside of flex basis. Setting flex-basis to 30% will allow your elements to grow beyond it, but also ensure that they get their 30%, assuming there's enough space and rules to support that.
 
