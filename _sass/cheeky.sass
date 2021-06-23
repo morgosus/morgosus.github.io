@@ -22,6 +22,7 @@ $header: lightgray //#F0F0FD
 
 /* ----- Aux ----- */
 $db: 1px solid $primary
+$test-outline: gold 3px dashed
 
 /* ----- Whole page elements ----- */
 *
@@ -104,12 +105,13 @@ body
   &__content
     flex-grow: 1
     padding-top: 1rem
-    max-width: 100%
+    max-width: 80%
   &__aside
     padding-top: 1rem
     padding-left: 1rem
     margin-left: 1rem
     min-width: 13rem
+    max-width: 20%
     position: relative
     box-shadow:  -5px 0 5px -5px $header
     &:before
@@ -135,7 +137,6 @@ body
 .card
   position: relative
   display: flex
-  align-items: center
   margin-bottom: 1rem
   &__content
     align-self: baseline
@@ -175,7 +176,6 @@ body
       margin-top: 0.5rem
       font-weight: normal
       text-align: center
-
 .rss
   display: flex
   align-items: center
@@ -216,6 +216,7 @@ body
     clear: both
     & > *
       margin-bottom: 1rem
+      outline: $test-outline
     p
       text-align: justify
       //margin-bottom: 1rem
@@ -313,3 +314,50 @@ body
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 19%), inset 0 2px 4px 0 rgb(0 0 0 / 20%), inset 0 3px 10px 0 rgb(0 0 0 / 19%)
   border-radius: 0.25rem
   text-shadow: 0 0 5px gray
+
+
+@media screen and (max-width: 1024px)
+  //.card
+  //  flex-direction: column
+  //  margin-bottom: 0.5rem
+  //  &__image
+  //    margin: auto
+  //    margin-bottom: 0.25rem
+  //  &__content
+  //  &__heading
+  //    margin-bottom: 0rem
+  //  &__meta
+  //    margin-bottom: 0rem
+  .card
+    margin-bottom: 0.5rem
+    &__image
+      margin-bottom: 0.25rem
+      margin-right: 0.25rem
+    &__content
+    &__heading
+      margin-bottom: 0rem
+    &__meta
+      margin-bottom: 0rem
+  .main
+    &__aside
+      margin-left: 0.5rem
+      padding: 0.5rem
+      .posts__list
+        .card
+          margin-left: 0
+          margin-bottom: 0.5rem
+          &__image
+            width: 100%
+          &__content
+          &__heading
+            margin: auto
+          &__meta
+    &__content
+      padding-top: 0.5rem
+      padding-left: 0.5rem
+  .rss
+    margin-bottom: 0.5rem
+    line-height: 1rem
+  .post-content
+    & > *
+      margin-bottom: 0.5rem !important

@@ -315,13 +315,14 @@ body {
 .main__content {
   flex-grow: 1;
   padding-top: 1rem;
-  max-width: 100%;
+  max-width: 80%;
 }
 .main__aside {
   padding-top: 1rem;
   padding-left: 1rem;
   margin-left: 1rem;
   min-width: 13rem;
+  max-width: 20%;
   position: relative;
   box-shadow: -5px 0 5px -5px lightgray;
 }
@@ -341,7 +342,6 @@ body {
 .card {
   position: relative;
   display: flex;
-  align-items: center;
   margin-bottom: 1rem;
 }
 .card__content {
@@ -435,6 +435,7 @@ body {
 }
 .post .post-content > * {
   margin-bottom: 1rem;
+  outline: gold 3px dashed;
 }
 .post .post-content p {
   text-align: justify;
@@ -537,6 +538,50 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19), inset 0 2px 4px 0 rgba(0, 0, 0, 0.2), inset 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.25rem;
   text-shadow: 0 0 5px gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    margin-bottom: 0.5rem;
+  }
+  .card__image {
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .card__heading {
+    margin-bottom: 0rem;
+  }
+  .card__meta {
+    margin-bottom: 0rem;
+  }
+
+  .main__aside {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+  }
+  .main__aside .posts__list .card {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  .main__aside .posts__list .card__image {
+    width: 100%;
+  }
+  .main__aside .posts__list .card__heading {
+    margin: auto;
+  }
+  .main__content {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .rss {
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .post-content > * {
+    margin-bottom: 0.5rem !important;
+  }
 }
 
 /*# sourceMappingURL=cheeky.css.map */
