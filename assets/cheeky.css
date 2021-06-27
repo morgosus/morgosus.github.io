@@ -386,16 +386,15 @@
 
   /* ----- Drop Cap ----- */
   .post-content::first-letter {
-    margin-top: 0.25rem;
-    border: 0.25rem solid #101010;
-    padding: 0.25rem;
+    margin-top: 8.0901699438px;
+    border: 4.0450849719px solid #101010;
+    padding: 4.0450849719px;
     font-size: 3rem;
     line-height: 3rem;
-    margin-right: 0.75rem;
-    margin-bottom: 0.25rem;
+    margin-right: 12.1352549156px;
+    margin-bottom: 4.0450849719px;
     float: left;
     vertical-align: bottom;
-    border-radius: 0.25rem;
   }
 
   /*\--------------------------------------------\*/
