@@ -8,10 +8,13 @@
     {% include header.html %}
 
     <main class="main theme-default" aria-label="Content">
+
       <div class="main__content">
         {{ content }}
       </div>
+
       <aside class="main__aside">
+
         <h2 class="posts__heading sr-only">{{ page.list_title | default: "Featured Posts" }}</h2>
         <ul class="posts__list">
         {%- for post in site.posts -%}
@@ -36,8 +39,8 @@
             <img class="card__image" src="/assets/{{post.thumbnail}}.jpg" alt="{{post.thumbnail-alt}}">
             <div class="card__content">
               <h3 class="card__heading">{{ post.title | escape }}</h3>
-              <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
             </div>
+            <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
           </li>
           {% endif post.featured == true %}
         {%- endfor -%}
