@@ -15,7 +15,6 @@ layout: default
     <h2 class="posts__heading sr-only">{{ page.list_title | default: "Newest Posts" }}</h2>
     <ul class="posts__list">
       {%- for post in site.posts -%}
-
         {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
         {% if site.minima.date_format != true %}
           {% case day_posted %}
@@ -40,8 +39,8 @@ layout: default
           {%- if site.show_excerpts -%}
             {{ post.excerpt | truncate: site.excerpt_length }}
           {%- endif -%}
-        <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
         </div>
+        <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
       </li>
       {%- endfor -%}
     </ul>
