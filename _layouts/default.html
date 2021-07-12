@@ -5,14 +5,17 @@
 
   <body>
 
-    {% include header.html %}
+    {% if page.hide_header != true %}
+      {% include header.html %}
+    {% endif %}
 
-    <main class="main theme-default" aria-label="Content">
+    <main class="main theme-{{ page.theme | default: "default" }}" aria-label="Content">
 
       <div class="main__content">
         {{ content }}
       </div>
 
+      {% if page.hide_sidebar != true %}
       <aside class="main__aside">
 
         <h2 class="posts__heading sr-only">{{ page.list_title | default: "Featured Posts" }}</h2>
@@ -46,9 +49,12 @@
         {%- endfor -%}
       </ul>
       </aside>
+      {% endif %}
     </main>
 
-    {%- include footer.html -%}
+    {% if page.hide_footer != true %}
+      {%- include footer.html -%}
+    {% endif %}
 
   </body>
 
