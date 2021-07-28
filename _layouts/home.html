@@ -32,7 +32,7 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
       <!-- TODO: Consider a READ MORE button-->
       <li class="posts__card card">
-        <img class="card__image" src="/assets/{{post.thumbnail}}.jpg" alt="{{post.thumbnail-alt}}">
+        <img class="card__image" src="/assets/{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
         <div class="card__content">
           <h3 class="card__heading">{{ post.title | escape }}</h3>
           <span class="card__meta">{{ post.date | date: date_format }}</span>
