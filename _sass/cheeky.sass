@@ -4,3 +4,47 @@
   @import "click/header"
 @media screen and (min-width: 1024px)
   @import "bkp"
+
+@font-face
+  font-family: monofonto
+  src: url(/assets/font/monofonto.ttf)
+
+$golden-ratio: 1.61803398875
+
+$f: 100%
+
+$s: $golden-ratio*10px
+//heading font = content*$gr
+$font-size: 18px
+$font-size-heading:  $font-size*$golden-ratio
+
+$g: #16FF42
+$gb: 1px solid $g
+
+$border-color: #EEEEEE
+
+$border: 1px solid $border-color
+$box-shadow: 0px 0px 5px $border-color
+$background-color: white
+body
+  font-family: monofonto
+
+.header__logo
+.header, .footer
+  text-align: center
+  font-size: $font-size
+  text-transform: uppercase
+.header
+  border-bottom: $border
+.footer
+  border-top: $border
+.main__aside
+  border-left: $border
+
+.card__image, .post-thumbnail
+  outline: $border !important
+  border-radius: 0 !important
+
+*
+  box-shadow: none !important
+  text-shadow: none !important
