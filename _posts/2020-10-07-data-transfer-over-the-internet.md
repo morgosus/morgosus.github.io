@@ -3,8 +3,8 @@ layout: post
 title:  "Data Transfer Over the Internet"
 date:   2020-10-07 11:47:39 +0200
 categories: programming
-thumbnail: "placeholder-alpha"
-thumbnail-alt: "A photo of stairs and a tree near a river."
+thumbnail: "thm/programming.svg"
+thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms
 

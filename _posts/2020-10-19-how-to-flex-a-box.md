@@ -3,8 +3,8 @@ layout: post
 title:  "How to Flex a Box"
 date:   2020-10-19 20:00:15 +0200
 categories: programming
-thumbnail: "placeholder-alpha"
-thumbnail-alt: "A photo of stairs and a tree near a river."
+thumbnail: "thm/flex.svg"
+thumbnail-alt: "Flex"
 featured: false
 author: Martin Toms
 

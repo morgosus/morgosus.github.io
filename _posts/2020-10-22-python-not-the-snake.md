@@ -3,8 +3,8 @@ layout: post
 title:  "Python (Not the Snake)"
 date:   2020-10-22 23:56:48 +0200
 categories: programming
-thumbnail: "placeholder-beta"
-thumbnail-alt: "A photo of stairs and a tree near a river."
+thumbnail: "thm/programming.svg"
+thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms
 

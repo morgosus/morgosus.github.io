@@ -3,8 +3,8 @@ layout: post
 title:  "Latte PHP Template Engine"
 date:   2020-09-23 12:51:02 +0200
 categories: programming
-thumbnail: "placeholder-alpha"
-thumbnail-alt: "A photo of stairs and a tree near a river."
+thumbnail: "thm/programming.svg"
+thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms
 

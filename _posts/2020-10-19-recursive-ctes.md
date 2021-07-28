@@ -3,8 +3,8 @@ layout: post
 title:  "Recursive CTEs"
 date:   2020-10-19 14:10:35 +0200
 categories: programming
-thumbnail: "placeholder-gamma"
-thumbnail-alt: "A photo of stairs and a tree near a river."
+thumbnail: "thm/mariadb.svg"
+thumbnail-alt: "MariaDB"
 featured: false
 author: Martin Toms
 
