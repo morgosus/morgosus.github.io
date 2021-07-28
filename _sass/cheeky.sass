@@ -6,8 +6,10 @@
   @import "bkp"
 
 @font-face
-  font-family: monofonto
-  src: url(/assets/font/monofonto.ttf)
+  font-family: 'monofonto'
+  src: url('/assets/font/monofonto-webfont.woff2') format('woff2'), url('/assets/font/monofonto-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
 
 $golden-ratio: 1.61803398875
 
@@ -27,7 +29,7 @@ $border: 1px solid $border-color
 $box-shadow: 0px 0px 5px $border-color
 $background-color: white
 body
-  font-family: monofonto
+  font-family: 'monofonto', monospace
 
 .header__logo
 .header, .footer
