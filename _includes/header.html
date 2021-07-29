@@ -2,7 +2,7 @@
   <div class="header__wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="header__logo" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="header__logo" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/nib.svg" alt="Fountain pen nib" />{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
     <nav class="header__navigation">

@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="icon" type="image/png" href="{{ "/assets/favicon.ico" | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ "/assets/favicon.ico?v=" | relative_url | append: randomBuildNumber }}" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/normalize.css?v=" | relative_url | append: randomBuildNumber }}">
   <link rel="stylesheet" href="{{ "/assets/cheeky.css?v=" | relative_url | append: randomBuildNumber }}">
 
