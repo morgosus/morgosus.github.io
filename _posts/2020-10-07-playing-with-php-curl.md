@@ -3,7 +3,7 @@ layout: post
 title:  "Playing with PHP cURL"
 date:   2020-10-07 23:56:48 +0200
 categories: programming
-thumbnail: "thm/programming.svg"
+thumbnail: "/assets/thm/programming.jpg"
 thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms

@@ -3,7 +3,7 @@ layout: post
 title:  "Recursive CTEs"
 date:   2020-10-19 14:10:35 +0200
 categories: programming
-thumbnail: "thm/mariadb.svg"
+thumbnail: "/assets/thm/mariadb.jpg"
 thumbnail-alt: "MariaDB"
 featured: false
 author: Martin Toms
