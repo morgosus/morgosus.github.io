@@ -4,7 +4,7 @@ _site
 .jekyll-metadata
 vendor
 /.idea/
-/_sass/click/header.css
-/_sass/click/header.css.map
-/_sass/bkp.css
-/_sass/bkp.css.map
+_sass/*.css
+_sass/*.css.map
+_sass/*/*.css
+_sass/*/*.css.map
