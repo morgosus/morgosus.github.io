@@ -44,3 +44,11 @@ plugins:
 # Own
 show_excerpts: true
 excerpt_length: 200
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+    - assets/css
+    - assets/vendor
+  style: compressed
