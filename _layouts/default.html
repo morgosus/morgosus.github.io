@@ -4,86 +4,17 @@
   {%- include /head.html -%}
 
   <body>
+  {% unless page.hide_header == true %}
+    {% include header.html %}
+  {% endunless %}
 
-    {% if page.hide_header != true %}
-      {% include header.html %}
-    {% endif %}
+  <div class="wrapper wrapper--body">
+    <main class="main theme-{{ page.theme | default: "default" }}" aria-label="Content">{%- include main.html -%}</main>
+    <aside class="sidebar">{%- include sidebar.html -%}</aside>
+  </div>
 
-    <main class="main theme-{{ page.theme | default: "default" }}" aria-label="Content">
-
-      <div class="main__content">
-        {{ content }}
-      </div>
-
-      {% if page.hide_sidebar != true %}
-      <aside class="main__aside">
-
-        <h2 class="posts__heading sr-only">{{ page.list_title | default: "Featured Posts" }}</h2>
-
-        <ul class="posts__list">
-          <li class="posts__card card card--aside">
-            <img class="card__image" src="https://repository-images.githubusercontent.com/387175538/21a5dcf1-a0fb-4af9-804c-76cc93deb865" alt="A screenshot of the travel portfolio">
-            <div class="card__content">
-              <h3 class="card__heading">Travel Portfolio</h3>
-            </div>
-            <a class="card__overlay" href="https://travel.toms.click" title="Go to the Travel Portfolio"></a>
-          </li>
-          <li class="posts__card card card--aside">
-            <img class="card__image" src="https://github.com/morgosus/fit-boy/blob/master/github/1.5.0.png?raw=true" alt="Fit-Boy by Morgosus, a clock face themed after the legendary Fallout Pip-Boy">
-            <div class="card__content">
-              <h3 class="card__heading">Fit-Boy for Fitbit Sense and Versa 3</h3>
-            </div>
-            <a class="card__overlay" href="https://gallery.fitbit.com/details/2d38820d-91d8-47a7-947f-0d8a12fa1cbe" title="Go to Fitbit Gallery - Fit-Boy by Morgosus"></a>
-          </li>
-          <li class="posts__card card card--aside">
-            <img class="card__image" src="https://repository-images.githubusercontent.com/188399932/5a497a9d-1c2c-4a33-af5d-a811a87a524a" alt="Front cover of the thesis">
-            <div class="card__content">
-              <h3 class="card__heading">My Thesis</h3>
-            </div>
-            <a class="card__overlay" href="https://github.com/morgosus/thesis" title="Go to the thesis Github page"></a>
-          </li>
-          <li class="posts__card card card--aside">
-            <div class="card__content">
-              <h3 class="card__heading">[ Link: Resume ]</h3>
-            </div>
-            <a class="card__overlay" href="https://martin.toms.click" title="Go to the resume"></a>
-          </li>
-        {%- for post in site.posts -%}
-          {% if post.featured == true and post.title != page.title %}
-            {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
-            {% if site.minima.date_format != true %}
-              {% case day_posted %}
-                {% when '01', '21', '31' %}
-                  {% assign ordinal_format = '%-dst %B %Y' %}
-                {% when '02', '22' %}
-                  {% assign ordinal_format = '%-dnd %B %Y' %}
-                {% when '03', '23' %}
-                  {% assign ordinal_format = '%-drd %B %Y' %}
-                {% else %}
-                  {% assign ordinal_format = '%-dth %B %Y' %}
-              {% endcase %}
-            {% endif %}
-  
-            {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
-          <!-- TODO: Consider a READ MORE button-->
-          <li class="posts__card card card--aside">
-            <img class="card__image" src="/assets/{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
-            <div class="card__content">
-              <h3 class="card__heading">{{ post.title | escape }}</h3>
-            </div>
-            <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
-          </li>
-          {% endif post.featured == true %}
-        {%- endfor -%}
-      </ul>
-      </aside>
-      {% endif %}
-    </main>
-
-    {% if page.hide_footer != true %}
-      {%- include footer.html -%}
-    {% endif %}
-
+  {% unless page.hide_sidebar == true %}
+    {% include footer.html %}
+  {% endunless %}
   </body>
-
 </html>

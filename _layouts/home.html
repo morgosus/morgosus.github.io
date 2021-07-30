@@ -5,16 +5,16 @@ layout: default
 
 <div class="homepage">
   {%- if page.title -%}
-    <h1 class="homepage__heading sr-only">{{ page.title | default: "Homepage" }}</h1>
+    <h1 class="homepage__heading  sr">{{ page.title | default: "Homepage" }}</h1>
   {%- endif -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
   <section class="homepage__posts posts">
-    <h2 class="posts__heading sr-only">{{ page.list_title | default: "Newest Posts" }}</h2>
-    <ul class="posts__list">
+    <h2 class="posts__heading sr">{{ page.list_title | default: "Newest Posts" }}</h2>
       {%- for post in site.posts -%}
+        {% unless post.home == false %}
         {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
         {% if site.minima.date_format != true %}
           {% case day_posted %}
@@ -31,21 +31,25 @@ layout: default
 
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
       <!-- TODO: Consider a READ MORE button-->
-      <li class="posts__card card">
-        <img class="card__image" src="/assets/{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+      <div class="posts__card card">
+        {% unless post.thumbnail == "#" %}
+        <img class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+        {% endunless %}
         <div class="card__content">
-          <h3 class="card__heading">{{ post.title | escape }}</h3>
-          <span class="card__meta">{{ post.date | date: date_format }}</span>
+          <h3 class="card__content-heading">{{ post.title | escape }}</h3>
+          <span class="card__content-meta">{{ post.date | date: date_format }}</span>
+          <div class="card__content-excerpt">
           {%- if site.show_excerpts -%}
             {{ post.excerpt | truncate: site.excerpt_length }}
           {%- endif -%}
+          </div>
         </div>
         <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
-      </li>
+      </div>
+      {% endunless %}
       {%- endfor -%}
-    </ul>
   </section>
 
-  <p class="rss"><img class="rss__icon" src="/assets/rss.svg" alt="RSS icon" />&nbsp;Subscribe&nbsp;<a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss"><img class="rss__icon" src="/assets/rss.jpg" alt="RSS icon" />&nbsp;Subscribe&nbsp;<a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 </div>
