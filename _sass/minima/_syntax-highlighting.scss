@@ -2,10 +2,19 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
+  background: inherit;
+
+  * {
+    font-family: $primary-font !important;
+  }
+
+  .highlight {
+    border-left: $s/4 solid $border-color;
+    padding-left: $s;
+  }
 
   .highlighter-rouge & {
-    background: #eef;
+    background: inherit;
   }
 
   .c     { color: #998; font-style: italic } // Comment
