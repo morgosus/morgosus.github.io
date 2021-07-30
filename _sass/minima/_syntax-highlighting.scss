@@ -9,9 +9,10 @@
   }
 
   .highlight {
-    border-left: $s/4 solid $color;
-    padding-left: $s;
+    border-left: $s/4 solid $border-color;
     overflow-x: auto;
+    padding: $s/2 0 $s/2 $s;
+    border-radius: $s/2;
   }
 
   .highlighter-rouge & {

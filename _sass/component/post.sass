@@ -1,2 +1,49 @@
 /*--- Display --------------------------*/
+.post
+  &__thumbnail
+    width: 100%
+  &__header
+  &__title
+    float: left
+  &__meta
+    float: right
+    margin-top: $s
+    &-published
+    &-author
+  &__content
+    clear: both
+    & > *
+      margin-bottom: $s
+    p:last-of-type
+      margin-bottom: 0 !important
+    &-notice
+      padding-left: $s
+  h1, h2, h3, h4, h5, h6
+    margin: $s*2 0 0 0 !important
+  h1:first-of-type
+    margin-top: $s !important
 /*--- Coloring -------------------------*/
+.post
+  text-align: justify
+  hyphens: auto
+  &__thumbnail
+    outline: $border
+  &__header
+  &__title
+    text-align: left
+  &__meta
+    text-align: right
+    font-family: $primary-font
+    &-published
+    &-author
+  &__content
+    &-notice
+      border-left: $s/4 solid $g
+      color: $g
+
+  ul, ol
+    list-style-position: inside
+    ul, ol
+      padding-left: $s
+      ul, ol
+        padding-left: $s
