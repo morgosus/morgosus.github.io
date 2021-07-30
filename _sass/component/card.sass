@@ -1,0 +1,59 @@
+/*--- Display --------------------------*/
+.card
+  display: flex
+  margin-bottom: $s
+  text-align: justify
+  hyphens: auto
+  position: relative
+  cursor: default
+  &__image
+    margin-right: $s
+    //min-width: 300px
+    width: 300px
+    max-width: 100%
+    max-height: 200px
+    object-fit: cover
+  &__content
+    display: flex
+    flex-direction: column
+    flex: 1
+    &-heading
+      line-height: 1em
+      margin-bottom: $s
+    &-meta
+      line-height: 1em
+      margin-bottom: $s/2
+      font-size: $font-size*16/18
+    &-excerpt
+      font-size: $font-size*16/18
+  &__overlay
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    cursor: pointer
+
+.card--sidebar
+  flex-wrap: wrap
+  margin-bottom: $s
+  .card__image
+    margin: 0 !important
+    height: 10*$s !important
+    margin-bottom: $s !important
+
+
+/*--- Coloring -------------------------*/
+
+.card
+  &__image
+    outline: $border
+  &__content
+    &-heading
+    &-meta
+    &-excerpt
+  &__overlay
+
+.card--sidebar
+  text-align: center
+  .card__image
