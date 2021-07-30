@@ -11,6 +11,7 @@
   .highlight {
     border-left: $s/4 solid $color;
     padding-left: $s;
+    overflow-x: auto;
   }
 
   .highlighter-rouge & {
