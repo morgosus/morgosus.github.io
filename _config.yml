@@ -43,7 +43,7 @@ plugins:
 
 # Own
 show_excerpts: true
-excerpt_length: 200
+excerpt_length: 250
 
 sass:
   load_paths:
