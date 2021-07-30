@@ -1,0 +1,27 @@
+@media screen and (max-width: 960px)
+  *
+    .wrapper--body
+      flex-direction: column-reverse
+
+    .sidebar
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-evenly
+      border: none !important
+      padding: 0 !important
+      padding-top: $s !important
+      margin: 0 !important
+      min-width: 100% !important
+    .card--sidebar
+      flex-direction: column
+      max-width: $s*15
+      width: 100%
+    .card
+      flex-direction: column
+      &__image
+        margin: 0 auto !important
+        margin-bottom: $s !important
+    .rss
+    .main
+      padding: $s/2
