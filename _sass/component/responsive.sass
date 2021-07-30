@@ -9,7 +9,7 @@
       flex-wrap: wrap
       justify-content: space-evenly
       border: none !important
-      padding: 0 !important
+      padding: $s/2 !important
       padding-top: $s !important
       margin: 0 !important
       min-width: 100% !important
@@ -25,3 +25,12 @@
     .rss
     .main
       padding: $s/2
+
+@media screen and (max-width: 480px)
+  .card
+    &__image
+      width: 100% !important
+  .card--sidebar
+      max-width: 100% !important
+      width: 100% !important
+      min-width: 100%  !important
