@@ -8,7 +8,7 @@ thumbnail: "https://filedn.eu/lwI1LDSpBGNhFdgdym0FqY7/i/thm/travel-diary.jpg"
 thumbnail-alt: "A screenshot of the travel portfolio"
 
 link: https://travel.toms.click/
-link-text: Go to the Travel Portfolio
+link-text: Go to my Travel Portfolio
 
 home: false
 featured: true
