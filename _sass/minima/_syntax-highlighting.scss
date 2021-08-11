@@ -2,22 +2,6 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: inherit;
-
-  * {
-    font-family: $primary-font !important;
-  }
-
-  .highlight {
-    border-left: $s/4 solid $border-color;
-    overflow-x: auto;
-    padding: $s/2 0 $s/2 $s;
-    border-radius: $s/2;
-  }
-
-  .highlighter-rouge & {
-    background: inherit;
-  }
 
   .c     { color: #998; font-style: italic } // Comment #998;
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
