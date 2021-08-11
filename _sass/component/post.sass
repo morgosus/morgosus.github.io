@@ -41,9 +41,73 @@
       border-left: $s/4 solid $g
       color: $g
 
+  /*--- Markdown Style -----------------*/
   ul, ol
     list-style-position: inside
     ul, ol
       padding-left: $s
       ul, ol
         padding-left: $s
+
+  .task-list
+    display: flex
+    flex-direction: column
+    list-style: none
+    text-transform: uppercase
+    font-family: $primary-font
+    font-size: 0.75*$font-size
+    line-height: $font-size
+    &-item
+      display: flex
+      align-items: center
+      margin-bottom: $s/4
+      &-checkbox
+        margin-right: $s
+
+  table
+    border-collapse: collapse
+    margin: auto
+    max-width: 100%
+    text-transform: uppercase
+    font-family: $primary-font
+    font-size: 0.75*$font-size
+    line-height: $font-size
+    tr
+      th
+        text-align: center
+      td, th
+        border: 1px solid black
+        padding: $s/4
+        text-align: left
+
+  .footnotes
+    $footnote-font: $primary-font
+    display: block
+    ol
+      display: flex
+      flex-direction: column
+      li
+        text-transform: uppercase
+        font-family: $footnote-font
+        font-size: 0.75*$font-size
+        *
+          display: inline
+          font-family: $footnote-font
+        p
+          .reversefootnote
+            display: none
+
+  .highlight
+    background: inherit
+    *
+      font-family: $primary-font !important
+    .highlight
+      border-left: $s/4 solid $border-color
+      overflow-x: auto
+      padding: $s/2 0 $s/2 $s
+      border-radius: $s/2
+    .highlighter-rouge &
+      background: inherit
+
+  del
+    color: darkgray
