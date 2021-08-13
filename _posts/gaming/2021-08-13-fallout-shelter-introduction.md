@@ -4,7 +4,7 @@ title:  "Fallout Shelter Online: Introduction"
 date:   2021-08-13 10:08:32 +0200
 categories: gaming foso
 thumbnail: /assets/thm/gaming/foso/login.jpg
-thumbnail-alt: "Programming"
+thumbnail-alt: "The login screen of Fallout Shelter Online"
 featured: false
 author: "[Martin Toms](https://martin.toms.click)"
 
