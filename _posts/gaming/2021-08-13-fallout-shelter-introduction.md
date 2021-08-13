@@ -20,7 +20,7 @@ And although the game is only available in Asia, as stated by the Fallout Shelte
 
 > Our game will only be live in China, Indonesia, Malaysia, Philippines, Singapore, Thailand, South Korea, Vietnam, Laos, Cambodia, Brunei, and Japan. I apologize for any inconvenience this may cause[^2]
 
-... There is hope yet! If you're not from there, you needn't weep, there are ways to play it even from other regions. I can not, however, endorse them here, so I will only state the fact that it is possible. Just [Tap Tap](www.taptap.io) away and find a way.
+... There is hope yet! If you're not from there, you needn't weep, there are ways to play it even from other regions. I can not, however, endorse them here, so I will only state the fact that it is possible. Just [Tap Tap](https://www.taptap.io) away and find a way.
 
 The game is packed with features and content, it has a story, lots of characters and ways to combine them and is a sort of pocket version of Fallout 4 combined with Fallout Shelter. You'll see characters from Fallout 4, whether they be from the Minutemen (*another settlement might need your help*) or the Brotherhood (*yes, Palading Danse is still looking for that transceiver*). You'll be able to recruit many characters and add them to your vault.
 
