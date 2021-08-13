@@ -5,4 +5,5 @@
 layout: home
 title: Homepage
 on_navbar: false
+categories: programming
 ---
