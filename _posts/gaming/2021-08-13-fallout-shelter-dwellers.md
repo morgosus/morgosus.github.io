@@ -125,6 +125,12 @@ Now, aside from that perk at 3, 4, and 5 medals, each time you upgrade a dweller
 
 Also, some dwellers unlock a trinket once they reach 4 stars (not all of them!), but more about that some other time.
 
+## Is There Any Point In Owning Dwellers You Don't Use?
+
+Yes, at the very least you can climb into the Dweller gallery and unlock some small boosts to all of your dwellers, hey, 3 - 20 power might not be much, but if you get that 20 times, it's 60 to 400... and that's 300 to 2000 power if you count your entire 5-man squad!
+
+Additionally, unlocking a dweller who can have a trinket allows you to claim a 100 Nuka Cola Quantum bonus in the VR Room.
+
 ## And Then There Was One
 
 Now that we've gone through each important piece of information, we can fully understand **POWER**. Power is a numeric view of all the stats, perks, equipment (not tools), trinkets, medals and who knows what. Power tells you how 'powerful' a dweller is in combat. Although do beware... higher power doesn't always beat lower power. It's all about the team combination. A group of 120 000 power may very well beat a group of 150 000 or a single character or 200 000 if the composition is just right.
