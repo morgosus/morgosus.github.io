@@ -36,6 +36,12 @@
     font-family: $primary-font
     &-published
     &-author
+      p
+        display: inline
+        a
+          text-decoration: none
+          color: inherit
+          font-weight: bold
   &__content
     &-notice
       border-left: $s/4 solid $g
@@ -81,21 +87,25 @@
         text-align: left
 
   .footnotes
-    $footnote-font: $primary-font
+    $footnote-font: $secondary-font
+    line-height: $font-size
     display: block
+    margin-top: $s
     ol
       display: flex
       flex-direction: column
       li
-        text-transform: uppercase
-        font-family: $footnote-font
         font-size: 0.75*$font-size
+        line-height: 0.75 * $line-height
         *
           display: inline
           font-family: $footnote-font
         p
           .reversefootnote
             display: none
+  .footnote
+    text-decoration: none
+    margin-left: $s/4
 
   .highlight
     background: inherit
@@ -108,6 +118,19 @@
       border-radius: $s/2
     .highlighter-rouge &
       background: inherit
+
+  blockquote
+    font-size: 0.75 * $font-size
+    line-height: 0.75 * $line-height
+    p
+      display: inline
+      font-style: italic
+      &:after
+        content: '”'
+        display: inline
+      &:before
+        content: '„'
+        display: inline
 
   del
     color: darkgray

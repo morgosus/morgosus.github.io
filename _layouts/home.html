@@ -15,6 +15,7 @@ layout: default
     <h2 class="posts__heading sr">{{ page.list_title | default: "Newest Posts" }}</h2>
       {%- for post in site.posts -%}
         {% unless post.home == false %}
+        {% if post.categories contains page.categories %}
         {% capture day_posted %}{{ post.date | date: "%d" }}{% endcapture %}
         {% if site.minima.date_format != true %}
           {% case day_posted %}
@@ -46,6 +47,7 @@ layout: default
         </div>
         <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
       </div>
+      {% endif %}
       {% endunless %}
       {%- endfor -%}
   </section>

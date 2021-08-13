@@ -6,7 +6,7 @@ layout: default
 
   <div class="post__header">
     <h1 class="post__title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post__meta">
+    <div class="post__meta">
       <time class="post__meta-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 
         {% capture day_posted %}{{ page.date | date: "%d" }}{% endcapture %}
@@ -28,9 +28,9 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post__meta-author h-card" itemprop="name">{{ page.author }}</span></span>
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post__meta-author h-card" itemprop="name">{{ page.author | markdownify }}</span></span>
       {%- endif -%}
-    </p>
+    </div>
   </div>
   <div class="post__content e-content" itemprop="articleBody">
     {{ content }}
