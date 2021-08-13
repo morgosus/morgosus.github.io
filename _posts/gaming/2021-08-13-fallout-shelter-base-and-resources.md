@@ -17,7 +17,7 @@ The base of all things (*pun very much intended, applause please*) is your base 
 four basic resources, your effort and potentially a battle pass (*remember those handy - pun intended - Mr. Handies from 
 Fallout Shelter? Well, you can buy it here too, along with additional rewards for dailies*).
 
-## Let's break down the basic resources now.
+## Let's Break down the Basic Resources Now
 There's no resource shortages as far as 'penalties for not having them',
 but worry not - as soon as you reach higher levels, you won't have enough resources. Which is why you should try to be 
 clever with them.
@@ -26,7 +26,7 @@ You can also get resources from various packs that you may procure through vario
 through straight up buying them). You may also find resources in other places, but let's talk about that some other 
 time.
 
-## Back to the topic at hand, let's break down the basic resources now.
+## Back to the Topic at Hand, Let's Break down the Basic Resources Now
 **Power**, the Harry Potter scar shaped one, is the most important one... at least as far as base building is concerned. 
 You can use it to expand or upgrade the vault. Pretty simple, right? It comes from the power generator room. My 
 suggestion? Always upgrade the power generator first, that way your hourly income will always be at its potentially 
@@ -52,7 +52,7 @@ that's how the homeless people level up (too much?). You generate it within the 
 **Summary** - you use water to level up perks, gaining ability improvements or stat bonuses; food for leveling up; caps 
 for buying basic items and power to upgrade your vault.
 
-## But Martin, what are those other three resources on the right side of the screen?
+## But Martin, What Are Those Other Three Resources on the Right Side of the Screen?
 Those are, what I call, the *advanced resources*. Let's take a look at them, top to bottom.
 
 **Nuka-Cola Quantum** - used for purchasing useful items, speeding things up, purchasing the other two resources and many, 
@@ -74,7 +74,7 @@ additional 60 Rad-X three times a day at specific times.
 
 There are other currencies, but I'll get to them once they become relevant.
 
-## Who should you put in the production rooms?
+## Who Should You Put in the Production Rooms?
 
 Well, production dwellers. Some dwellers (namely the RARE - blue and COMMON - white ones) have production perks. That's 
 nuclear physicist - power, workoholic - caps, ~~plumber~~ water expert and the perfect chef. Rare dwellers have these 

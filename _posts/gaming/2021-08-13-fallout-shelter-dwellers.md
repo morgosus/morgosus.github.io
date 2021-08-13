@@ -30,7 +30,7 @@ Dwellers come in different shapes and colors, let's talk about the colors:
 5. UR, Ultra rare, kinda glowy purple ones, which are obtainable only through **Ultra Rare Reddeem Tickets** (which you gain through events, limited offers and such, usually in the count of 20 - 40)
   - Currently there's only the V.A.T.S. equipped lone wanderer **Nate** and the **KL-E-O** Assaultron and they cost 400 tickets each
 
-### I also mentioned perks
+### I Also Mentioned Perks
 
 ![A perk](/assets/thm/gaming/foso/perk.jpg)
 
@@ -54,7 +54,7 @@ As with many other games, each of the dwellers has a role to play in the grand s
 
 A **squad** that you usually can not go wrong with is HEALER + TANK + DPS + SUPPORT + DPS / SUPPORT, I also like HEALER + RAD HEALER + GOOD TANK + DPS + SUPPORT for events where radiation is a factor, usually using Madison as the radiation healer. Just make sure your healer can keep your tank alive!
 
-### So, what are some examples of abilities?
+### So, What Are Some Examples of Abilities?
 
 Easy, I'll give you an example for each group, just so you get the general idea of what a role ability looks like:
 
@@ -65,7 +65,7 @@ Easy, I'll give you an example for each group, just so you get the general idea 
 
 Each ability comes with an AP cost. Action points are gained by the dweller when they use their normal attack. You can upgrade abilities the same way you would upgrade equipment, more about that later.
 
-## Yeah! Fighting is cool! What about some stats?
+## Yeah! Fighting Is Cool! What about Some Stats?
 
 First off, each dweller has a **level** (*you can raise that by forcing* ***food*** *down their throat, remember?*), and with each 
 level up, they gain a stat boost. This is determined by their SPECIAL set.
@@ -76,7 +76,7 @@ defense. **Agility** increases dodge chance and last, but not least - **L**uck g
 hits. Dwellers can additionally have varying attack interval (usually 3 - 4 seconds), and critical multiplier, a.k.a. 
 the damage their critical hits do (Usually 150% - 200%)
 
-## What are those little traits they have?
+## What Are Those Little Traits They Have?
 ![A trait](/assets/thm/gaming/foso/trait.jpg)
 
 First off, there's **race**, that determines how well they go with/against other races. Yes, all your characters are... anyways, next we have the **type of damage** - either physical or energy - which each cater to either energy resistance or physical resistance.
@@ -93,7 +93,7 @@ A ~~JAMES~~ Bond grants the character a special bonus if there are more characte
 
 If you have all 5 characters in your squad with the institute bond, they'll get +15% damage to humans, +10% physical damage reduction, as well as some additional bonus damage reduction if they're all full-star (more about stars later)
 
-## Now, how do you upgrade equipment, tools and abilities?
+## Now, How Do You Upgrade Equipment, Tools and Abilities?
 
 ![Tools](/assets/thm/gaming/foso/tools.jpg)
 
@@ -105,7 +105,7 @@ Now, each upgrade requires a certain amount of resources, this can be as little 
 
 Another dweller related item is the attachment screen, I think that's better left for a separate article though, for now let's just say attachments are pieces of armor that you can equip your characters with, increasing their stats and giving them unique bonuses and/or additional abilities... oh look, someone's standing in front of your vault!
 
-## So, how do you get dwellers?
+## So, How Do You Get Dwellers Anyways?
 
 ![Alien recruitment screen](/assets/thm/gaming/foso/alien.jpg)
 
@@ -115,7 +115,7 @@ Posters are located within some missions (for example every HARD mission on the 
 
 You may also rarely (or when you draw 10 items at a time from any of the pools) get an entire dweller. If you happen to gain that once you already have the dweller, you'll get the equivalent of what it cost to recruit them in the first place (let's say I own Strong and I draw a full Strong, I'll get 80 posters of Strong).
 
-### What happens if you already have a dweller and you gain their posters?
+### What Happens If You Already Have a Dweller, and You Gain Their Posters?
 
 Well, the journey doesn't end with recruitment. Each one of them can be upgraded, that's what we call stars and medals. A SR dweller starts off with 2 stars, an SSR with 3. To upgrade an SSR dweller, which cost you 80 posters, you'll need 100 posters, then 200, then ... oh, you get the idea. Once your dweller reaches 5 stars, you will need promotion certificates in addition to posters. Those are gained mainly from limited events. They're separated based on rarity (Orange Promotion Certificate is used for SSR dwellers and so on).
 
@@ -125,7 +125,7 @@ Now, aside from that perk at 3, 4, and 5 medals, each time you upgrade a dweller
 
 Also, some dwellers unlock a trinket once they reach 4 stars (not all of them!), but more about that some other time.
 
-## Power
+## And Then There Was One
 
 Now that we've gone through each important piece of information, we can fully understand **POWER**. Power is a numeric view of all the stats, perks, equipment (not tools), trinkets, medals and who knows what. Power tells you how 'powerful' a dweller is in combat. Although do beware... higher power doesn't always beat lower power. It's all about the team combination. A group of 120 000 power may very well beat a group of 150 000 or a single character or 200 000 if the composition is just right.
 
