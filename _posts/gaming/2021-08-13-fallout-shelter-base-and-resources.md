@@ -14,8 +14,8 @@ published: true
 ---
 
 The base of all things (*pun very much intended, applause please*) is your base - the vault. Your vault runs on the 
-four basic resources, your effort and potentially a battle pass (*remember those handy - pun intended - Mr. Handies from 
-Fallout Shelter? Well, you can buy it here too, along with additional rewards for dailies*).
+four basic resources, your effort and potentially a battle pass (remember those handy - pun intended - Mr. Handies from 
+Fallout Shelter? Well, you can buy it here too, along with additional rewards for dailies).
 
 ## Let's Break down the Basic Resources Now
 There's no resource shortages as far as 'penalties for not having them',
