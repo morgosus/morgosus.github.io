@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fallout Shelter Online: Introduction"
-date:   2021-08-09-23:23:49 +0200
+date:   2021-08-13 10:08:32 +0200
 categories: gaming foso
 thumbnail: /assets/thm/gaming/foso/login.jpg
 thumbnail-alt: "Programming"
