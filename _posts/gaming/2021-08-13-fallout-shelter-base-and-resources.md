@@ -69,7 +69,8 @@ Finally, there's the funny looking pill. That's **Rad-X** for you. You need Rad-
 missions will cost you 10 - 30 Rad-X. You regain it at a rate of 1 every 6 minutes. Each day you can also buy 120 Rad-X 
 for a small price of 20 Nuka-Cola Quantums, then 40, 60 etc. Missions may hand you capsules with Rad-X that contain 
 (based on their rarity) 60, 120, or 200 Rad-X. Vault 112 is one of the best places to get Rad-X, so make sure to keep 
-at least 200 - 300 pre-war cash on you, and never miss the trader there. More about Vault 112 later.
+at least 200 - 300 pre-war cash on you, and never miss the trader there. More about Vault 112 later. You may also claim 
+additional 60 Rad-X three times a day at specific times.
 
 There are other currencies, but I'll get to them once they become relevant.
 
