@@ -40,11 +40,9 @@ github_comments_issueid: 6
 published: true
 
 ---
-You have reached level 33, and there are two short term choices in front of you
-- Keep going, fuel your main squad and upgrade your overseer's office
-  - This will, however, keep you at a disadvantage - lower access to free materials and resources for upgrading
-- Stand your ground, focus on the Mysterious Treasure
-  - This will, however, slow down your progress momentarily - as you'll be spending lots of resources for non-main characters
+You have reached level 33, and there are two short term choices in front of you: 
+
+You can keep going, fuel your main squad and upgrade your overseer's office. This will, however, keep you at a disadvantage - you'll have lower access to free materials and resources for upgrading. You could also stand your ground, focus on the Mysterious Treasure - this will, however, slow down your progress momentarily - as you'll be spending lots of resources for non-main characters
 
 Remember the essential resources? Food, water, caps, and materials? Well, you're going to have to decide on whom you're going to spend them on. You see, unlike any other incidents so far, Mysterious treasure requires you to use bonded dwellers. That's... bad.
 
