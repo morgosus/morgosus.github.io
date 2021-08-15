@@ -1,13 +1,42 @@
 ---
 layout: post
-title:  "Fallout Shelter Online: Introduction"
+title:  "Introduction"
 date:   2021-08-13 10:08:32 +0200
 categories: gaming foso
 thumbnail: /assets/thm/gaming/foso/login.jpg
 thumbnail-alt: "The login screen of Fallout Shelter Online"
 featured: false
-author: "[Martin Toms](https://martin.toms.click)"
 
+author:
+  name: Martin Toms
+  givenName: Martin
+  alternateName: Morgosus
+  familyName: Toms
+  gender: male
+  email: martin@toms.click
+  url: https://martin.toms.click
+  alumniOf:
+    type: CollegeOrUniversity
+    name: Czech University of Life Sciences Prague
+    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
+    startDate: 1906
+
+hidden-meta:
+- itemprop: countryOfOrigin
+  value: Czech Republic
+- itemprop: genre
+  value: Gaming & Entertainment
+- itemprop: backstory
+  value: Compiled from personal experience with the game Fallout Shelter Online
+- itemprop: accessMode
+  value: visual
+- itemprop: accessModeSufficient
+  value: textual
+
+series: Fallout Shelter Online
+order: 1
+
+github_comments_issueid: 1
 published: true
 
 ---
