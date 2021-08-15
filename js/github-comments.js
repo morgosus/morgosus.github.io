@@ -48,13 +48,13 @@ async function getComments(repo_name, comment_id, page_id, acc )
         const date = new Date(comment.created_at);
         const elapsed = timeSince(date.getTime());
 
-        acc += "<div class='comment'>" +
+        acc += "<div class='comment' itemscope itemtype='https://schema.org/UserComments'>" +
             "<div class='comment__left'>" +
             "<img class='comment__img' alt='Avatar image' src='" + comment.user.avatar_url + "' width='24px' />" +
             "</div><div class='comment__right'>" +
-            "<a class='comment__user' href='" + comment.user.html_url + "'>" + comment.user.login + "</a>" +
-            "<time class='comment__date' datetime='" + date.toUTCString() + "'>" + elapsed + " ago</time>" +
-            "<div class='comment__content'>" + comment.body_html + "</div>" +
+            "<a class='comment__user' itemprop='creator' itemscope itemtype='https://schema.org/Person' href='" + comment.user.html_url + "'><span itemprop='name'>" + comment.user.login + "</span><span aria-hidden='true' itemprop='url sameAs'>"+ comment.user.html_url +"</span></a>" +
+            "<time class='comment__date' itemprop='commentTime' datetime='" + date.toUTCString() + "'>" + elapsed + " ago</time>" +
+            "<div class='comment__content' itemprop='commentText'>" + comment.body_html + "</div>" +
             "</div></div>";
     }
 
