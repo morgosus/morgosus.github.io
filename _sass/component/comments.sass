@@ -23,16 +23,17 @@
     clear: both
 
 
-.comment:nth-of-type(2n)
-  flex-direction: row-reverse
-  .comment__img
-    margin-left: $s
-    margin-right: 0
-  .comment__user
-    float: right
-  .comment__date
-    float: left
-  &__content
+.comment
+  &:nth-of-type(2n)
+    flex-direction: row-reverse
+    .comment__img
+      margin-left: $s
+      margin-right: 0
+    .comment__user
+      float: right
+    .comment__date
+      float: left
+    &__content
 
 /*--- Coloring -------------------------*/
 #gh-comments-list
