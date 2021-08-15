@@ -15,5 +15,7 @@
   <link rel="stylesheet" href="{{- "/assets/normalize.css?v=" | relative_url | append: randomBuildNumber -}}">
   <link rel="stylesheet" href="{{- "/assets/master.css?v=" | relative_url | append: randomBuildNumber -}}">
 
+  <title>{{page.title | default: Page}} - Toms.click</title>
+
   {%- feed_meta -%}
 </head>
