@@ -32,6 +32,10 @@ instagram_username: morgosus
 youtube_username: MartinToms-CzechRepublic
 stackoverflow_username: morgosus
 
+comments: true
+
+github_comments_repository: morgosus/comments.morgosus.github.io
+
 # Build settings
 theme: minima
 plugins:
