@@ -1,0 +1,19 @@
+<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <span>{{- "•" -}}</span>
+    <a class="post__meta-author h-card" itemprop="name" href="{{- page.author.url -}}">{{-  page.author.name | default: page.author | default: "Anonymous" -}}</a>
+    {%- if page.author.alternateName -%}<span itemprop="alternateName" aria-hidden="true">{{- page.author.alternateName -}}</span>{%- endif -%}
+    {%- if page.author.email -%}<span itemprop="email" aria-hidden="true">{{- page.author.email -}}</span>{%- endif -%}
+    {%- if page.author.gender -%}<span itemprop="gender" aria-hidden="true">{{- page.author.gender -}}</span>{%- endif -%}
+    {%- if page.author.givenName -%}<span itemprop="givenName" aria-hidden="true">{{- page.author.givenName -}}</span>{%- endif -%}
+    {%- if page.author.url -%}<span itemprop="url" aria-hidden="true">{{- page.author.url -}}</span>{%- endif -%}
+    {%- if page.author.familyName -%}<span itemprop="familyName" aria-hidden="true">{{- page.author.familyName -}}</span>{%- endif -%}
+    {%- if page.author.alumniOf and page.author.alumniOf.name and page.author.alumniOf.url and page.author.alumniOf.startDate -%}
+    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole" aria-hidden="true">
+        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/{{- page.author.alumniOf.type -}}">
+            <span itemprop="name" aria-hidden="true">{{- page.author.alumniOf.name -}}</span>
+            <span itemprop="sameAs" aria-hidden="true">{{- page.author.alumniOf.url -}}</span>
+        </span>
+        <span itemprop="startDate" aria-hidden="true">{{- page.author.alumniOf.startDate -}}</span>
+    </span>
+    {%- endif -%}
+</span>

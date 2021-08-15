@@ -1,42 +1,70 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <img class="post__thumbnail" src="{{ page.thumbnail }}" alt="{{ page.thumbnail-alt }}"/>
+
+{%- capture day_posted -%}{{- page.date | date: "%d" -}}{%- endcapture -%}
+
+{%- if site.minima.date_format != true -%}
+  {%- case day_posted -%}
+    {%- when '01', '21', '31' -%}
+      {%- assign ordinal_format = '%-dst %B %Y' -%}
+    {%- when '02', '22' -%}
+      {%- assign ordinal_format = '%-dnd %B %Y' -%}
+    {%- when '03', '23' -%}
+      {%- assign ordinal_format = '%-drd %B %Y' -%}
+    {%- else -%}
+      {%- assign ordinal_format = '%-dth %B %Y' -%}
+  {%- endcase -%}
+{%- endif -%}
+
+{%- capture wordCount -%}{{- content | number_of_words -}}{%- endcapture -%}
+
+{%- assign date_format = site.minima.date_format | default: ordinal_format -%}
+
+{%- capture timeRequired -%}{{- wordCount | divided_by: 200 | round -}}{%- endcapture -%}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/Article">
+  <img class="post__thumbnail" src="{{- page.thumbnail -}}" alt="{{- page.thumbnail-alt -}}"/>
 
   <div class="post__header">
-    <h1 class="post__title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="post__meta">
-      <time class="post__meta-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time class="post__meta-published" datetime="{{- page.date | date_to_xmlschema -}}" itemprop="datePublished">{{- page.date | date: date_format -}}</time>
 
-        {% capture day_posted %}{{ page.date | date: "%d" }}{% endcapture %}
+        {%- for item in page.hidden-meta -%}<span aria-hidden="true" itemprop="{{- item.itemprop -}}">{{- item.value -}}</span>{%- endfor -%}
 
-        {% if site.minima.date_format != true %}
-          {% case day_posted %}
-            {% when '01', '21', '31' %}
-              {% assign ordinal_format = '%-dst %B %Y' %}
-            {% when '02', '22' %}
-              {% assign ordinal_format = '%-dnd %B %Y' %}
-            {% when '03', '23' %}
-              {% assign ordinal_format = '%-drd %B %Y' %}
-            {% else %}
-              {% assign ordinal_format = '%-dth %B %Y' %}
-          {% endcase %}
-        {% endif %}
+        <span aria-hidden="true" itemprop="wordCount">{{- wordCount -}}</span>&nbsp;•&nbsp;<span itemprop="timeRequired">{{- timeRequired -}}-min</span>
 
-        {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
-        {{ page.date | date: date_format }}
-      </time>
+
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="post__meta-author h-card" itemprop="name">{{ page.author | markdownify }}</span></span>
+        {%- include component/author.html -%}
       {%- endif -%}
     </div>
+    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="../../../" itemprop="about">{%- if page.series -%}〔 {{- page.series -}} 〕{%- endif -%}</a><span itemprop="name headline">{{- page.title | escape -}}</span></h1>
   </div>
   <div class="post__content e-content" itemprop="articleBody">
-    {{ content }}
+    {{- content -}}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <div class="post__series-data">
+    {%- if page.previous and page.previous.categories == page.categories -%}
+    <figure class="post__previous">
+      <!--<img src="{{- page.previous.thumbnail -}}" alt="{{- page.previous.alt -}}" />-->
+      <figcaption class="caption">〔 Previous: {{ page.previous.title }} 〕</figcaption>
+      <a class="card__overlay" href="{{- page.previous.id -}}" title="Go to the previous article in the series"></a>
+    </figure>
+    {%- endif -%}
+    {%- if page.next and page.next.categories == page.categories -%}
+    <figure class="post__next">
+      <!--<img src="{{- page.next.thumbnail -}}" alt="{{- page.next.alt -}}" />-->
+      <figcaption class="caption">〔 Next: {{ page.next.title }} 〕</figcaption>
+      <a class="card__overlay" href="{{- page.next.id -}}" title="Go to the next article in the series"></a>
+    </figure>
+    {%- endif -%}
+  </div>
+
+  <div itemprop="abstract" aria-hidden="true">{{- page.excerpt -}}</div>
+
+  <div class="post__comments">
+    {% include github-comments.html %}
+  </div>
 </article>
