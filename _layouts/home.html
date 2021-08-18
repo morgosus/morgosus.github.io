@@ -11,11 +11,16 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-  <section class="homepage__posts posts">
+  <section class="homepage__posts posts" itemscope itemtype="https://www.schema.org/ItemList">
+    <span itemprop="itemListOrder" aria-hidden="true" hidden>Unordered</span>
+    {% assign n = 0 %}
     <h2 class="posts__heading sr">{{ page.list_title | default: "Newest Posts" }}</h2>
       {%- for post in site.posts -%}
         {%- unless post.home == false -%}
         {%- if post.categories contains page.categories -%}
+
+        {% assign n = n | plus:1 %}
+
         {%- capture day_posted -%}{{ post.date | date: "%d" }}{%- endcapture -%}
         {%- if site.minima.date_format != true -%}
           {%- case day_posted -%}
@@ -32,12 +37,12 @@ layout: default
 
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
       <!-- TODO: Consider a READ MORE button-->
-      <div class="posts__card card">
+      <div class="posts__card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         {%- unless post.thumbnail == "#" -%}
-        <img class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+        <img itemprop="image" class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
         {%- endunless -%}
         <div class="card__content">
-          <h3 class="card__content-heading">{% if post.series %}{{ post.series }}: {% endif %}{{ post.title | escape }}</h3>
+          <h3 itemprop="name" class="card__content-heading">{% if post.series %}{{ post.series }}: {% endif %}{{ post.title | escape }}</h3>
           <span class="card__content-meta">{{ post.date | date: date_format }}</span>
           <div class="card__content-excerpt">
           {%- if site.show_excerpts -%}
@@ -45,12 +50,15 @@ layout: default
           {%- endif -%}
           </div>
         </div>
-        <a class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
+        <span itemprop="position" aria-hidden="true" hidden>{{n}}</span>
+        <a itemprop="url sameAs" class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
       </div>
       {%- endif -%}
       {%- endunless -%}
       {%- endfor -%}
   </section>
+
+  <span itemprop="numberOfItems" aria-hidden="true" hidden>{{n}}</span>
 
   <p class="rss"><img class="rss__icon" src="/assets/rss.jpg" alt="RSS icon" />&nbsp;Subscribe&nbsp;<a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
