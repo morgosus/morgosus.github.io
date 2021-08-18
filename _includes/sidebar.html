@@ -1,35 +1,21 @@
 <h2 class="sr">{{- page.list_title | default: "Featured Posts" -}}</h2>
 
 {%- for post in site.posts -%}
-{%- if post.featured == true and post.title != page.title -%}
-{%- capture day_posted -%}{{- post.date | date: "%d" -}}{%- endcapture -%}
-{%- if site.minima.date_format != true -%}
-{%- case day_posted -%}
-{%- when '01', '21', '31' -%}
-{%- assign ordinal_format = '%-dst %B %Y' -%}
-{%- when '02', '22' -%}
-{%- assign ordinal_format = '%-dnd %B %Y' -%}
-{%- when '03', '23' -%}
-{%- assign ordinal_format = '%-drd %B %Y' -%}
-{%- else -%}
-{%- assign ordinal_format = '%-dth %B %Y' -%}
-{%- endcase -%}
-{%- endif -%}
+  {%- if post.featured == true and post.title != page.title -%}
+    {%- include component/capture-day-posted.html -%}
 
-{%- assign date_format = site.minima.date_format | default: ordinal_format -%}
-
-<div class="card card--sidebar">
-  {%- unless post.thumbnail == "#" -%}
-  <img class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
-  {%- endunless -%}
-  <div class="card__content">
-    <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
-  </div>
-  {%- if post.link -%}
-    <a class="card__overlay" href="{{- post.link | relative_url -}}" title="'{{- post.link-text | escape -}}'"></a>
-  {%- else -%}
-    <a class="card__overlay" href="{{- post.url | relative_url -}}" title="Go to the post '{{- post.title | escape -}}'"></a>
+    <div class="card card--sidebar">
+      {%- unless post.thumbnail == "#" -%}
+      <img class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+      {%- endunless -%}
+      <div class="card__content">
+        <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
+      </div>
+      {%- if post.link -%}
+        <a class="card__overlay" href="{{- post.link | relative_url -}}" title="'{{- post.link-text | escape -}}'"></a>
+      {%- else -%}
+        <a class="card__overlay" href="{{- post.url | relative_url -}}" title="Go to the post '{{- post.title | escape -}}'"></a>
+      {%- endif -%}
+    </div>
   {%- endif -%}
-</div>
-{%- endif post.featured == true -%}
 {%- endfor -%}
