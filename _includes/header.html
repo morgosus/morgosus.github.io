@@ -1,25 +1,9 @@
 <header class="header">
-  <a class="header__logo" title="Open the home page" rel="author" href="{{- "/" | relative_url -}}" >
-  <img class="header__logo-img" src="/assets/favicon.ico" alt="Logo" />
+  <a class="header__logo" title="Open the home page" rel="author" href='{{- "/" | relative_url -}}' >
+  <img itemprop="thumbnailUrl" class="header__logo-img" src="/assets/favicon-32.jpg" alt="Logo" />
   <span class="header__logo-text">{{- site.title | escape -}}</span>
-  </a><!--
-  --><nav class="nav">
-  <a class="nav__link" href="/">Home</a><a class="nav__link" href="/gaming">Gaming</a><a class="nav__link" href="/about">About</a>
-</nav>
-
-
+  </a>
+  <nav class="nav">
+    <a class="nav__link" href="/">Home</a><a class="nav__link" href="/about">About</a><a class="nav__link" href="/gaming">Gaming</a>
+  </nav>
 </header>
-
-<!-- TODO: This will be a separate line, nav with <a>s -->
-<!--
-{%- if page_paths -%}
-<nav class="header__navigation">
-    {%- for path in page_paths -%}
-      {%- assign my_page = site.pages | where: "path", path | first -%}
-      {%- if my_page.on_navbar == true -%}
-      <a class="header__navigation-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-      {%- endif -%}
-    {%- endfor -%}
-</nav>
-{%- endif -%}
--->
