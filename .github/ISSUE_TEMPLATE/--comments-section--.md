@@ -1,10 +1,13 @@
 ---
-name: "〔 Comments Section 〕"
-about: A comments section for one of the posts.
-title: "〔 Comments Section 〕Article Name"
-labels: Comment Section, content
+name: "〔 Feature 〕"
+about: A planned / suggested feature
+title: "〔 Feature 〕Feature Name"
+labels: enhancement
 assignees: ''
 
 ---
 
-A comments section for the [name](url) post.
+- [ ] Accepted or Rejected
+  - [ ] Accepted
+    - [ ] Done
+  - [ ] Rejected
