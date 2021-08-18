@@ -3,7 +3,7 @@ layout: post
 title:  "Mysterious Treasure"
 date:   2021-08-15 21:54:33 +0200
 categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/mysterious-treasure.jpg
+thumbnail: /assets/thm/gaming/foso/mysterious-treasure.jpg?v=1.0.0
 thumbnail-alt: "Mysterious Treasure map"
 featured: false
 

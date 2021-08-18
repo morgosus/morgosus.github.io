@@ -3,7 +3,7 @@ layout: post
 title:  "Dwellers"
 date:   2021-08-13 22:05:32 +0200
 categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/desdemona.jpg
+thumbnail: /assets/thm/gaming/foso/desdemona.jpg?v=1.0.0
 thumbnail-alt: "Desdemona dweller info"
 featured: false
 

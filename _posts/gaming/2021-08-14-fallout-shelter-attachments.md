@@ -3,7 +3,7 @@ layout: post
 title:  "Attachments and Remaking"
 date:   2021-08-14 1:15:13 +0200
 categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/attachments.jpg
+thumbnail: /assets/thm/gaming/foso/attachments.jpg?v=1.0.0
 thumbnail-alt: "Attachments screen"
 featured: false
 

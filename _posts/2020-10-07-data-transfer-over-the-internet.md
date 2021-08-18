@@ -3,7 +3,7 @@ layout: post
 title:  "Data Transfer Over the Internet"
 date:   2020-10-07 11:47:39 +0200
 categories: programming
-thumbnail: "/assets/thm/programming.jpg"
+thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
 thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms

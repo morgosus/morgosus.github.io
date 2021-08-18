@@ -3,7 +3,7 @@ layout: post
 title:  "Python (Not the Snake)"
 date:   2020-10-22 23:56:48 +0200
 categories: programming
-thumbnail: "/assets/thm/programming.jpg"
+thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
 thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms

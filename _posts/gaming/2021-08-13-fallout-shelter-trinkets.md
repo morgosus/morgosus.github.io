@@ -3,7 +3,7 @@ layout: post
 title:  "Trinkets"
 date:   2021-08-13 23:25:57 +0200
 categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/vr-room.jpg
+thumbnail: /assets/thm/gaming/foso/vr-room.jpg?v=1.0.0
 thumbnail-alt: "VR Room"
 featured: false
 

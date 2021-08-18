@@ -3,7 +3,7 @@ layout: post
 title:  "How to Flex a Box"
 date:   2020-10-19 20:00:15 +0200
 categories: programming
-thumbnail: "/assets/thm/flex.jpg"
+thumbnail: "/assets/thm/flex.jpg?v=1.0.0"
 thumbnail-alt: "Flex"
 featured: false
 author: Martin Toms

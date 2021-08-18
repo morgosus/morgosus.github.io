@@ -3,7 +3,7 @@ layout: post
 title:  "Base and Resources"
 date:   2021-08-13 11:24:30 +0200
 categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/vault.jpg
+thumbnail: /assets/thm/gaming/foso/vault.jpg?v=1.0.0
 thumbnail-alt: "Fallout Shelter Online Cryo Room within the player's Vault"
 featured: false
 

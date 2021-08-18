@@ -3,7 +3,7 @@ layout: post
 title:  "Latte PHP Template Engine"
 date:   2020-09-23 12:51:02 +0200
 categories: programming
-thumbnail: "/assets/thm/programming.jpg"
+thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
 thumbnail-alt: "Programming"
 featured: false
 author: Martin Toms
