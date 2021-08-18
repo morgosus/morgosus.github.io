@@ -1,0 +1,16 @@
+<span itemprop="author" itemscope itemtype="Person" aria-hidden="true" hidden>
+    <span itemprop="name">{{site.author.name}}</span>
+    <span itemprop="givenName">{{site.author.givenName}}</span>
+    <span itemprop="familyName">{{site.author.familyName}}</span>
+    <span itemprop="gender">{{site.author.gender}}</span>
+    <span itemprop="alternateName">{{site.author.alternateName}}</span>
+    <span itemprop="sameAs">{{site.author.sameAs}}</span>
+    <span itemprop="email">{{site.author.email}}</span>
+    <span itemprop="url">{{site.author.url}}</span>
+    <span itemprop="alumniOf" itemscope itemtype="https://schema.org/OrganizationRole">
+        <span itemprop="alumniOf" itemscope itemtype="https://schema.org/{{site.author.alumniOf.type}}"></span>
+            <span itemprop="name">{{site.author.alumniOf.name}}</span>
+            <span itemprop="sameAs">{{site.author.alumniOf.url}}</span>
+        <span itemprop="startDate">{{site.author.alumniOf.startDate}}</span>
+    </span>
+</span>
