@@ -2,29 +2,18 @@
 layout: default
 ---
 
-{%- capture day_posted -%}{{- page.date | date: "%d" -}}{%- endcapture -%}
-
-{%- if site.minima.date_format != true -%}
-  {%- case day_posted -%}
-    {%- when '01', '21', '31' -%}
-      {%- assign ordinal_format = '%-dst %B %Y' -%}
-    {%- when '02', '22' -%}
-      {%- assign ordinal_format = '%-dnd %B %Y' -%}
-    {%- when '03', '23' -%}
-      {%- assign ordinal_format = '%-drd %B %Y' -%}
-    {%- else -%}
-      {%- assign ordinal_format = '%-dth %B %Y' -%}
-  {%- endcase -%}
-{%- endif -%}
+{%- include component/capture-day-posted.html -%}
 
 {%- capture wordCount -%}{{- content | number_of_words -}}{%- endcapture -%}
 
-{%- assign date_format = site.minima.date_format | default: ordinal_format -%}
-
 {%- capture timeRequired -%}{{- wordCount | divided_by: 200 | round -}}{%- endcapture -%}
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/Article">
-  <img class="post__thumbnail" src="{{- page.thumbnail -}}" alt="{{- page.thumbnail-alt -}}"/>
+<article class="post h-entry" itemscope itemtype="https://schema.org/Article">
+
+  <figure class="post__thumbnail-wrapper">
+    <img itemprop="thumbnailUrl" class="post__thumbnail" src="{{- page.thumbnail -}}" alt="{{- page.thumbnail-alt -}}"/>
+    <figcaption class="post__thumbnail-caption">{{- page.thumbnail-alt -}}</figcaption>
+  </figure>
 
   <div class="post__header">
     <div class="post__meta">
@@ -50,21 +39,54 @@ layout: default
     <figure class="post__previous">
       <!--<img src="{{- page.previous.thumbnail -}}" alt="{{- page.previous.alt -}}" />-->
       <figcaption class="caption">〔 Previous: {{ page.previous.title }} 〕</figcaption>
-      <a class="card__overlay" href="{{- page.previous.id -}}" title="Go to the previous article in the series"></a>
+      <a rel="prev" class="card__overlay" href="{{- page.previous.id -}}" title="Go to the previous article in the series"></a>
     </figure>
     {%- endif -%}
     {%- if page.next and page.next.categories == page.categories -%}
     <figure class="post__next">
       <!--<img src="{{- page.next.thumbnail -}}" alt="{{- page.next.alt -}}" />-->
       <figcaption class="caption">〔 Next: {{ page.next.title }} 〕</figcaption>
-      <a class="card__overlay" href="{{- page.next.id -}}" title="Go to the next article in the series"></a>
+      <a rel="next" class="card__overlay" href="{{- page.next.id -}}" title="Go to the next article in the series"></a>
     </figure>
     {%- endif -%}
   </div>
 
   <div itemprop="abstract" aria-hidden="true">{{- page.excerpt -}}</div>
 
-  <div class="post__comments">
-    {% include github-comments.html %}
-  </div>
+  {%- if page.github_comments_issueid -%}
+  <script src="https://giscus.app/client.js"
+          data-repo="{{site.github_comments_repository}}"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYzMjY4NDA="
+          data-mapping="number"
+          data-term="{{page.github_comments_issueid}}"
+          data-reactions-enabled="1"
+          data-emit-metadata="1"
+          data-theme="light"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {%- endif -%}
+
 </article>
+
+<script>
+  const images = document.getElementsByTagName('img');
+
+  //if not thumbnail and within post, replace with a captioned figure
+
+  for (let ims = 0; ims < images.length; ims++) {
+    let img = images[ims];
+    if (img.classList.value === "") {
+      console.log('here');
+      const figr = document.createElement("figure");
+      figr.setAttribute('class', 'post__image-wrapper');
+      img.setAttribute('class', 'post__image');
+      const cptn = document.createElement("figcaption");
+      cptn.setAttribute('class', 'post__image-caption');
+      cptn.innerHTML = img.alt;
+      figr.appendChild(img.cloneNode());
+      figr.appendChild(cptn);
+      img.replaceWith(figr);
+    }
+  }
+</script>

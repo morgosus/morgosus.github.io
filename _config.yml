@@ -21,10 +21,26 @@
 port: 4002
 
 title: Toms.click
-author: Martin Toms
+
+author:
+  name: Martin Toms
+  thumbnail: "/assets/martin.svg"
+  sameAs: "https://github.com/morgosus"
+  givenName: Martin
+  familyName: Toms
+  gender: male
+  alternateName: morgosus
+  url: https://martin.toms.click
+  email: martin@toms.click
+  alumniOf:
+    type: CollegeOrUniversity
+    name: Czech University of Life Sciences Prague
+    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
+    startDate: 1906
+
 email: contact@toms.click
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website of Martin Toms. Functions as both a blog and a portfolio.
+  Great content and awesome gaming tips await you (you wouldn’t want to miss that). I always do my best to make sure the writeups here are as informative as they can, to make your visit worthwhile. You’ll find useful blog posts about programming and Fallout Shelter Online, but soon I’ll also be writing about other games.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: morgosus
@@ -34,7 +50,7 @@ stackoverflow_username: morgosus
 
 comments: true
 
-github_comments_repository: morgosus/comments.morgosus.github.io
+github_comments_repository: morgosus/morgosus.github.io
 
 # Build settings
 theme: minima

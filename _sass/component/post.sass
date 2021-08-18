@@ -35,6 +35,7 @@
     color: inherit
   &__thumbnail
     outline: $border
+      left: 0
   &__header
   &__title
     text-align: left
@@ -141,8 +142,6 @@
   del
     color: darkgray
 
-
-
   &__series-data
     margin-top: $s*2
     margin-bottom: $s*2
@@ -181,3 +180,44 @@
     content: " 〕"
   &:hover
     text-shadow: 0.25px 0 0 currentColor
+
+@keyframes rollDown
+  0%
+    top: -$s*3
+  100%
+    top: $s
+
+@keyframes rollUp
+  0%
+    top: -$s*3
+  100%
+    top: $s
+
+.post__thumbnail, .post__image
+  outline: none
+  &-wrapper
+    overflow: hidden
+    position: relative
+    outline: $border
+  &-caption
+    animation: rollOut 1s ease-out forwards
+    background-color: rgba(0,0,0,0.25)
+    position: absolute
+    top: $s
+    left: 0
+    border-right: $border-color $s/4 solid
+    padding: $s/2
+    padding-left: $s*2
+    color: $border-color
+    font-family: $primary-font
+    line-height: $font-size
+    text-shadow: 0px 0px 5px #000
+    cursor: default
+.post__image-caption
+  top: initial
+  left: initial
+  bottom: $s*1.5
+  right: 0
+  padding-right: $s*2
+  border: none
+  border-left: $border-color $s/4 solid
