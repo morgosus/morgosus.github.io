@@ -4,13 +4,15 @@ title:  "Mysterious Treasure"
 date:   2021-08-15 21:54:33 +0200
 categories: gaming foso
 thumbnail: /assets/thm/gaming/foso/mysterious-treasure.jpg
-thumbnail-alt: "Mysterious Treasure"
+thumbnail-alt: "Mysterious Treasure map"
 featured: false
 
 author:
   name: Martin Toms
+  thumbnail: "/assets/martin.svg"
+  sameAs: "https://github.com/morgosus"
   givenName: Martin
-  alternateName: Morgosus
+  alternateName: morgosus
   familyName: Toms
   gender: male
   email: martin@toms.click
@@ -34,9 +36,9 @@ hidden-meta:
   value: textual
 
 series: Fallout Shelter Online
-order: 6
+order: 15
 
-github_comments_issueid: 6
+github_comments_issueid: 15
 published: true
 
 ---

@@ -4,13 +4,15 @@ title:  "Attachments and Remaking"
 date:   2021-08-14 1:15:13 +0200
 categories: gaming foso
 thumbnail: /assets/thm/gaming/foso/attachments.jpg
-thumbnail-alt: "Attachments"
+thumbnail-alt: "Attachments screen"
 featured: false
 
 author:
   name: Martin Toms
+  thumbnail: "/assets/martin.svg"
+  sameAs: "https://github.com/morgosus"
   givenName: Martin
-  alternateName: Morgosus
+  alternateName: morgosus
   familyName: Toms
   gender: male
   email: martin@toms.click
@@ -36,7 +38,7 @@ hidden-meta:
 series: Fallout Shelter Online
 order: 5
 
-github_comments_issueid: 5
+github_comments_issueid: 14
 published: true
 
 ---

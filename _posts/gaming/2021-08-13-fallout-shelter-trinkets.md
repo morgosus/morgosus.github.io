@@ -9,8 +9,10 @@ featured: false
 
 author:
   name: Martin Toms
+  thumbnail: "/assets/martin.svg"
+  sameAs: "https://github.com/morgosus"
   givenName: Martin
-  alternateName: Morgosus
+  alternateName: morgosus
   familyName: Toms
   gender: male
   email: martin@toms.click
@@ -36,7 +38,7 @@ hidden-meta:
 series: Fallout Shelter Online
 order: 4
 
-github_comments_issueid: 4
+github_comments_issueid: 13
 published: true
 
 ---
