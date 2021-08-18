@@ -36,7 +36,7 @@ hidden-meta:
   value: textual
 
 series: Fallout Shelter Online
-order: 15
+order: 6
 
 github_comments_issueid: 15
 published: true
