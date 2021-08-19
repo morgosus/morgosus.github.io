@@ -1,3 +1,4 @@
+/* Reorganize */
 .gsc-comments > .gsc-header {
     order: 1;
 }
@@ -15,6 +16,7 @@
     flex-direction: column-reverse;
 }
 
-.gsc-header {
-    padding-bottom: 1rem;
+/*Remove clutter*/
+.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu {
+    display: none;
 }
