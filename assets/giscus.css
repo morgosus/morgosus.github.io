@@ -22,7 +22,20 @@
 }
 
 .gsc-comment-content blockquote {
-    border-left: 4.031px;
+    border-left: 4.031px solid #EEEEEE;
     padding-left: 8.090px;
     font-size: 13.5px;
+    line-height: 24px;
+}
+.gsc-comment-content p {
+    display: inline;
+    font-style: italic;
+}
+.gsc-comment-content p:before {
+    content: '”';
+    display: inline;
+}
+.gsc-comment-content p:after {
+    content: '„';
+    display: inline;
 }
