@@ -46,3 +46,16 @@
 .gsc-comment-box-textarea {
     resize: none;
 }
+
+/*Comments*/
+.gsc-comment * {
+    border: none;
+}
+
+.gsc-comment {
+    outline: #EEEEEE 1px solid;
+}
+
+.gsc-reply-box {
+    outline: #EEEEEE 1px solid;
+}
