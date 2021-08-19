@@ -21,6 +21,8 @@
     display: none;
 }
 
+/*Blockquotes*/
+
 .gsc-comment-content blockquote {
     border-left: 4.031px solid #EEEEEE;
     padding-left: 8.090px;
@@ -38,4 +40,9 @@
 .gsc-comment-content blockquote p:after {
     content: '„';
     display: inline;
+}
+
+/*Textarea*/
+.gsc-comment-box-textarea {
+    resize: none;
 }
