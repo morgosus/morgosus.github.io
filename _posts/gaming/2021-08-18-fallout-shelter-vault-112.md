@@ -38,7 +38,7 @@ hidden-meta:
 series: Fallout Shelter Online
 order: 7
 
-github_comments_issueid: 16
+github_comments_issueid: 17
 published: true
 
 ---
