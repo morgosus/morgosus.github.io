@@ -8,4 +8,17 @@ layout: default
     {{ content }}
   </div>
 
+  {%- if page.github_comments_issueid -%}
+  <script src="https://giscus.app/client.js"
+          data-repo="{{site.github_comments_repository}}"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYzMjY4NDA="
+          data-mapping="number"
+          data-term="{{page.github_comments_issueid}}"
+          data-reactions-enabled="0"
+          data-emit-metadata="1"
+          data-theme="https://www.toms.click/assets/master.css"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {%- endif -%}
 </article>

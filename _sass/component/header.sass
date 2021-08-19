@@ -5,6 +5,11 @@
 
   margin-top: $s*0.75
   padding-bottom: $s*0.75
+  &__wrapper
+    display: flex
+    width: 100%
+    justify-content: space-between
+    max-width: $site-width
   &__logo
     display: flex
     align-items: center
@@ -13,6 +18,23 @@
     &-text
   .nav
     &__link
+/*--- Animate --------------------------*/
+//@keyframes drawBorder
+//  0%
+//    border: 1px solid white
+//  25%
+//    border: 1px solid white
+//    border-top-color: black
+//  50%
+//    border: 1px solid white
+//    border-right-color: black
+//  75%
+//    border: 1px solid white
+//    border-bottom-color: black
+//  100%
+//    border: 1px solid white
+//    border-left-color: black
+
 /*--- Coloring -------------------------*/
 .header
   text-align: center
@@ -24,7 +46,14 @@
     text-decoration: none
     color: $color
   .nav
+    text-align: right
     &__link
+      border: 1px solid white
       color: black
       text-decoration: none
       margin-left: $s
+      &:not(.nav__link--active):hover
+        text-decoration: underline
+      &--active
+        text-shadow: 0px 0px 1px #000
+        cursor: default
