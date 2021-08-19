@@ -64,3 +64,38 @@
 .gsc-reply-box:first-child {
     display: none;
 }
+
+.gsc-comment div.w-full {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gsc-comment-header {
+    max-width: 30%;
+}
+
+.gsc-comment-content {
+    max-width: 70%;
+}
+
+.gsc-comment-author-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.gsc-comment-author:last-child {
+    display: none;
+}
+
+.gsc-comment-author-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.gsc-comment-author-avatar span {
+    margin-bottom: 18px;
+}
+
+.flex {
+    display: none;
+}
