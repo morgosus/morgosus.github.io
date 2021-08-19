@@ -17,6 +17,12 @@
 }
 
 /*Remove clutter*/
-.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu, .gsc-comment-replies-count {
+.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu, .gsc-comment-replies-count, .gsc-comment-box-markdown-hint {
     display: none;
+}
+
+.gsc-comment-content blockquote {
+    border-left: 4.031px;
+    padding-left: 8.090px;
+    font-size: 13.5px;
 }
