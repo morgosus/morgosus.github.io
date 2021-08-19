@@ -84,7 +84,7 @@
 }
 
 .gsc-comment-author:last-child {
-    display: none;
+    display: none; !important;
 }
 
 .gsc-comment-author-avatar img {
