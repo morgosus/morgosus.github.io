@@ -53,9 +53,14 @@
 }
 
 .gsc-comment {
+    border: #EEEEEE 1px solid;
+}
+
+/*Reply box*/
+.gsc-reply-box {
     outline: #EEEEEE 1px solid;
 }
 
-.gsc-reply-box {
-    outline: #EEEEEE 1px solid;
+.gsc-reply-box:first-child {
+    display: none;
 }
