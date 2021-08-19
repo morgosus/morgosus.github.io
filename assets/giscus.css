@@ -58,7 +58,7 @@
 
 /*Reply box*/
 .gsc-reply-box {
-    outline: #EEEEEE 1px solid;
+    border-top: #EEEEEE 1px solid;
 }
 
 .gsc-reply-box:first-child {
