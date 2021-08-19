@@ -8,6 +8,8 @@ layout: default
     {{ content }}
   </div>
 
+  {%- include component/random-build-number.html -%}
+
   {%- if page.github_comments_issueid -%}
   <script src="https://giscus.app/client.js"
           data-repo="{{site.github_comments_repository}}"
@@ -16,7 +18,7 @@ layout: default
           data-term="{{page.github_comments_issueid}}"
           data-reactions-enabled="0"
           data-emit-metadata="1"
-          data-theme="https://www.toms.click/assets/master.css"
+          data-theme={{- "https://www.toms.click/assets/giscus.css?v=" | relative_url | append: randomBuildNumber -}}"
           crossorigin="anonymous"
           async>
   </script>
