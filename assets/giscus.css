@@ -17,6 +17,6 @@
 }
 
 /*Remove clutter*/
-.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu {
+.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu, .gsc-comment-replies-count {
     display: none;
 }
