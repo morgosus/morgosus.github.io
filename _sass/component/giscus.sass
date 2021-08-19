@@ -1,2 +1,59 @@
 /*--- Display --------------------------*/
 /*--- Coloring -------------------------*/
+
+
+
+
+
+
+/*--- Display --------------------------*/
+#gh-comments-list
+  display: flex
+  flex-direction: column
+
+.comment
+  margin-top: $s
+  display: flex
+  padding: $s
+  &__img
+    min-width: $s*6
+    min-height: $s*6
+    margin-right: $s
+  &__user
+    float: left
+    line-height: $font-size
+    margin-bottom: $s/2
+  &__date
+    float: right
+    line-height: $font-size
+
+  &__content
+    clear: both
+
+
+.comment
+  &:nth-of-type(2n)
+    flex-direction: row-reverse
+    .comment__img
+      margin-left: $s
+      margin-right: 0
+    .comment__user
+      float: right
+    .comment__date
+      float: left
+
+/*--- Coloring -------------------------*/
+#gh-comments-list
+
+.comment-button
+  background-color: inherit
+  border: none
+  margin: auto
+  color: #0000EE
+  cursor: pointer
+  display: block
+  text-decoration: none
+  &:hover
+    text-shadow: 0.25px 0 0 currentColor
+  &:visited
+    color: #0000EE

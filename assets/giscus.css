@@ -17,7 +17,7 @@
 }
 
 /*Remove clutter*/
-.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu, .gsc-comment-replies-count, .gsc-comment-box-markdown-hint {
+.gsc-header, .gsc-comment-reactions, .gsc-reactions-menu, .gsc-comment-replies-count, .gsc-comment-box-markdown-hint, .gsc-upvotes, .gsc-comment-box-separator {
     display: none;
 }
 
