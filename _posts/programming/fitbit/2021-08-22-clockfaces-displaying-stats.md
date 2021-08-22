@@ -46,11 +46,11 @@ It only makes sense to include various stats since we're working with a Fitbit d
 
 From a design perspective, you only really have two options.
 - **Minimal**
-  - Focus on displaying the most important stats
-  - Other stats can be available by tapping the screen
+  - Focuses on displaying the most important stats
   - Better suited for 'looks' oriented clock faces
+  - Other stats can be available by tapping the screen
 - **Stats heavy**
-  - Jam in as many stats as possible
+  - Jams in as many stats as possible
   - Usually comes at a UI/UX cost
 
 Now, we'll need another set of imports. User activity has a single import, but each sensor has its own. We'll want to display all of the stats, heart rate, and battery level. So we'll have 3 imports.
