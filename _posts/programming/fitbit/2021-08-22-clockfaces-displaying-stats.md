@@ -37,7 +37,7 @@ hidden-meta:
 series: Fitbit
 order: 3
 
-github_comments_issueid: 
+github_comments_issueid: 25
 published: true
 
 ---
