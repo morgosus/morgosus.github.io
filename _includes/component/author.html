@@ -1,7 +1,7 @@
 <div itemprop="author" itemscope itemtype="https://schema.org/Person" hidden class="post__meta">
     <span>{{- "•" -}}</span>
     <a class="post__meta-author h-card" itemprop="name" href="{{- page.author.url -}}">{{-  page.author.name | default: page.author | default: "Anonymous" -}}
-        <img class="post__meta-author-thumbnail" src="/assets/thm/author/morgosus.jpg" alt="A drawing of Martin Toms" width="32px" height="32px" /></a>
+        <img itemprop="image" class="post__meta-author-thumbnail" src="/assets/thm/author/morgosus.jpg" alt="A drawing of Martin Toms" width="32px" height="32px" /></a>
     {%- if page.author.alternateName -%}<span itemprop="alternateName" aria-hidden="true">{{- page.author.alternateName -}}</span>{%- endif -%}
     {%- if page.author.email -%}<span itemprop="email" aria-hidden="true">{{- page.author.email -}}</span>{%- endif -%}
     {%- if page.author.gender -%}<span itemprop="gender" aria-hidden="true">{{- page.author.gender -}}</span>{%- endif -%}
