@@ -25,7 +25,7 @@
   h1, h2, h3, h4, h5, h6
     margin: $s*2 0 0 0 !important
   h1:first-of-type
-    margin-top: $s !important
+    margin-top: $s/2-3 !important
 /*--- Coloring -------------------------*/
 .post
   text-align: justify
@@ -35,17 +35,30 @@
     color: inherit
   &__thumbnail
     outline: $border
-      left: 0
+    left: 0
+    margin-bottom: $s
   &__header
   &__title
     text-align: left
   &__meta
     text-align: right
     font-family: $primary-font
+    display: flex
+    align-items: center
+    margin-top: 0
     &-published
     &-author
       text-decoration: none
       color: inherit
+      margin-left: $s/2
+      display: flex
+      align-items: center
+      &-thumbnail
+        margin-left: $s/4
+        border-radius: 20px
+        box-sizing: content-box
+        padding: 3px
+        border: 1px solid black
   &__content
     &-notice
       border-left: $s/4 solid $g
