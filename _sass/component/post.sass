@@ -55,10 +55,20 @@
   ul, ol
     font-family: $secondary-font
     list-style-position: inside
+    li
+      position: relative
+    ::marker
+      color: #8a0303
     ul, ol
       padding-left: $s
       ul, ol
         padding-left: $s
+
+  .note
+    background-color: $border-color
+    text-align: center
+    box-shadow: 0px 0px 1px #000
+    padding: $s/4 $s
 
   .task-list
     display: flex
@@ -115,20 +125,21 @@
 
   .highlight
     background: inherit
+    background-color: #FCFCFC
     *
-      font-family: $primary-font !important
+      font-family: $code-font !important
     .highlight
       border-left: $s/4 solid $border-color
+      border-right: $s/4 solid $border-color
       overflow-x: auto
-      padding: $s/2 0 $s/2 $s
-      border-radius: $s/2
+      padding: $s/2 $s $s/2 $s
     .highlighter-rouge &
       background: inherit
 
   blockquote
     font-size: 0.75 * $font-size
     line-height: 0.75 * $line-height
-    padding-left: $s/2
+    padding-left: $s
     border-left: $s/4 solid $border-color
     p
       display: inline
@@ -221,3 +232,6 @@
   padding-right: $s*2
   border: none
   border-left: $border-color $s/4 solid
+
+.highlighter-rouge
+  font-family: $code-font !important
