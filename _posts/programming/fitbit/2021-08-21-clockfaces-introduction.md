@@ -8,19 +8,19 @@ thumbnail-alt: "Me as a character wearing Fitbit Sense"
 featured: false
 
 author:
-name: Martin Toms
-givenName: Martin
-alternateName: morgosus
-familyName: Toms
-gender: male
-email: martin@toms.click
-sameAs: https://github.com/morgosus
-url: https://martin.toms.click
-alumniOf:
-type: CollegeOrUniversity
-name: Czech University of Life Sciences Prague
-url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
-startDate: 1906
+  name: Martin Toms
+  givenName: Martin
+  alternateName: morgosus
+  familyName: Toms
+  gender: male
+  email: martin@toms.click
+  sameAs: https://github.com/morgosus
+  url: https://martin.toms.click
+  alumniOf:
+    type: CollegeOrUniversity
+    name: Czech University of Life Sciences Prague
+    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
+    startDate: 1906
 
 hidden-meta:
 - itemprop: countryOfOrigin
