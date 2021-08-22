@@ -4,7 +4,7 @@ title:  "Time and Date"
 date:   2021-08-21 13:20:16 +0200
 categories: programming fitbit
 thumbnail: /assets/thm/programming/fitbit/fitboy.jpg
-thumbnail-alt: "Me as a character wearing Fitbit Sense"
+thumbnail-alt: "Advanced Fitbit SDK: The birth of PIP-BOY!"
 featured: false
 
 author:

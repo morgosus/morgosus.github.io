@@ -4,7 +4,7 @@ title:  "Displaying Stats and Sensor Data"
 date:   2021-08-22 11:34:14 +0200
 categories: programming fitbit
 thumbnail: /assets/thm/programming/fitbit/fitboy.jpg
-thumbnail-alt: "Me as a character wearing Fitbit Sense"
+thumbnail-alt: "Advanced Fitbit SDK: The birth of PIP-BOY!"
 featured: false
 
 author:
