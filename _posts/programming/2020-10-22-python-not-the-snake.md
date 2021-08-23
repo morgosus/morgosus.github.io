@@ -1,15 +1,17 @@
 ---
+title:              "Python (Not the Snake)"
+date:               2020-10-22 23:56:48 +0200
+
+categories:         programming
+tags:               Python
+
+thumbnail:          programming-1
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "Python (Not the Snake)"
-date:   2020-10-22 23:56:48 +0200
-categories: programming
-thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
-thumbnail-alt: "Programming"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 Hiss there! Let's take a look at one of my favorite languages, which, admittedly, I don't use much lately. It's still neat. This will be, as usually, a very short article. I'll mention just the basics, just enough for a person to get to know the language. After installing Python, you may use it to interpret your code, for example in Linux: `file.py`.
 

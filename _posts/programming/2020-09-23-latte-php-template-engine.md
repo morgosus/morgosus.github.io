@@ -1,15 +1,17 @@
 ---
+title:              "Latte PHP Template Engine"
+date:               2020-09-23 12:51:02 +0200
+
+categories:         programming
+tags:               PHP Latte MVC
+
+thumbnail:          programming-1
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "Latte PHP Template Engine"
-date:   2020-09-23 12:51:02 +0200
-categories: programming
-thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
-thumbnail-alt: "Programming"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 Let's check out [Latte](https://latte.nette.org). I'll show you how I used it in my current project, a pretty clear example of how to use it.
 

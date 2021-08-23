@@ -1,15 +1,17 @@
 ---
+title:              "Data Transfer Over the Internet"
+date:               2020-10-07 11:47:39 +0200
+
+categories:         programming
+tags:               HTTP HTTPS FTP DNS TFTP
+
+thumbnail:          programming-1
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "Data Transfer Over the Internet"
-date:   2020-10-07 11:47:39 +0200
-categories: programming
-thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
-thumbnail-alt: "Programming"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 Everyone knows the internet. Does everyone know how it works? Probably not. I'm not talking hardware, that's easy (not really), I'm talking protocols. We'll start with HTTP and make our way through the most frequently used ones.
 

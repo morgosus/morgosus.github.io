@@ -1,48 +1,21 @@
 ---
+title:              "Attachments and Remaking"
+date:               2021-08-14 1:15:13 +0200
+
+categories:         gaming fallout-shelter-online
+tags:               gaming fallout-shelter-online android
+
+thumbnail:          foso-5
+comment-section:    10
+
+meta:
+  author:           morgosus
+  series:           Fallout Shelter Online
+  order:            5
+  genre:            Gaming & Entertainment
+
 layout: post
-title:  "Attachments and Remaking"
-date:   2021-08-14 1:15:13 +0200
-categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/attachments.jpg?v=1.0.0
-thumbnail-alt: "Attachments screen"
-featured: false
-
-author:
-  name: Martin Toms
-  thumbnail: "/assets/martin.svg"
-  sameAs: "https://github.com/morgosus"
-  givenName: Martin
-  alternateName: morgosus
-  familyName: Toms
-  gender: male
-  email: martin@toms.click
-  url: https://martin.toms.click
-  alumniOf:
-    type: CollegeOrUniversity
-    name: Czech University of Life Sciences Prague
-    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
-    startDate: 1906
-
-hidden-meta:
-- itemprop: countryOfOrigin
-  value: Czech Republic
-- itemprop: genre
-  value: Gaming & Entertainment
-- itemprop: backstory
-  value: Compiled from personal experience with the game Fallout Shelter Online
-- itemprop: accessMode
-  value: visual
-- itemprop: accessModeSufficient
-  value: textual
-
-series: Fallout Shelter Online
-order: 5
-
-github_comments_issueid: 14
-published: true
-
 ---
-
 I claimed that attachments are pieces of armor that you can slap onto your dwellers. I was right, but let's go more in-depth this time.
 
 First off, you can get attachments everywhere - you can get them from missions, events, purchase them for Pre-War money (4 items from any set - not the complete set! just any 4 pieces, rare or better), or buy them for Silver Vault Tokens (10 tokens = a single SSR attachment of choice, both set and type can be chosen).

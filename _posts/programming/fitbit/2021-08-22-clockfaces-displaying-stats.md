@@ -1,47 +1,21 @@
 ---
+title:              "Displaying Stats and Sensor Data"
+date:               2021-08-22 11:34:14 +0200
+
+categories:         programming fitbit
+tags:               JavaScript SVG CSS
+
+thumbnail:          fitbit-1
+comment-section:    25
+
+meta:
+  author:           morgosus
+  series:           Fitbit
+  order:            3
+  genre:            Programming
+
 layout: post
-title:  "Displaying Stats and Sensor Data"
-date:   2021-08-22 11:34:14 +0200
-categories: programming fitbit
-thumbnail: /assets/thm/programming/fitbit/fitboy.jpg
-thumbnail-alt: "Advanced Fitbit SDK: The birth of PIP-BOY!"
-featured: false
-
-author:
-  name: Martin Toms
-  givenName: Martin
-  alternateName: morgosus
-  familyName: Toms
-  gender: male
-  email: martin@toms.click
-  sameAs: https://github.com/morgosus
-  url: https://martin.toms.click
-  alumniOf:
-    type: CollegeOrUniversity
-    name: Czech University of Life Sciences Prague
-    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
-    startDate: 1906
-
-hidden-meta:
-- itemprop: countryOfOrigin
-  value: Czech Republic
-- itemprop: genre
-  value: Gaming & Entertainment
-- itemprop: backstory
-  value: Compiled from personal experience with the game Fallout Shelter Online
-- itemprop: accessMode
-  value: visual
-- itemprop: accessModeSufficient
-  value: textual
-
-series: Fitbit
-order: 3
-
-github_comments_issueid: 25
-published: true
-
 ---
-
 It only makes sense to include various stats since we're working with a Fitbit device. Stats can be gathered from two primary sources - **sensors** and **user activity**. The main difference is that sensors provide a current value. At the same time, user activity is usually a sum of readings for the day/week.
 
 From a design perspective, you only really have two options.

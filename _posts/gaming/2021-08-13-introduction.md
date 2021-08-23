@@ -1,48 +1,21 @@
 ---
+title:              "Introduction"
+date:               2021-08-13 10:08:32 +0200
+
+categories:         gaming fallout-shelter-online
+tags:               gaming fallout-shelter-online android
+
+thumbnail:          foso-1
+comment-section:    10
+
+meta:
+  author:           morgosus
+  series:           Fallout Shelter Online
+  order:            1
+  genre:            Gaming & Entertainment
+
 layout: post
-title:  "Introduction"
-date:   2021-08-13 10:08:32 +0200
-categories: gaming foso
-thumbnail: /assets/thm/gaming/foso/login.jpg?v=1.0.0
-thumbnail-alt: "The login screen of Fallout Shelter Online"
-featured: false
-
-author:
-  name: Martin Toms
-  thumbnail: "/assets/martin.svg"
-  sameAs: "https://github.com/morgosus"
-  givenName: Martin
-  alternateName: morgosus
-  familyName: Toms
-  gender: male
-  email: martin@toms.click
-  url: https://martin.toms.click
-  alumniOf:
-    type: CollegeOrUniversity
-    name: Czech University of Life Sciences Prague
-    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
-    startDate: 1906
-
-hidden-meta:
-- itemprop: countryOfOrigin
-  value: Czech Republic
-- itemprop: genre
-  value: Gaming & Entertainment
-- itemprop: backstory
-  value: Compiled from personal experience with the game Fallout Shelter Online
-- itemprop: accessMode
-  value: visual
-- itemprop: accessModeSufficient
-  value: textual
-
-series: Fallout Shelter Online
-order: 1
-
-github_comments_issueid: 10
-published: true
-
 ---
-
 Many of us are familiar with the legendary Android and PC game [Fallout Shelter](https://bethesda.net/en/game/falloutshelter). There was a time when all of my high school classmates had that tiny vault and spent all of their breaks improving it. However, not all of us may be familiar with the even more wonderful Android game [Fallout Shelter Online](http://fosol.gaea.com/en/).
 
 > Fallout Shelter Online puts you in control of a state-of-the-art underground Vault from Vault-Tec Corporation, used to protect the population from total nuclear annihilation. Build a thriving Vault, recruit legendary Fallout heroes, explore the Wasteland, and solve the mystery of the missing Overseer.[^1]

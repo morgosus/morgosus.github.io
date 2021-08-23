@@ -1,45 +1,20 @@
 ---
+title:              "Introduction"
+date:               2021-08-21 10:37:03 +0200
+
+categories:         programming fitbit
+tags:               JavaScript SVG CSS
+
+thumbnail:          fitbit-1
+comment-section:    22
+
+meta:
+  author:           morgosus
+  series:           Fitbit
+  order:            1
+  genre:            Programming
+
 layout: post
-title:  "Introduction"
-date:   2021-08-21 10:37:03 +0200
-categories: programming fitbit
-thumbnail: /assets/thm/programming/fitbit/fitboy.jpg
-thumbnail-alt: "Advanced Fitbit SDK: The birth of PIP-BOY!"
-featured: false
-
-author:
-  name: Martin Toms
-  givenName: Martin
-  alternateName: morgosus
-  familyName: Toms
-  gender: male
-  email: martin@toms.click
-  sameAs: https://github.com/morgosus
-  url: https://martin.toms.click
-  alumniOf:
-    type: CollegeOrUniversity
-    name: Czech University of Life Sciences Prague
-    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
-    startDate: 1906
-
-hidden-meta:
-- itemprop: countryOfOrigin
-  value: Czech Republic
-- itemprop: genre
-  value: Gaming & Entertainment
-- itemprop: backstory
-  value: Compiled from personal experience with the game Fallout Shelter Online
-- itemprop: accessMode
-  value: visual
-- itemprop: accessModeSufficient
-  value: textual
-
-series: Fitbit
-order: 1
-
-github_comments_issueid: 22
-published: true
-
 ---
 In this series, I will dissect and explain creating a clock face for Fitbit Sense and Versa 3. Piece by piece. Now, while I will be using code examples from my app, the principles are more of a general kind. If you follow this series through, you should have a good idea of creating any Fitbit SDK clockface. It's really similar to web development. As the current version is SDK 6.0.0, I will be working under it. However, the code is identical to the previous version.
 

@@ -1,15 +1,17 @@
 ---
+title:              "Recursive CTEs"
+date:               2020-10-19 14:10:35 +0200
+
+categories:         programming
+tags:               SQL MariaDb
+
+thumbnail:          mariadb
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "Recursive CTEs"
-date:   2020-10-19 14:10:35 +0200
-categories: programming
-thumbnail: "/assets/thm/mariadb.jpg?v=1.0.0"
-thumbnail-alt: "MariaDB"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 This is just a quick explanation of the topic on a simple example. It won't deal with optimization, merely wrapping your mind around the concept. CTE (Common Table Expression) is a... hmm.. think of it as a temporary view. You bring in some set of results and then you're able to query it. Recursive CTE just adds recursion to the ploy.
 

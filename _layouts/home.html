@@ -38,11 +38,14 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
       <!-- TODO: Consider a READ MORE button-->
       <div class="posts__card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        {%- unless post.thumbnail == "#" -%}
-        <img itemprop="image" class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+
+        {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
+
+        {%- unless thumbnail.source == "#" -%}
+        <img itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
         {%- endunless -%}
         <div class="card__content">
-          <h3 itemprop="name" class="card__content-heading">{% if post.series %}{{ post.series }}: {% endif %}{{ post.title | escape }}</h3>
+          <h3 itemprop="name" class="card__content-heading">{% if post.meta.series %}{{ post.meta.series }}: {% endif %}{{ post.title | escape }}</h3>
           <span class="card__content-meta">{{ post.date | date: date_format }}</span>
           <div class="card__content-excerpt">
           {%- if site.show_excerpts -%}

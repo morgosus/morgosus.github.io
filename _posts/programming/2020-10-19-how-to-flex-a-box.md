@@ -1,15 +1,17 @@
 ---
+title:              "How to Flex a Box"
+date:               2020-10-19 20:00:15 +0200
+
+categories:         programming
+tags:               CSS Flexbox
+
+thumbnail:          flexbox
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "How to Flex a Box"
-date:   2020-10-19 20:00:15 +0200
-categories: programming
-thumbnail: "/assets/thm/flex.jpg?v=1.0.0"
-thumbnail-alt: "Flex"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 Quite a few people have told me that they have no experience with Flexbox, yet they deal with CSS and HTML layouts. It's usually a matter of minutes to explain this particular topic and many people are in awe of how simple, yet efficient this tool is. Flexbox, as you may have already deduced, is a CSS... I guess we could say library.
 

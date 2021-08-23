@@ -1,15 +1,17 @@
 ---
+title:              "SASS and SCSS"
+date:               2021-07-30 15:45:37 +0200
+
+categories:         programming
+tags:               SASS CSS
+
+thumbnail:          programming-1
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "SASS and SCSS"
-date:   2021-07-30 15:45:37 +0200
-categories: programming
-thumbnail: "/assets/thm/programming.jpg"
-thumbnail-alt: "Programming"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 SASS is the ideal preprocessor for CSS. It's a sort of syntax enhancer for it. SASS needs to be compiled into CSS, the 
 advantage of this is the fact that you can use SASS and SCSS (or even a combination of both, for example if you wanted 

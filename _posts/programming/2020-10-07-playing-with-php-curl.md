@@ -1,15 +1,17 @@
 ---
+title:              "Playing with PHP cURL"
+date:               2020-10-07 23:56:48 +0200
+
+categories:         programming
+tags:               PHP cURL
+
+thumbnail:          programming-1
+
+meta:
+  author:           morgosus
+  genre:            Programming
+
 layout: post
-title:  "Playing with PHP cURL"
-date:   2020-10-07 23:56:48 +0200
-categories: programming
-thumbnail: "/assets/thm/programming.jpg?v=1.0.0"
-thumbnail-alt: "Programming"
-featured: false
-author: Martin Toms
-
-published: true
-
 ---
 Sometimes you might want to grab a page or two on the web. See, cURL allows you to send a bot of sorts - and it does just that. This 'bot' isn't limited to visiting pages, it can post data or even login and carry a session. I guess you could make a cURL script for logging in and adjusting user settings or something.
 

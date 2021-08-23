@@ -10,25 +10,29 @@ layout: default
 
 <article class="post h-entry" itemscope itemtype="https://schema.org/Article">
 
+  {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
+
   <figure class="post__thumbnail-wrapper">
-    <img itemprop="thumbnailUrl" class="post__thumbnail" src="{{- page.thumbnail -}}" alt="{{- page.thumbnail-alt -}}"/>
-    <figcaption class="post__thumbnail-caption">{{- page.thumbnail-alt -}}</figcaption>
+    <img itemprop="thumbnailUrl" class="post__thumbnail" src="{{- thumbnail.source -}}" alt="{{- thumbnail.caption -}}"/>
+    <figcaption class="post__thumbnail-caption">{{- thumbnail.caption -}}</figcaption>
   </figure>
 
   <div class="post__header">
     <div class="post__meta">
       <time class="post__meta-published" datetime="{{- page.date | date_to_xmlschema -}}" itemprop="datePublished">{{- page.date | date: date_format -}}</time>
 
-        {%- for item in page.hidden-meta -%}<span aria-hidden="true" itemprop="{{- item.itemprop -}}">{{- item.value -}}</span>{%- endfor -%}
+        <span aria-hidden="true" itemprop="genre">{{- page.meta.genre -}}</span>
+        <span aria-hidden="true" itemprop="countryOfOrigin">{{- page.meta.countryOfOrigin | default: "Czech Republic" -}}</span>
+        <span aria-hidden="true" itemprop="accessMode">{{- page.meta.accessMode | default: "visual" -}}</span>
+        <span aria-hidden="true" itemprop="accessModeSufficient">{{- page.meta.accessModeSufficient | default: "textual" -}}</span>
 
         <span aria-hidden="true" itemprop="wordCount">{{- wordCount -}}</span>&nbsp;•&nbsp;<span itemprop="timeRequired">{{- timeRequired -}}-min</span>&nbsp;
 
-
-      {%- if page.author -%}
+      {%- if page.meta.author -%}
         {%- include component/author.html -%}
       {%- endif -%}
     </div>
-    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="../../../" itemprop="about">{%- if page.series -%}〔 {{- page.series -}} 〕{%- endif -%}</a><span itemprop="name headline">{{- page.title | escape -}}</span></h1>
+    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="../../../" itemprop="about">{%- if page.meta.series -%}〔 {{- page.meta.series -}} 〕{%- endif -%}</a><span itemprop="name headline">{{- page.title | escape -}}</span></h1>
   </div>
   <div class="post__content e-content" itemprop="articleBody">
     {{- content -}}
@@ -37,14 +41,12 @@ layout: default
   <div class="post__series-data">
     {%- if page.previous and page.previous.categories == page.categories -%}
     <figure class="post__previous">
-      <!--<img src="{{- page.previous.thumbnail -}}" alt="{{- page.previous.alt -}}" />-->
       <figcaption class="caption">〔 Previous: {{ page.previous.title }} 〕</figcaption>
       <a rel="prev" class="card__overlay" href="{{- page.previous.id -}}" title="Go to the previous article in the series"></a>
     </figure>
     {%- endif -%}
     {%- if page.next and page.next.categories == page.categories -%}
     <figure class="post__next">
-      <!--<img src="{{- page.next.thumbnail -}}" alt="{{- page.next.alt -}}" />-->
       <figcaption class="caption">〔 Next: {{ page.next.title }} 〕</figcaption>
       <a rel="next" class="card__overlay" href="{{- page.next.id -}}" title="Go to the next article in the series"></a>
     </figure>
@@ -55,12 +57,12 @@ layout: default
 
   {%- include component/random-build-number.html -%}
 
-  {%- if page.github_comments_issueid -%}
+  {%- if page.comment-section -%}
   <script src="https://giscus.app/client.js"
           data-repo="{{site.github_comments_repository}}"
           data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYzMjY4NDA="
           data-mapping="number"
-          data-term="{{page.github_comments_issueid}}"
+          data-term="{{page.comment-section}}"
           data-reactions-enabled="0"
           data-emit-metadata="1"
           data-theme={{- "https://api.toms.click/css/giscus.css?v=" | relative_url | append: randomBuildNumber -}}"
