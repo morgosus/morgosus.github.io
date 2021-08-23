@@ -13,7 +13,7 @@ layout: default
   {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
 
   <figure class="post__thumbnail-wrapper">
-    <img itemprop="thumbnailUrl" class="post__thumbnail" src="{{- thumbnail.source -}}" alt="{{- thumbnail.caption -}}"/>
+    <img loading="lazy" itemprop="thumbnailUrl" class="post__thumbnail" src="{{- thumbnail.source -}}" alt="{{- thumbnail.caption -}}"/>
     <figcaption class="post__thumbnail-caption">{{- thumbnail.caption -}}</figcaption>
   </figure>
 
