@@ -12,7 +12,7 @@
         <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
       </div>
       {%- if post.link -%}
-        <a class="card__overlay" href="{{- post.link | relative_url -}}" title="'{{- post.link-text | escape -}}'"></a>
+        <a class="card__overlay" href="{{- post.link | relative_url -}}" title="{{- post.link-text | escape -}}"></a>
       {%- else -%}
         <a class="card__overlay" href="{{- post.url | relative_url -}}" title="Go to the post '{{- post.title | escape -}}'"></a>
       {%- endif -%}
