@@ -70,3 +70,11 @@ sass:
     - assets/css
     - assets/vendor
   style: compressed
+
+collections:
+  thumbnail:
+    output: true
+    permalink: /:collection/:name
+  author:
+    output: true
+    permalink: /:collection/:name
