@@ -8,7 +8,7 @@ thumbnail: "#"
 thumbnail-alt: "#"
 
 link: https://github.com/morgosus
-link-text: Go to my Github profile
+link-text: Go to my GitHub profile
 
 home: false
 featured: true
