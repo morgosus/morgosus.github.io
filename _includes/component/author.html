@@ -1,20 +1,22 @@
+{% assign author = site.author | where:"alternateName", page.meta.author | first %}
+
 <div itemprop="author" itemscope itemtype="https://schema.org/Person" hidden class="post__meta">
     <span>{{- "•" -}}</span>
-    <a class="post__meta-author h-card" itemprop="name" href="{{- page.author.url -}}">{{-  page.author.name | default: page.author | default: "Anonymous" -}}
-        <img itemprop="image" class="post__meta-author-thumbnail" src="/assets/thm/author/morgosus.jpg" alt="A drawing of Martin Toms" width="32px" height="32px" /></a>
-    {%- if page.author.alternateName -%}<span itemprop="alternateName" aria-hidden="true">{{- page.author.alternateName -}}</span>{%- endif -%}
-    {%- if page.author.email -%}<span itemprop="email" aria-hidden="true">{{- page.author.email -}}</span>{%- endif -%}
-    {%- if page.author.gender -%}<span itemprop="gender" aria-hidden="true">{{- page.author.gender -}}</span>{%- endif -%}
-    {%- if page.author.givenName -%}<span itemprop="givenName" aria-hidden="true">{{- page.author.givenName -}}</span>{%- endif -%}
-    {%- if page.author.url -%}<span itemprop="url" aria-hidden="true">{{- page.author.url -}}</span>{%- endif -%}
-    {%- if page.author.familyName -%}<span itemprop="familyName" aria-hidden="true">{{- page.author.familyName -}}</span>{%- endif -%}
-    {%- if page.author.alumniOf and page.author.alumniOf.name and page.author.alumniOf.url and page.author.alumniOf.startDate -%}
+    <a class="post__meta-author h-card" itemprop="name" href="{{- author.link -}}" title="Go to {{author.name}}'s profile.">{{-  author.name | default: author | default: "Anonymous" -}}
+        <img loading="lazy" itemprop="image" class="post__meta-author-thumbnail" src="{{author.thumbnail.source}}" alt="The profile picture of {{author.name}}." width="24px" height="24px" /></a>
+    {%- if author.alternateName -%}<span itemprop="alternateName" aria-hidden="true">{{- author.alternateName -}}</span>{%- endif -%}
+    {%- if author.email -%}<span itemprop="email" aria-hidden="true">{{- author.email -}}</span>{%- endif -%}
+    {%- if author.gender -%}<span itemprop="gender" aria-hidden="true">{{- author.gender -}}</span>{%- endif -%}
+    {%- if author.givenName -%}<span itemprop="givenName" aria-hidden="true">{{- author.givenName -}}</span>{%- endif -%}
+    {%- if author.url -%}<span itemprop="url" aria-hidden="true">{{- author.url -}}</span>{%- endif -%}
+    {%- if author.familyName -%}<span itemprop="familyName" aria-hidden="true">{{- author.familyName -}}</span>{%- endif -%}
+    {%- if author.alumniOf and author.alumniOf.name and author.alumniOf.url and author.alumniOf.startDate -%}
     <span itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole" aria-hidden="true">
-        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/{{- page.author.alumniOf.type -}}">
-            <span itemprop="name" aria-hidden="true">{{- page.author.alumniOf.name -}}</span>
-            <span itemprop="sameAs" aria-hidden="true">{{- page.author.alumniOf.url -}}</span>
+        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/{{- author.alumniOf.type -}}">
+            <span itemprop="name" aria-hidden="true">{{- author.alumniOf.name -}}</span>
+            <span itemprop="sameAs" aria-hidden="true">{{- author.alumniOf.url -}}</span>
         </span>
-        <span itemprop="startDate" aria-hidden="true">{{- page.author.alumniOf.startDate -}}</span>
+        <span itemprop="startDate" aria-hidden="true">{{- author.alumniOf.startDate -}}</span>
     </span>
     {%- endif -%}
 </div>
