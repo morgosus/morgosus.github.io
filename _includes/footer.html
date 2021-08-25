@@ -1,8 +1,8 @@
 <footer class="footer">
   <div class="footer__wrapper">
+    <div class="footer__copyright" itemprop="copyrightNotice">&copy;&nbsp;2021&nbsp;Martin Toms, All Rights Reserved, <a href="mailto:{{- site.email -}}">〔 {{- site.email -}} 〕</a></div>
     {%- if site.author -%}
-    <div class="footer__copyright" itemprop="copyrightNotice">&copy;&nbsp;{{- 'now' | date: "%Y" -}}&nbsp;{{- site.author.name | escape -}}, All Rights Reserved, <a href="mailto:{{- site.email -}}">〔 {{- site.email -}} 〕</a></div>
-    {%- include author.html -%}
+      {%- include author.html -%}
     {%- endif -%}
   </div>
   <span itemprop="accessMode" aria-hidden="true" hidden>colorDependent</span>
