@@ -6,12 +6,12 @@ categories:         gaming fallout-shelter-online
 tags:               gaming fallout-shelter-online android
 
 thumbnail:          foso-8
-comment-section:    
+comment-section:    31
 
 meta:
   author:           morgosus
   series:           Fallout Shelter Online
-  order:            7
+  order:            8
   genre:            Gaming & Entertainment
 
 layout: post
