@@ -4,7 +4,11 @@
   {%- if post.featured == true and post.title != page.title -%}
     {%- include component/capture-day-posted.html -%}
 
+    {%- if post.thumbnail == "#" -%}
+    <div class="card card--sidebar card--link-only">
+    {%- else -%}
     <div class="card card--sidebar">
+    {%- endif -%}
       {%- unless post.thumbnail == "#" -%}
       <img class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
       {%- endunless -%}
