@@ -33,18 +33,30 @@
     top: 0
     left: 0
     cursor: pointer
-  &:hover .card__content-heading
-    text-decoration: underline
-    cursor: default
 
 .card--sidebar
+  outline: 2px solid $border-color
   flex-wrap: wrap
   margin-bottom: $s
   .card__image
     margin: 0 !important
     height: 10*$s !important
-    margin-bottom: $s !important
+    margin-bottom: $s/2 !important
+    outline: 2px solid $border-color
+  .card__content-heading
+    margin-bottom: $s/2 !important
 
+  &:hover
+    box-shadow: 0px 0px 5px #000
+
+.card--link-only
+  outline: 2px solid $border-color
+  padding: $s/2 $s
+  .card__content-heading
+    margin: 0 !important
+    text-decoration: none !important
+  &:hover
+    box-shadow: 0px 0px 5px #000
 
 /*--- Coloring -------------------------*/
 

@@ -1,11 +1,18 @@
 .share
-  flex-wrap: wrap
   display: flex
   justify-content: space-between
+  flex-direction: column
+  outline: 2px solid $border-color
+  padding: $s/2 $s
+  &__row
+    width: 100%
+    display: flex
+    justify-content: space-around
+    margin-top: $s/2
   &__heading
     font-family: $primary-font
-    width: 100%
-    margin-bottom: $s/2
+    text-align: center
+    cursor: default
   &__link
     width: $line-height
     height: $line-height
