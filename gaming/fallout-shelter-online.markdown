@@ -5,5 +5,5 @@
 layout: home
 title: Fallout Shelter Online
 on_navbar: false
-categories: foso
+categories: fallout-shelter-online
 ---
