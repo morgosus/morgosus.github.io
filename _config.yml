@@ -78,3 +78,6 @@ collections:
   author:
     output: true
     permalink: /:collection/:name
+  featured:
+    output: true
+    permalink: /:collection/:name
