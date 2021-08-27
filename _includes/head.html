@@ -27,6 +27,7 @@
   <meta property="og:description" content="{{site.description}}">
   {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
   <meta property="og:image" content="{{site.url}}{{thumbnail.source | default: '/assets/martin.jpg?v=1.0.0'}}">
+  <meta property="og:type" content="website" />
   <meta name="twitter:card" content="{{site.description}}">
 
   <link rel="canonical" href="{{site.url}}/">
