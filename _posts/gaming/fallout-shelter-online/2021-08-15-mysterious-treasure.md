@@ -16,7 +16,7 @@ meta:
 
 layout: post
 ---
-You have reached level 33, and there are two short term choices in front of you: 
+You have reached level 33, and there are two short term choices in front of you...
 
 You can keep going, fuel your main squad and upgrade your overseer's office. This will, however, keep you at a disadvantage - you'll have lower access to free materials and resources for upgrading. You could also stand your ground, focus on the Mysterious Treasure - this will, however, slow down your progress momentarily - as you'll be spending lots of resources for non-main characters
 
