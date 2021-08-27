@@ -10,7 +10,7 @@
     <div class="card card--sidebar">
     {%- endif -%}
       {%- unless post.thumbnail == "#" -%}
-      <img class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+      <img loading="lazy" class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
       {%- endunless -%}
       <div class="card__content">
         <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
