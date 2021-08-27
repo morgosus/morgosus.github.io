@@ -48,6 +48,8 @@ Have you ever wanted to throw Preston Garvey with his 'Another settlement needs 
 
 Overall the encounters aren't that difficult, but they are fun, as you get to fight zombies instead of the usual ghouls. You also gain both **Sentinel's Crystal**s and **Doom's Mark**s.
 
+![The map of this event](/assets/thm/gaming/foso/terminator-of-sins-path-to-boss.jpg?v=1.0.0)
+
 Does your team highly outperform the enemies? Switch the difficulty of the encounter to boost your rewards!
 {: .note}
 
