@@ -1,5 +1,23 @@
 <h2 class="sr">{{- page.list_title | default: "Featured Posts" -}}</h2>
 
+
+{% for post in site.featured %}
+  {%- if post.thumbnail == "#" -%}
+    <div class="card card--sidebar card--link-only">
+    {%- else -%}
+    <div class="card card--sidebar">
+  {%- endif -%}
+
+    {%- unless post.thumbnail == "#" -%}
+      <img loading="lazy" class="card__image" src="{{post.thumbnail.url}}" alt="{{post.title}}">
+    {%- endunless -%}
+      <div class="card__content">
+        <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
+      </div>
+      <a class="card__overlay" href="{{- post.link.url | relative_url -}}" title="{{- post.link.caption | escape -}}"></a>
+    </div>
+{% endfor %}
+
 {%- for post in site.posts -%}
   {%- if post.featured == true and post.title != page.title -%}
     {%- include component/capture-day-posted.html -%}
