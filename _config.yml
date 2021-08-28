@@ -73,11 +73,5 @@ sass:
 
 collections:
   thumbnail:
-    output: true
-    permalink: /:collection/:name
   author:
-    output: true
-    permalink: /:collection/:name
   featured:
-    output: true
-    permalink: /:collection/:name
