@@ -60,6 +60,7 @@ The items which play a role in further upgrading your attachments are
 5. Another helpful material is the **Formatting Chip**, which allows you to reset or roll your upgrades back.
 - Reset removes all the stats at the cost of one chip per item. In addition, it returns some used materials back (kits, not chips).
 - Rollback does the same, but it keeps the first star in, allowing you to reclaim some materials, upgrade a different attachment piece while also keeping the old item rolled-back item with the initial stats. You can return to it anyways, and the stats - which you probably like, such as HP + damage - are kept. You just need kits at that point to bring the item to its former glory.
+6. Last but not least, the **Enclave Advanced Chip** raises the cost of upgrading to 46 enclave toolkits, as well as allowing another set of medal upgrades
 
 SR and SSR attachments that have been sufficiently remade gain additional bonuses beyond just the two stats. These are called phases.
 
