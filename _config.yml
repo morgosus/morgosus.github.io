@@ -72,6 +72,6 @@ sass:
   style: compressed
 
 collections:
-  - thumbnail
-  - author
-  - featured
+  thumbnail:
+  author:
+  featured:
