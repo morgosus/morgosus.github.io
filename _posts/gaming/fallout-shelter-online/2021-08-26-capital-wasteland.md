@@ -30,6 +30,7 @@ The Capital wasteland, also known as the place where Fallout 3 took place, is an
 - The dwellers you need for progress do not need to survive. So Sturges and Dogmeat may die as long as you beat the encounter with the other three dwellers.
 - So far, I've seen the requirement for Strong, Sarah, Dave, Kellog, Silver Shroud, Maxson, Virgil, Madison, Pickman, Slag, Alien, Father Clifford, Three Dog, Moira, Piper, MacCready, Dogmeat, Sturges, Cait, and Ronnie. It's safe to assume that most of these dwellers will be R or SR, also unlockable through hard missions, but some SSR dwellers will be required.
   - Most of these dwellers are obtainable through free means without drawing from pools.
+    - Note that you need the SSR dwellers far less often than the SR or R
     - Hard missions (Piper, ...)
     - Faction missions (Ronnie, Madison, ...)
     - Simply getting them at the beginning of the game (Sturges, Dogmeat)
