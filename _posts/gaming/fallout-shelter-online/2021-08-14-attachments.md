@@ -6,7 +6,7 @@ categories:         gaming fallout-shelter-online
 tags:               gaming fallout-shelter-online android
 
 thumbnail:          foso-5
-comment-section:    10
+comment-section:    14
 
 meta:
   author:           morgosus
