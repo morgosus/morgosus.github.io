@@ -51,5 +51,11 @@ The Capital wasteland, also known as the place where Fallout 3 took place, is an
 - Ropes and Stealth Boys can be used to skip enemies, disable their power-ups, and boost your own attack before you take them on.
 - If you're in a darkness map, a room scanner (don't use it, just press it and look at the room outlines) can be a great help in navigating the hellscape-mazes that these maps are.
 - Remember that portals may lead to a different location than the one you teleported to them from.
+- Once you get to upgrading equipment to level 66, you'll need **a lot** of caps and resources, the best place to get resources are hard missions (they give 25 of each, you need like 500 per level)
+  - Hard missions give you posters
+    - SSR Tara (up to 6)
+    - SSR Amari (up to 12 a day, One of the 4 hard missions requires Sarah)
+    - SSR Madison (up to 6, requires Silver Shroud and Maxson)
+
 
 Last but not least - if you took on an Alpha Deathclaw without a healer or two on hard difficulty, you deserved to be killed off.
