@@ -75,3 +75,8 @@ collections:
   thumbnail:
   author:
   featured:
+
+feed:
+  categories:
+    - programming
+    - gaming
