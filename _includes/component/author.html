@@ -1,9 +1,8 @@
 {% assign author = site.author | where:"alternateName", page.meta.author | first %}
-
 <div itemprop="author" itemscope itemtype="https://schema.org/Person" hidden class="post__meta">
     <span>{{- "•" -}}</span>
-    <a class="post__meta-author h-card" itemprop="name" href="{{- author.link -}}" title="Go to {{author.name}}'s profile.">{{-  author.name | default: author | default: "Anonymous" -}}
-        <img loading="lazy" itemprop="image" class="post__meta-author-thumbnail" src="{{author.thumbnail.source}}" alt="The profile picture of {{author.name}}." width="24px" height="24px" /></a>
+    <a class="post__meta-author h-card" itemprop="name" {%- if author.link -%}href="{{- author.link -}}"{%- endif -%} title="Go to {{author.name}}'s profile.">{{-  author.name | default: author | default: "Anonymous" -}}
+        {%- if author.thumbnail.source -%}<img loading="lazy" itemprop="image" class="post__meta-author-thumbnail" src="{{author.thumbnail.source}}" alt="The profile picture of {{author.name}}." width="24px" height="24px" />{%- endif -%}</a>
     {%- if author.alternateName -%}<span itemprop="alternateName" aria-hidden="true">{{- author.alternateName -}}</span>{%- endif -%}
     {%- if author.email -%}<span itemprop="email" aria-hidden="true">{{- author.email -}}</span>{%- endif -%}
     {%- if author.gender -%}<span itemprop="gender" aria-hidden="true">{{- author.gender -}}</span>{%- endif -%}
