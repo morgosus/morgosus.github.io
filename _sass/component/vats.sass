@@ -1,0 +1,59 @@
+.note
+  //box-shadow: 0px 0px 1px #16FF42 !important
+  //background-color: rgba(22,255,66,0.25) !important
+
+.card .card__image
+.card:hover .card__image
+  //outline: 2px solid #16FF42
+  //filter: hue-rotate(240deg) saturate(3.3) grayscale(50%)
+
+.comments-section-title
+  margin-bottom: $s/4 !important
+
+.author
+  //background-color: rgba(22,255,66,0.25) !important
+  //box-shadow: 0px 0px 1px #16FF42 !important
+  padding: $s !important
+  display: flex
+  margin-bottom: $s
+  align-items: center
+  figcaption
+    display: none
+  .thumbnail
+    @include boxShadow
+    border-radius: 100%
+    object-fit: cover
+    width: 128px
+    height: 128px
+    margin-right: $s
+  .content
+    flex-grow: 1
+    .name
+      margin: 0 !important
+      float: left
+      text-align: center
+      clear: none !important
+    .bio
+      text-align: justify
+      hyphens: auto
+
+/*THEME SID*/
+
+.image-float-left, .image-float-right
+  max-width: 25%
+  float: left
+  margin-right: $s
+  margin-bottom: $s
+  clear: right
+
+.image-float-right
+  max-width: 25%
+  float: left
+  margin-right: $s
+  margin-bottom: $s
+  clear: left
+
+.post h2, h3, h4, h5, h6
+  clear: both
+
+.post p
