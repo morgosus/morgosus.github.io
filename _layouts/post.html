@@ -77,16 +77,15 @@ layout: default
 </article>
 <h2 class="comments-section-title">Comments Section</h2>
 {%- if page.comment-section -%}
-<script src="https://giscus.app/client.js"
+<script src="https://giscus.app/client.js" async defer
+        crossorigin="anonymous"
         data-repo="{{site.github_comments_repository}}"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYzMjY4NDA="
         data-mapping="number"
         data-term="{{page.comment-section}}"
         data-reactions-enabled="0"
         data-emit-metadata="1"
-        data-theme="{{- 'https://api.toms.click/css/giscus.css?v=' | relative_url | append: randomBuildNumber -}}"
-crossorigin="anonymous"
-async defer>
+        data-theme="{{- 'https://api.toms.click/css/giscus.css?v=' | relative_url | append: randomBuildNumber -}}">
 </script>
 <script type="module" src="/js/image-to-figure.min.js" async defer></script>
 {%- endif -%}
