@@ -53,44 +53,40 @@ layout: default
     {%- endif -%}
   </div>
 
-  <div itemprop="abstract" aria-hidden="true">{{- page.excerpt -}}</div>
+  <div itemprop="abstract" aria-hidden="true" hidden>{{- page.excerpt -}}</div>
 
+  {%if author.content%}
+  <section class="note author">
+    {% if author.thumbnail.source %}
+      <img class="thumbnail" src="{{author.thumbnail.source}}" alt="Profile picture of {{author.name}}" />
+    {% endif %}
+    <div class="content">
+      {% if author.name %}
+      <h2 class="name">{{author.name}}{%if author.alternateName%}({{author.alternateName}}){%endif%}:&nbsp;</h2>
+      {% endif %}
+      {% if author.bio %}
+      <p class="bio">{{author.content}}</p>
+      {% else %}
+      <p class="bio">This author prefers to keep an air of mystery about them.</p>
+      {% endif %}
+    </div>
+  </section>
+  {%endif%}
   {%- include component/random-build-number.html -%}
 
-  {%- if page.comment-section -%}
-  <script src="https://giscus.app/client.js"
-          data-repo="{{site.github_comments_repository}}"
-          data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYzMjY4NDA="
-          data-mapping="number"
-          data-term="{{page.comment-section}}"
-          data-reactions-enabled="0"
-          data-emit-metadata="1"
-          data-theme={{- "https://api.toms.click/css/giscus.css?v=" | relative_url | append: randomBuildNumber -}}"
-          crossorigin="anonymous"
-          async>
-  </script>
-  {%- endif -%}
-
 </article>
-
-<script>
-  const images = document.getElementsByTagName('img');
-
-  //if not thumbnail and within post, replace with a captioned figure
-
-  for (let ims = 0; ims < images.length; ims++) {
-    let img = images[ims];
-    if (img.classList.value === "") {
-      console.log('here');
-      const figr = document.createElement("figure");
-      figr.setAttribute('class', 'post__image-wrapper');
-      img.setAttribute('class', 'post__image');
-      const cptn = document.createElement("figcaption");
-      cptn.setAttribute('class', 'post__image-caption');
-      cptn.innerHTML = img.alt;
-      figr.appendChild(img.cloneNode());
-      figr.appendChild(cptn);
-      img.replaceWith(figr);
-    }
-  }
+<h2 class="comments-section-title">Comments Section</h2>
+{%- if page.comment-section -%}
+<script src="https://giscus.app/client.js"
+        data-repo="{{site.github_comments_repository}}"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYzMjY4NDA="
+        data-mapping="number"
+        data-term="{{page.comment-section}}"
+        data-reactions-enabled="0"
+        data-emit-metadata="1"
+        data-theme="{{- 'https://api.toms.click/css/giscus.css?v=' | relative_url | append: randomBuildNumber -}}"
+crossorigin="anonymous"
+async defer>
 </script>
+<script type="module" src="/js/image-to-figure.min.js" async defer></script>
+{%- endif -%}
