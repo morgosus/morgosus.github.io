@@ -36,7 +36,7 @@ layout: default
         {%- endif -%}
 
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
-      <div class="posts__card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <div class="posts__card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 
         {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
 
@@ -61,6 +61,6 @@ layout: default
   </section>
 
   <span itemprop="numberOfItems" aria-hidden="true" hidden>{{n}}</span>
-  <p class="rss"><img loading="lazy" class="rss__icon" src="/assets/rss.jpg" alt="RSS icon" />&nbsp;Subscribe&nbsp;<a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss"><img loading="lazy" class="rss__icon" src="/assets/ui/rss.png" alt="RSS icon" />&nbsp;Subscribe&nbsp;<a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 </div>
