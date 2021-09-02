@@ -61,6 +61,6 @@ layout: default
   </section>
 
   <span itemprop="numberOfItems" aria-hidden="true" hidden>{{n}}</span>
-  <p class="rss"><img loading="lazy" class="rss__icon" src="/assets/ui/rss.png" alt="RSS icon" />&nbsp;Subscribe&nbsp;<a class="rss__link" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <a class="rss" href="{{ '/feed.xml' | relative_url }}" ><img loading="lazy" class="rss__icon" src="/assets/ui/rss.png" alt="RSS icon" />&nbsp;<span class="rss__link">〔Subscribe&nbsp;via RSS 〕</span></a>
   {%- endif -%}
 </div>
