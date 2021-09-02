@@ -18,4 +18,4 @@ Mainly? Google Analytics. It allows me to see where the visitors are from, what 
 You can always delete your cookies, or disable them in your browser. Note that this will reduce the functionality of many websites. Cookies are used for everything from logging in to customization. If you change your mind about your consent, you may click the revocation button below.
 
 <button class="cookie-policy-button revoke" onclick="deleteCookie('consent');deleteCookie('_gid');deleteCookie('_ga');deleteCookie('_gat_gtag_UA_175998459_1');">Revoke Cookie Consent</button>
-<button class="cookie-policy-button grant" onclick="setCookie('consent', true);">Grant Cookie Consent</button>
+<button class="cookie-policy-button grant" onclick="setCookie('consent', true, 182.5);">Grant Cookie Consent</button>
