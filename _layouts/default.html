@@ -13,6 +13,23 @@
     <aside class="sidebar">{%- include sidebar.html -%}</aside>
   </div>
 
+  <template id="cookie-banner">
+    <div class="banner">
+      <span class="text">Hi! May I please use cookies? You can read about them by clicking the cookie. Thanks!</span>
+      <button class="none" onclick="this.parentNode.parentNode.removeChild(this.parentNode)">No</button><a class="policy" href="/legal/cookie-policy">🍪</a>
+      <button class="all" onclick="setCookie('consent', true);this.parentNode.parentNode.removeChild(this.parentNode)">Yes</button>
+    </div>
+  </template>
+
+  <div id="cookie-banner-location">
+  </div>
+  <script>
+    if(getCookie('consent') !== 'true'){
+      const cookieBanner = byId('cookie-banner');
+      byId('cookie-banner-location').appendChild(cookieBanner.content.cloneNode(true));
+    }
+  </script>
+
   {%- unless page.hide_sidebar == true -%}
     {%- include footer.html -%}
   {%- endunless -%}
