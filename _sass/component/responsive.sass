@@ -20,11 +20,18 @@
     flex-direction: column
     max-width: $s*15
     width: 100%
+  .posts
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
   .card
     flex-direction: column
+    max-width: 49.25%
     &__image
+      width: 100%
       margin: 0 auto !important
       margin-bottom: $s !important
+    &__content
   .rss
 
   .main
@@ -35,8 +42,9 @@
     padding-right: $s/2
 @media screen and (max-width: 480px)
   .card
+    max-width: 100%
+    &__content
     &__image
-      width: 100% !important
   .card--sidebar
       max-width: 100% !important
       width: 100% !important
