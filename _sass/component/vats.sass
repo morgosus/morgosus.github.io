@@ -57,3 +57,70 @@
   clear: both
 
 .post p
+
+.banner
+  position: fixed
+  bottom: $s
+  background-color: white
+  right: $s
+  padding: $s
+  max-width: 300px
+  text-align: center
+  border: 2px solid black
+  display: flex
+  flex-wrap: wrap
+  border-radius: $s
+  cursor: default
+  font-family: $primary-font
+  .text
+    text-align: justify
+    hyphens: auto
+    color: black
+    clear: both
+    float: left
+    margin-bottom: $s
+    font-size: $font-size*0.75
+    line-height: $line-height*0.75
+  .policy
+    text-decoration: none
+    padding: $s/2
+    outline: 2px solid $border-color
+    width: 30%
+    &:hover
+      box-shadow: 0px 0px 4px black
+  .none, .all
+    cursor: pointer
+    border: 2px solid $border-color
+    &:hover
+  .none
+    background-color: #CD324C
+    padding: $s/2 $s*1.5
+    border-top-left-radius: $s
+    border-bottom-left-radius: $s
+    width: 35%
+    font-size: $font-size*0.75
+  .some
+    background-color: lightgray
+  .all
+    background-color: #9acd32
+    padding: $s/2 $s*1.5
+    border-top-right-radius: $s
+    border-bottom-right-radius: $s
+    width: 35%
+    &:hover
+      background-color: #16FF42
+
+.cookie-policy-button
+  cursor: pointer
+  padding: $s $s*3
+  border-radius: $s
+  border: 2px solid $border-color
+  &.revoke
+    background-color: #CD324C
+    float: left
+  &.grant
+    background-color: #9acd32
+    float: right
+    &:hover
+      background-color: #16FF42
+
