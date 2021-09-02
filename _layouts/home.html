@@ -36,7 +36,6 @@ layout: default
         {%- endif -%}
 
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
-      <!-- TODO: Consider a READ MORE button-->
       <div class="posts__card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 
         {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
