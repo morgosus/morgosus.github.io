@@ -11,6 +11,7 @@ comment-section:    15
 meta:
   author:           morgosus
   series:           Fallout Shelter Online
+  series-short:     FOSO
   order:            6
   genre:            Gaming & Entertainment
 
