@@ -1,5 +1,28 @@
+<div class="background"></div>
 <h2 class="sr">{{- page.list_title | default: "Featured Posts" -}}</h2>
+{%- for post in site.posts limit:1 -%}
+{%- include component/capture-day-posted.html -%}
 
+{%- if post.thumbnail == "#" -%}
+<div class="card card--sidebar card--link-only">
+  {%- else -%}
+  <div class="card card--sidebar">
+    <div class="card__role">Most Recent</div>
+    {%- endif -%}
+    {%- unless post.thumbnail == "#" -%}
+    {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
+    <img loading="lazy" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+    {%- endunless -%}
+    <div class="card__content">
+      <h3 class="card__content-heading">{{post.meta.series}}:&nbsp;{{- post.title | escape -}}</h3>
+    </div>
+    {%- if post.link -%}
+    <a class="card__overlay" href="{{- post.link | relative_url -}}" title="{{- post.link-text | escape -}}"></a>
+    {%- else -%}
+    <a class="card__overlay" href="{{- post.url | relative_url -}}" title="Go to the post '{{- post.title | escape -}}'"></a>
+    {%- endif -%}
+  </div>
+  {%- endfor -%}
 
 {% for post in site.featured %}
   {%- if post.thumbnail == "#" -%}
