@@ -124,20 +124,55 @@
     &:hover
       background-color: #16FF42
 
-.footer
-  font-size: $font-size*0.75 !important
-  line-height: $line-height*0.75
-  &__wrapper
-    margin: auto
-    max-width: $site-width
-  cursor: default
-  .legal-links
-    flex-wrap: wrap
-    display: flex
-    width: 100%
-    justify-content: space-between
-    margin-bottom: $s/2
-    a
-      color: black
-      padding: 0 $s/2
+//TODO: Logo transparency
+$theme: #FBFBFB
+$theme-secondary: white
 
+
+.header, .footer
+  background-color: $theme
+
+.share, .card__role, .card__content, .card__image, .card--link-only
+  background-color: $theme-secondary
+
+.card__role
+  text-transform: uppercase
+  text-align: center
+  padding: $s/2
+  line-height: $font-size*0.75
+  width: 100%
+.card--sidebar:not(.card--link-only)
+  padding: $s/4
+  .card__content
+    padding-top: $s/2
+  .card__image
+    margin-bottom: 0 !important
+.card--link-only
+
+
+.header
+  margin-top: 0
+  padding-top: $s
+  a
+    border: none !important
+.footer
+  margin-bottom: 0
+  padding-bottom: $s
+
+.sidebar
+  position: relative
+
+.sidebar .background
+  margin: -$s
+  position: absolute
+  display: grid
+  height: 100%
+  width: 100%
+
+.sidebar .background::before
+  content: ""
+  background-color: $theme
+  position: absolute
+  height: 100%
+  width: 200vw
+  z-index: -1

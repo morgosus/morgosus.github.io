@@ -2,11 +2,26 @@
 .footer
   margin-bottom: $s
   padding-top: $s
-
+  font-size: $font-size*0.75
+  line-height: $font-size*0.75
+  &__wrapper
+    margin: auto
+    max-width: $site-width
+  .footer__copyright
+    margin-bottom: $s
+  .legal-links
+    text-align: left
+  .legal-link
+    display: block
+    margin-bottom: $s/2
+    border-left: $s/4 solid $border-color
+    padding-left: $s/2
+    max-width: 300px
+    &:hover
+      border-color: black
 /*--- Coloring -------------------------*/
 .footer
-  text-align: center
-  text-transform: uppercase
+  cursor: default
   border-top: 2px solid $border-color
   a
     text-decoration: none
