@@ -197,6 +197,7 @@ $theme-secondary: white
   max-width: 49%
   width: 100%
   padding: $s/4
+  position: relative
   *
     text-decoration: none
     color: black
@@ -228,3 +229,12 @@ $theme-secondary: white
     object-fit: cover
     aspect-ratio: 3 / 2
     background-color: $theme-secondary
+
+.guest
+  color: transparent
+  position: absolute
+  background-image: url("/assets/ui/guest.png")
+  width: 128px
+  height: 92px
+  top: -$s
+  right: -$s
