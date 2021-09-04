@@ -1,37 +1,23 @@
 // defaults
 $site-width: 1024px
-
 $font-size: 18px
 $line-height: 32px
-
 $primary-font: sans-serif
 $secondary-font: -webkit-pictograph, sans-serif
 $code-font: monospace
-
 $background-color: white
 $color: black
 $border-color: #EEEEEE
-
 $border: 1px solid $border-color
 $box-shadow: 0px 0px 5px $border-color
-
-
-// units
 $golden-ratio: 1.61803398875
-
 $f: 100% //100% for fraction calculations ($f/3 = 33.333333333%)
 $s: $golden-ratio*10px //standard distance
-
-
 $g: #16FF42 //green
 $gb: 1px solid $g //green border - for testing
-//a nice way to use this is & > * outline: $gb
-
-// mixins
 @mixin stretch //full width and height
   width: $f
   height: $f
-
 .sr
   clip: rect(0 0 0 0)
   clip-path: inset(50%)
