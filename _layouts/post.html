@@ -13,6 +13,8 @@ layout: default
   {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
 
   <figure class="post__thumbnail-wrapper">
+    {% if post.meta.author != 'morgosus' %}<div class="guest">Guest</div>{% endif %}
+
     <img loading="lazy" itemprop="thumbnailUrl" class="post__thumbnail" src="{{- thumbnail.source -}}" alt="{{- thumbnail.caption -}}"/>
     <figcaption class="post__thumbnail-caption">{{- thumbnail.caption -}}</figcaption>
   </figure>
@@ -57,7 +59,6 @@ layout: default
 
   {%if author.content%}
   <section class="note author">
-    {% if author.alternateName != 'morgosus' %}<div class="guest">Guest</div>{% endif %}
     {% if author.thumbnail.source %}
       <img class="thumbnail" src="{{author.thumbnail.source}}" alt="Profile picture of {{author.name}}" />
     {% endif %}

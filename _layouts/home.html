@@ -38,7 +38,6 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
         <div class="posts__card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 
-          {% if post.meta.author != 'morgosus' %}<a class="link" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"><div class="guest">Guest</div></a>{% endif %}
         {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
 
         {%- unless thumbnail.source == "#" -%}
