@@ -176,3 +176,84 @@ $theme-secondary: white
   height: 100%
   width: 200vw
   z-index: -1
+
+
+.mb
+  margin-bottom: $s
+.s /*stretch*/
+  width: 100%
+.f
+  display: flex
+.b
+  border: 2px solid $border-color
+
+.pin
+  top: -$s/1.5
+  right: -$s/1.5
+  position: absolute
+  transition: all 0.20225s linear
+  background-image: url("/assets/ui/pin-stuck.png")
+  width: 32px
+  height: 32px
+  &.left
+    transform: rotateY(-180deg)
+    left: -$s/1.5
+    right: initial
+
+.card:hover .pin
+  transition: all 0.20225s ease-out
+  transform: rotate(-20deg)
+  right: -$s*1.5
+  top: -$s*1.5
+  background-image: url("/assets/ui/pin.png")
+  &.left
+    transform: rotateY(-180deg) rotate(-20deg)
+    left: -$s*1.5
+    right: initial
+
+
+
+.true-cards
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.true
+  background-color: $theme
+  border: 2px solid $border-color
+  margin-bottom: $s
+  max-width: 49%
+  width: 100%
+  padding: $s/4
+  *
+    text-decoration: none
+    color: black
+  &:hover
+    box-shadow: 0px 0px 5px #000
+  &--large
+    max-width: 100%
+    width: 100%
+  .caption
+    text-align: center
+    background-color: $theme-secondary
+    padding: $s/4
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: start
+    line-height: $font-size
+    .published
+    .series, .published
+      font-size: 0.75*$font-size
+      padding: $s/4
+    .title
+      padding: $s/4
+      width: 100%
+  .image
+    display: block
+    width: 100%
+    height: auto
+    object-fit: cover
+    aspect-ratio: 3 / 2
+    background-color: $theme-secondary
+  .link
