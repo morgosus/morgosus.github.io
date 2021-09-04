@@ -7,6 +7,8 @@
 <div class="card card--sidebar card--link-only">
   {%- else -%}
   <div class="card card--sidebar">
+    <a class="card__overlay" href="{{- post.url | relative_url -}}" title="Go to the post '{{- post.title | escape -}}'"><div class="pin"></div></a>
+    <a class="card__overlay" href="{{- post.url | relative_url -}}" title="Go to the post '{{- post.title | escape -}}'"><div class="pin left"></div></a>
     <div class="card__role">Most Recent</div>
     {%- endif -%}
     {%- unless post.thumbnail == "#" -%}
