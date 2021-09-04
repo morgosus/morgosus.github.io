@@ -57,6 +57,7 @@ layout: default
 
   {%if author.content%}
   <section class="note author">
+    {% if author.alternateName != 'morgosus' %}<div class="guest">Guest</div>{% endif %}
     {% if author.thumbnail.source %}
       <img class="thumbnail" src="{{author.thumbnail.source}}" alt="Profile picture of {{author.name}}" />
     {% endif %}
