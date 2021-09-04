@@ -18,8 +18,7 @@ categories: gaming
 
   {%- if page.categories contains "all" or post.categories contains page.categories -%}
   <figure class="true{% if n == 0 %} true--large{% endif %}">
-    {% if post.meta.author != 'morgosus' %}
-    <a class="link" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"><div class="guest">Guest</div></a>{% endif %}
+    {% if post.meta.author != 'morgosus' %}<a class="link" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"><div class="guest">Guest</div></a>{% endif %}
 
     {% assign n = n | plus:1 %}
     {%- capture day_posted -%}{{ post.date | date: "%d" }}{%- endcapture -%}
