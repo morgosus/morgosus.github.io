@@ -40,20 +40,8 @@ layout: default
     {{- content -}}
   </div>
 
-  <div class="post__series-data">
-    {%- if page.previous and page.previous.categories == page.categories -%}
-    <figure class="post__previous">
-      <figcaption class="caption">〔 Previous: {{ page.previous.title }} 〕</figcaption>
-      <a rel="prev" class="card__overlay" href="{{- page.previous.id -}}" title="Go to the previous article in the series"></a>
-    </figure>
-    {%- endif -%}
-    {%- if page.next and page.next.categories == page.categories -%}
-    <figure class="post__next">
-      <figcaption class="caption">〔 Next: {{ page.next.title }} 〕</figcaption>
-      <a rel="next" class="card__overlay" href="{{- page.next.id -}}" title="Go to the next article in the series"></a>
-    </figure>
-    {%- endif -%}
-  </div>
+
+  {%- include component/related.html -%}
 
   <div itemprop="abstract" aria-hidden="true" hidden>{{- page.excerpt -}}</div>
 

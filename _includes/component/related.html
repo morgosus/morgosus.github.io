@@ -1,0 +1,21 @@
+<div class="post__series-data" itemscope itemtype="http://schema.org/SiteNavigationElement/Pagination">
+    {% assign cat = page.categories | last %}
+    {% assign cats = site.categories[cat] %}
+    {% assign nextOrder = page.meta.order | plus: 1 %}
+    {% assign previousOrder = page.meta.order | minus: 1 %}
+
+    {% for related in cats %}
+    {% if related.meta.order == previousOrder %}
+    <figure class="post__previous">
+        <figcaption class="caption">«〔 {{ related.title }} 〕</figcaption>
+        <a rel="prev" class="card__overlay" href="{{- related.id -}}" title="Go to the previous article in the series" itemprop="relatedLink/pagination"></a>
+    </figure>
+    {% endif %}
+    {% if related.meta.order == nextOrder %}
+    <figure class="post__next">
+        <figcaption class="caption">〔 {{ related.title }} 〕»</figcaption>
+        <a rel="next" class="card__overlay" href="{{- related.id -}}" title="Go to the next article in the series" itemprop="relatedLink/pagination"></a>
+    </figure>
+    {% endif %}
+    {% endfor %}
+</div>
