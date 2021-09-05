@@ -130,6 +130,9 @@ $theme-secondary: white
 .card--sidebar:not(.card--link-only)
   padding: $s/4
   .card__content
+    &-heading
+      font-weight: normal !important
+      padding: 0 $s/4
     padding-top: $s/2
   .card__image
     margin-bottom: 0 !important
@@ -242,3 +245,9 @@ $theme-secondary: white
 
 .post__thumbnail-wrapper .guest
   bottom: $s*2.5
+
+.homepage
+  .card__image
+    padding: $s/4
+    background-color: $theme
+    outline: 2px solid $border-color !important
