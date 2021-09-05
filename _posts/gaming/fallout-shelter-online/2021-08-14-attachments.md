@@ -3,7 +3,7 @@ title:              "Attachments and Remaking"
 date:               2021-08-14 1:15:13 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout android
+tags:               gaming fallout android online
 
 thumbnail:          foso-5
 comment-section:    14
