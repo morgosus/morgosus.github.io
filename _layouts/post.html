@@ -13,7 +13,7 @@ layout: default
   {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
 
   <figure class="post__thumbnail-wrapper">
-    {% if post.meta.author != 'morgosus' %}<div class="guest">Guest</div>{% endif %}
+    {% if page.meta.author != 'morgosus' %}<div class="guest">{{Guest}}</div>{% endif %}
 
     <img loading="lazy" itemprop="thumbnailUrl" class="post__thumbnail" src="{{- thumbnail.source -}}" alt="{{- thumbnail.caption -}}"/>
     <figcaption class="post__thumbnail-caption">{{- thumbnail.caption -}}</figcaption>
