@@ -67,4 +67,4 @@ There's not much else to say about the Mysterious Treasure, other than that it s
 
 Enjoy the upgrading! And remember, you can reset characters without a rare memory chip (50 Nuka Cola Quantum once a week or 500 anytime) only until they reach level 20 (perks, tools, and attachments don't count, the only level does). So that means if you're planning to grab your resources back, don't go higher.
 
-[^1]: http://www.toms.click/gaming/foso/2021/08/14/fallout-shelter-attachments.html
+[^1]: Toms, M. (2021, August 14). *Attachments and Remaking*. Toms.Click. https://www.toms.click/gaming/fallout-shelter-online/2021/08/13/attachments.html

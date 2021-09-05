@@ -67,4 +67,4 @@ SR and SSR attachments that have been sufficiently remade gain additional bonuse
 
 That's everything about dweller attachments in general, I think.
 
-[^1]: https://www.toms.click/gaming/foso/2021/08/13/fallout-shelter-dwellers.html
+[^1]: Toms, M. (2021a, August 13). *Dwellers*. Toms.Click. https://www.toms.click/gaming/fallout-shelter-online/2021/08/13/dwellers.html

@@ -60,4 +60,4 @@ else
     const font = 'Monofonto_16';
 ```
 
-[^1]: https://www.w3.org/International/questions/qa-i18n
+[^1]: Ishida, R., W3C, Miller, S. K., & Boeing. (2005, December 5). Localization vs. Internationalization. World Wide Web Consortium (W3C). https://www.w3.org/International/questions/qa-i18n

@@ -151,6 +151,6 @@ function updateDate(today, previousDayNumber) {
 
 And there we go. Our app has a clock and a date, as well as the day of the week.
 
-[^1]: https://dev.fitbit.com/build/reference/device-api/clock/#interface-clock
-[^2]: https://github.com/gaperton/ionic-views/blob/master/docs/optimization-guidelines.md
-[^3]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+[^1]: Fitbit LLC. (n.d.). *Clock API*. Fitbit Developer. Retrieved August 21, 2021, from https://dev.fitbit.com/build/reference/device-api/clock/#interface-clock
+[^2]: Balin, V. (2018, June 11). *FitbitOS JavaScript Optimization Guidelines*. GitHub. https://github.com/gaperton/ionic-views/blob/master/docs/optimization-guidelines.md
+[^3]: Mozilla and individual contributors. (2021, July 31). *Date*. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date

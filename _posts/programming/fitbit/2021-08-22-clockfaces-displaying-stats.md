@@ -206,5 +206,5 @@ You should now know how to
 - Turn on sensors when the display wakes up
 - Turn off sensors when the display shuts down
 
-[^1]: https://www.gateworld.net/atlantis/s1/rising-part-1/transcript/
-[^2]: https://dev.fitbit.com/build/reference/device-api/user-activity/#interface-activityhistory
+[^1]: GateWorld. (2021, June 12). Rising, Part 1 Transcript. https://www.gateworld.net/atlantis/s1/rising-part-1/transcript/
+[^2]: Fitbit LLC. (n.d.-b). User-activity API. Fitbit Development. Retrieved August 22, 2021, from https://dev.fitbit.com/build/reference/device-api/user-activity/#interface-activityhistory

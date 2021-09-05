@@ -87,6 +87,6 @@ Does your team highly outperform the boss? I don't think it does!
 
 The perk of killing the boss is an immediate influx of some **sentinel's crystals** (a few hundred) and a piece of the rare **Praetor attachment** set. If you can't kill him, don't worry - every 25% of his health you knock down nets you 90 of those shiny crystals!
 
-[^1]: https://doom.fandom.com/wiki/Doom_Slayer
-[^2]: https://doom.fandom.com/wiki/Khan_Maykr
-[^3]: https://doom.fandom.com/wiki/Marauder
+[^1]: *Doom Slayer*. (n.d.). Doom Wiki. Retrieved August 27, 2021, from https://doom.fandom.com/wiki/Doom_Slayer
+[^2]: *Khan Maykr*. (n.d.). Doom Wiki. Retrieved August 27, 2021, from https://doom.fandom.com/wiki/Khan_Maykr
+[^3]: *Marauder*. (n.d.). Doom Wiki. Retrieved August 27, 2021, from https://doom.fandom.com/wiki/Marauder

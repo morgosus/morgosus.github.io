@@ -33,5 +33,5 @@ That's one of the most crucial differences between Fallout Shelter and Fallout S
 
 The second would be that you can spend an hour on the game and still have things to do, whether it be PvP, PvE, or just doing dailies and events.
 
-[^1]: https://play.google.com/store/apps/details?id=com.gaea.sdg.shelter
-[^2]: https://www.facebook.com/FalloutShelterOnlineAsia/
+[^1]: Google Commerce Ltd. (n.d.). *Fallout Shelter Online*. Google Play. Retrieved August 13, 2021, from https://play.google.com/store/apps/details?id=com.gaea.sdg.shelter
+[^2]: Gaea Mobile. (2021, August 2). *Fallout Shelter Online Asia*. Facebook. https://www.facebook.com/FalloutShelterOnlineAsia/
