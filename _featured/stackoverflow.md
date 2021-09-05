@@ -1,5 +1,5 @@
 ---
-title:          〔 Stack Overflow 〕
+title:          Stack Overflow
 thumbnail:      "#"
 link:
   url:          https://stackoverflow.com/users/8359316/morgosus

@@ -1,5 +1,5 @@
 ---
-title:          《 Resume 》
+title:          Resume
 thumbnail:      "#"
 link:
   url:          https://martin.toms.click/

@@ -1,5 +1,5 @@
 ---
-title:        〔 GitHub 〕
+title:        GitHub
 thumbnail:    "#"
 link:
   url:        https://github.com/morgosus

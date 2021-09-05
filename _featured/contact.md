@@ -1,5 +1,5 @@
 ---
-title:        〔 Contact 〕
+title:        Contact
 thumbnail:    "#"
 link:
   url:        "mailto:contact@toms.click"
