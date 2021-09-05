@@ -3,7 +3,7 @@ title:              "Capital Wasteland"
 date:               2021-08-26 11:50:47 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout-shelter-online android
+tags:               gaming fallout android
 
 thumbnail:          foso-8
 comment-section:    31
