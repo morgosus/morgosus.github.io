@@ -16,7 +16,7 @@
     <img loading="lazy" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
     {%- endunless -%}
     <div class="card__content">
-      <h3 class="card__content-heading">{{post.meta.series}}:&nbsp;{{- post.title | escape -}}</h3>
+      <h3 class="card__content-heading">{{post.meta.series-short}}:&nbsp;{{- post.title | escape -}}</h3>
     </div>
     {%- if post.link -%}
     <a class="card__overlay" href="{{- post.link | relative_url -}}" title="{{- post.link-text | escape -}}"></a>
