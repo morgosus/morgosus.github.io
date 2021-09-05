@@ -5,3 +5,19 @@
   border-left: 2px solid $border-color
   padding: $s 0 $s $s
   margin-left: $s
+  position: relative
+
+  .background
+    margin: -$s
+    position: absolute
+    display: grid
+    height: 100%
+    width: 100%
+
+  .background::before
+    content: ""
+    background-color: $theme
+    position: absolute
+    height: 100%
+    width: 200vw
+    z-index: -1

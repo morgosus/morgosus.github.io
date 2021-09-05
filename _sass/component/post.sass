@@ -36,6 +36,7 @@
   &__thumbnail
     left: 0
     margin-bottom: $s
+    border: $s/4 solid $theme
     outline: 2px solid $border-color !important
   &__header
   &__title
@@ -190,10 +191,12 @@
       text-align: right
       margin-left: auto
       justify-self: flex-end
+      order: 2
     .post__previous
       text-align: left
       margin-right: auto
       justify-self: flex-start
+      order: 1
 
   &__about, &__meta-author
     &:hover
@@ -252,3 +255,37 @@
 
 .highlighter-rouge
   font-family: $code-font !important
+
+.author
+  padding: $s !important
+  display: flex
+  margin-bottom: $s
+  align-items: center
+  position: relative
+  figcaption
+    display: none
+  .thumbnail
+    box-shadow: 0px 0px 2px black !important
+    border-radius: 100%
+    object-fit: cover
+    width: 128px
+    height: 128px
+    margin-right: $s
+  .content
+    flex-grow: 1
+    .name
+      margin: 0 !important
+      float: left
+      text-align: center
+      clear: none !important
+    .bio
+      text-align: justify
+      hyphens: auto
+
+
+.post h2, h3, h4, h5, h6
+  clear: both
+
+
+
+

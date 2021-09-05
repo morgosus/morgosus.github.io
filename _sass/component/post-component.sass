@@ -1,0 +1,37 @@
+.image-float-left, .image-float-right
+  max-width: 25%
+  float: left
+  margin-right: $s
+  margin-bottom: $s
+  clear: right
+
+.image-float-right
+  max-width: 25%
+  float: left
+  margin-right: $s
+  margin-bottom: $s
+  clear: left
+
+.comparison
+  background-color: $theme
+  border: $s/4 solid $theme
+  outline: 2px solid $border-color
+  display: flex
+  img
+    max-width: 50%
+  img:first-of-type
+    border-right: $s/8 solid $theme
+  img:last-of-type
+    border-left: $s/8 solid $theme
+
+@media screen and (max-width: 480px)
+  .comparison
+    flex-direction: column
+    img
+      max-width: 100%
+    img:first-of-type
+      border-bottom: $s/4 solid $theme
+      border-right: none
+    img:last-of-type
+      border-top: $s/4 solid $theme
+      border-left: none

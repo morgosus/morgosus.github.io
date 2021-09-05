@@ -62,3 +62,121 @@
   align-items: center
 .card--sidebar
   text-align: center
+
+
+
+.pin
+  top: -$s/1.5
+  right: -$s/1.5
+  position: absolute
+  transition: all 0.20225s linear
+  background-image: url("/assets/ui/pin-stuck.png")
+  width: 32px
+  height: 32px
+  &.left
+    transform: rotateY(-180deg)
+    left: -$s/1.5
+    right: initial
+
+.card:hover .pin
+  transition: all 0.20225s ease-out
+  transform: rotate(-20deg)
+  right: -$s*1.5
+  top: -$s*1.5
+  background-image: url("/assets/ui/pin.png")
+.card:hover .pin.left
+  transform: rotateY(-180deg) rotate(-20deg)
+  left: -$s*1.5
+  right: initial
+
+
+
+
+.true-cards
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.true
+  background-color: $theme
+  border: 2px solid $border-color
+  margin-bottom: $s
+  max-width: 49%
+  width: 100%
+  padding: $s/4
+  position: relative
+  *
+    text-decoration: none
+    color: black
+  &:hover
+    box-shadow: 0px 0px 5px #000
+  &--large
+    max-width: 100%
+    width: 100%
+  .caption
+    text-align: center
+    background-color: $theme-secondary
+    padding: $s/4
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: start
+    line-height: $font-size
+    .series, .published
+      font-size: 0.75*$font-size
+      padding: $s/4
+    .title
+      padding: $s/4
+      width: 100%
+  .image
+    max-height: 50vh
+    display: block
+    width: 100%
+    height: auto
+    object-fit: cover
+    aspect-ratio: 3 / 2
+    background-color: $theme-secondary
+
+.guest
+  color: transparent
+  position: absolute
+  background-image: url("/assets/ui/guest.png")
+  width: 128px
+  height: 92px
+  bottom: $line-height*2+$s
+  right: $s
+
+.post__thumbnail-wrapper .guest
+  bottom: $s*2.5
+
+
+
+.homepage
+  .card__image
+    background-color: $theme-secondary
+    border: $s/4 solid $theme
+    outline: 2px solid $border-color !important
+
+
+.share, .card__role, .card__content, .card__image, .card--link-only
+  background-color: $theme-secondary
+
+.card__role
+  text-transform: uppercase
+  text-align: center
+  padding: $s/2
+  line-height: $font-size*0.75
+  width: 100%
+.card--sidebar:not(.card--link-only)
+  padding: $s/4
+  .card__content
+    &-heading
+      font-weight: normal !important
+      padding: 0 $s/4
+    padding-top: $s/2
+  .card__image
+    margin-bottom: 0 !important
+
+.card__content
+  &-heading
+    font-weight: normal !important
