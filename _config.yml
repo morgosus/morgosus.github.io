@@ -20,6 +20,8 @@
 
 port: 4002
 
+permalink: /:categories/:title
+
 title: Toms.click
 
 author:
