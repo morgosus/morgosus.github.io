@@ -65,6 +65,9 @@ Once you reach the boss, more about him later, you will no longer gain Sentinel'
 
 I also mentioned an advanced hell lunchbox; it's just a box with a single SSR dweller poster with a 25% chance of containing a poster for the event dwellers. Of course, the **trinket token** is what you're after in this one, but an SSR poster is a nice freebie.
 
+This mission is only repeatable up to level 50
+{: .note}
+
 ## The Icon of Sin: Eternal Destruction [Final Battle]
 Now, the golden peak of the event. The boss fight. 90 25%
 ![He's casting a spell... time to die](/assets/thm/gaming/foso/terminator-of-sins-boss.jpg?v=1.0.0)
@@ -86,6 +89,9 @@ Does your team highly outperform the boss? I don't think it does!
 {: .note}
 
 The perk of killing the boss is an immediate influx of some **sentinel's crystals** (a few hundred) and a piece of the rare **Praetor attachment** set. If you can't kill him, don't worry - every 25% of his health you knock down nets you 90 of those shiny crystals!
+
+Rewards past 10 000 points are not worth it, unless you've gone through the entire *Endless Wrath*.
+{: .note}
 
 [^1]: *Doom Slayer*. (n.d.). Doom Wiki. Retrieved August 27, 2021, from https://doom.fandom.com/wiki/Doom_Slayer
 [^2]: *Khan Maykr*. (n.d.). Doom Wiki. Retrieved August 27, 2021, from https://doom.fandom.com/wiki/Khan_Maykr
