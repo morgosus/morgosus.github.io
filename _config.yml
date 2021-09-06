@@ -20,8 +20,6 @@
 
 port: 4002
 
-permalink: /:categories/:title
-
 title: Toms.click
 
 author:
@@ -64,6 +62,7 @@ plugins:
 # Own
 show_excerpts: true
 excerpt_length: 240
+permalink: /:categories/:title
 
 sass:
   load_paths:
