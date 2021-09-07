@@ -34,7 +34,7 @@ layout: default
         {%- include component/author.html -%}
       {%- endif -%}
     </div>
-    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="../../../" itemprop="about">{%- if page.meta.series -%}〔 {{- page.meta.series -}} 〕{%- endif -%}</a><span itemprop="name headline">{{- page.title | escape -}}</span></h1>
+    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="../../../" itemprop="about">{%- if page.meta.series -%}{{- page.meta.series -}}{%- endif -%}</a>: <span itemprop="name headline">{{- page.title | escape -}}</span></h1>
   </div>
   <div class="post__content e-content" itemprop="articleBody">
     {{- content -}}
