@@ -10,20 +10,22 @@
     margin-right: $s
     width: 300px
     max-width: 100%
-    max-height: 200px
+    align-self: center /* stretch */
     object-fit: cover
+    max-height: 200px
     aspect-ratio: 3 / 2
   &__content
     display: flex
     flex-direction: column
     flex: 1
     &-heading
-      line-height: 1em
-      margin-bottom: $s
+      line-height: $line-height
+      margin-bottom: $s/4
+      text-align: left
     &-meta
-      line-height: 1em
-      margin-bottom: $s/2
-      font-size: $font-size*16/18
+      margin-bottom: $s/4
+      font-size: $font-size*0.75
+      line-height: $font-size*0.75
     &-excerpt
       font-size: $font-size*16/18
   &__overlay
@@ -35,26 +37,24 @@
     cursor: pointer
 
 .card--sidebar
-  outline: 2px solid $border-color
   flex-wrap: wrap
   margin-bottom: $s
+  padding: 0 !important
   .card__image
     margin: 0 !important
     height: 10*$s !important
     margin-bottom: $s/2 !important
   .card__content-heading
-    margin-bottom: $s/2 !important
-
-  &:hover
-    box-shadow: 0px 0px 5px #000
-
+    margin-bottom: 0 !important
+    text-align: center
+    font-size: $font-size*0.75
+    line-height: $line-height*0.75
 .card--link-only
-  outline: 2px solid $border-color
   padding: $s/2 $s
+  line-height: $line-height
   .card__content-heading
     margin: 0 !important
   &:hover
-    box-shadow: 0px 0px 5px #000
 
 /*--- Coloring -------------------------*/
 
@@ -98,24 +98,18 @@
   justify-content: space-between
 
 .true
-  background-color: $theme
-  border: 2px solid $border-color
   margin-bottom: $s
   max-width: 49%
   width: 100%
-  padding: $s/4
   position: relative
   *
     text-decoration: none
     color: black
-  &:hover
-    box-shadow: 0px 0px 5px #000
   &--large
     max-width: 100%
     width: 100%
   .caption
     text-align: center
-    background-color: $theme-secondary
     padding: $s/4
     display: flex
     flex-wrap: wrap
@@ -135,7 +129,6 @@
     height: auto
     object-fit: cover
     aspect-ratio: 3 / 2
-    background-color: $theme-secondary
 
 .guest
   color: transparent
@@ -149,24 +142,16 @@
 .post__thumbnail-wrapper .guest
   bottom: $s*2.5
 
-
-
-.homepage
-  .card__image
-    background-color: $theme-secondary
-    border: $s/4 solid $theme
-    outline: 2px solid $border-color !important
-
-
 .share, .card__role, .card__content, .card__image, .card--link-only
   background-color: $theme-secondary
 
 .card__role
   text-transform: uppercase
   text-align: center
-  padding: $s/2
-  line-height: $font-size*0.75
+  padding: $s/4
   width: 100%
+  font-size: $font-size*0.75
+  line-height: $line-height*0.75
 .card--sidebar:not(.card--link-only)
   padding: $s/4
   .card__content
