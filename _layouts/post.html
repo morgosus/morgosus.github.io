@@ -41,7 +41,6 @@ layout: default
   </div>
 
 
-  {%- include component/related.html -%}
 
   <div itemprop="abstract" aria-hidden="true" hidden>{{- page.excerpt -}}</div>
 
@@ -64,6 +63,7 @@ layout: default
   {%endif%}
   {%- include component/random-build-number.html -%}
 
+  {%- include component/related.html -%}
 </article>
 {%- if page.comment-section -%}
 <h2 class="comments-section-title">Comments Section</h2>
