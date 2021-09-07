@@ -14,14 +14,17 @@
 
 .comparison
   background-color: $theme
-  border: $s/4 solid $theme
-  outline: 2px solid $border-color
   display: flex
-  img
+  figure
     max-width: 50%
-  img:first-of-type
+  figure:first-of-type
     border-right: $s/8 solid $theme
-  img:last-of-type
+    figcaption
+      left: 0
+      right: initial
+      border-left: none
+      border-right: $s/4 solid $border-color
+  figure:last-of-type
     border-left: $s/8 solid $theme
 
 .note
@@ -35,11 +38,11 @@
 @media screen and (max-width: 480px)
   .comparison
     flex-direction: column
-    img
+    figure
       max-width: 100%
-    img:first-of-type
+    figure:first-of-type
       border-bottom: $s/4 solid $theme
       border-right: none
-    img:last-of-type
+    figure:last-of-type
       border-top: $s/4 solid $theme
       border-left: none

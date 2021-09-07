@@ -35,7 +35,6 @@
     color: inherit
   &__thumbnail
     left: 0
-    margin-bottom: $s
     border: $s/4 solid $theme
     outline: 2px solid $border-color !important
   &__header
@@ -223,6 +222,8 @@
   outline: none
   width: 100%
   &-wrapper
+    outline: 2px solid $border-color
+    border: $s/4 solid $theme
     position: relative
   &-caption
     animation: rollOut 1s ease-out forwards
@@ -238,6 +239,8 @@
     line-height: $font-size
     text-shadow: 0px 0px 5px #000
     cursor: default
+    text-align: left
+    max-width: 90%
 .post__image-caption
   top: initial
   left: initial
@@ -276,9 +279,15 @@
       text-align: justify
       hyphens: auto
 
+.post h1
 
 .post h2, h3, h4, h5, h6
   clear: both
+  font-weight: bold
+.post h3, h4, h5, h6
+  font-weight: normal
+.post h4, h5, h6
+  font-family: $secondary-font
 
 
 
