@@ -15,6 +15,8 @@ meta:
   order:            8
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/2021/08/26/capital-wasteland
+
 layout: post
 ---
 The Capital wasteland, also known as the place where Fallout 3 took place, is an entire second unlockable map. Once you finish the Commonwealth storyline and complete the 'Finale' chapter (upgrade equipment to level 65) of the main quests, you will gain access to it. There are some critical differences in the incidents there... I'd say that The Capital Wasteland is a sequel to the mysterious treasure, partially. Make sure to read up my advice list for [that](https://www.toms.click/gaming/fallout-shelter-online/2021/08/15/mysterious-treasure.html), as they still apply here, if you don't have 3 or 4 dwellers who are strong enough to take on the incidents by themselves.

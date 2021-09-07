@@ -15,6 +15,8 @@ meta:
   order:            6
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/2021/08/15/mysterious-treasure
+
 layout: post
 ---
 You have reached level 33, and there are two short term choices in front of you...

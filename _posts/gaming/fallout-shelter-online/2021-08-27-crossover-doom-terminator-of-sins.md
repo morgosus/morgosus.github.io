@@ -15,6 +15,8 @@ meta:
   order:            9
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/2021/08/27/crossover-doom-terminator-of-sins
+
 layout: post
 ---
 

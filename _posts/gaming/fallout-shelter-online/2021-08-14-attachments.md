@@ -15,6 +15,8 @@ meta:
   order:            5
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/2021/08/14/attachments
+
 layout: post
 ---
 I claimed that attachments are pieces of armor that you can slap onto your dwellers. I was right, but let's go more in-depth this time.

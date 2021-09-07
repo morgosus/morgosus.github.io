@@ -15,6 +15,8 @@ meta:
   order:            1
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/2021/08/13/introduction
+
 layout: post
 ---
 Many of us are familiar with the legendary Android and PC game [Fallout Shelter](https://bethesda.net/en/game/falloutshelter). There was a time when all of my high school classmates had that tiny vault and spent all of their breaks improving it. However, not all of us may be familiar with the even more wonderful Android game [Fallout Shelter Online](http://fosol.gaea.com/en/).
