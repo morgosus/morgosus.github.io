@@ -6,7 +6,7 @@ categories:         gaming fallout-76
 tags:               gaming fallout pc online
 
 thumbnail:          prosnap-deluxe
-comment-section:
+comment-section:    35
 
 meta:
   author:           morgosus

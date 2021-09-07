@@ -6,7 +6,7 @@ categories:         gaming fallout-76
 tags:               gaming fallout pc online
 
 thumbnail:          fo76-1
-comment-section:
+comment-section:    36
 
 meta:
   author:           morgosus
