@@ -7,13 +7,13 @@
     {% for related in cats %}
     {% if related.meta.order == previousOrder %}
     <figure class="post__previous">
-        <figcaption class="caption">«〔 {{ related.title }} 〕</figcaption>
+        <figcaption class="caption">« Previous</figcaption>
         <a rel="prev" class="card__overlay" href="{{- related.id -}}" title="Go to the previous article in the series" itemprop="relatedLink/pagination"></a>
     </figure>
     {% endif %}
     {% if related.meta.order == nextOrder %}
     <figure class="post__next">
-        <figcaption class="caption">〔 {{ related.title }} 〕»</figcaption>
+        <figcaption class="caption">Next »</figcaption>
         <a rel="next" class="card__overlay" href="{{- related.id -}}" title="Go to the next article in the series" itemprop="relatedLink/pagination"></a>
     </figure>
     {% endif %}
