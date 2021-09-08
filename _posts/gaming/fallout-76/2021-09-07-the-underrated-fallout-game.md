@@ -3,7 +3,7 @@ title:              The Underrated Fallout 76 Game
 date:               2021-09-07 7:29:05 +0200
 
 categories:         gaming fallout-76
-tags:               gaming fallout pc online
+tags:               gaming fallout pc online open-world rpg
 
 thumbnail:          fo76-1
 comment-section:    36

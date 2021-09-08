@@ -3,7 +3,7 @@ title:              "\"SnapMatic!\" the ProSnap Deluxe Camera"
 date:               2021-09-07 7:54:42 +0200
 
 categories:         gaming fallout-76
-tags:               gaming fallout pc online
+tags:               gaming fallout pc online open-world rpg
 
 thumbnail:          prosnap-deluxe
 comment-section:    35

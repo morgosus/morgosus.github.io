@@ -3,7 +3,7 @@ title:              "Base and Resources"
 date:               2021-08-13 11:24:30 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout android online
+tags:               gaming fallout android online gacha
 
 thumbnail:          foso-2
 comment-section:    11

@@ -3,7 +3,7 @@ title:              "Introduction"
 date:               2021-08-13 10:08:32 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout android online
+tags:               gaming fallout android online gacha
 
 thumbnail:          foso-1
 comment-section:    10

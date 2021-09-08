@@ -3,7 +3,7 @@ title:              "Crossover: DOOM! Terminator of Sins"
 date:               2021-08-27 15:33:44 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout android online doom
+tags:               gaming fallout android online doom gacha
 
 thumbnail:          terminator-of-sins
 comment-section:    32
