@@ -28,7 +28,7 @@ layout: default
         <span aria-hidden="true" itemprop="accessMode">{{- page.meta.accessMode | default: "visual" -}}</span>
         <span aria-hidden="true" itemprop="accessModeSufficient">{{- page.meta.accessModeSufficient | default: "textual" -}}</span>
 
-        <span aria-hidden="true" itemprop="wordCount">{{- wordCount -}}</span>&nbsp;•&nbsp;<span itemprop="timeRequired">{{- timeRequired -}}-min</span>&nbsp;
+        <span aria-hidden="true" itemprop="wordCount">{{- wordCount -}}</span><span itemprop="timeRequired" aria-hidden="true">{{- timeRequired -}}-min</span>&nbsp;
 
       {%- if page.meta.author -%}
         {%- include component/author.html -%}
