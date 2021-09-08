@@ -7,13 +7,27 @@
   &__thumbnail
     width: 100%
   &__header
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
   &__title
-    float: left
+    font-family: $secondary-font !important
+    text-align: left
+    font-size: $font-size
+    font-weight: bold
+    margin: 0 !important
   &__meta
-    float: right
-    margin-top: $s
+    font-family: $secondary-font !important
+    text-align: right
+    color: gray
+    font-style: italic
     &-published
+      float: right
     &-author
+      float: right
+      &-thumbnail
+        margin-left: $s !important
   &__content
     clear: both
     & > *
@@ -25,7 +39,7 @@
   h1, h2, h3, h4, h5, h6
     margin: $s*2 0 0 0 !important
   h1:first-of-type
-    margin-top: $s/2-3 !important
+    margin-top: 0 !important
 /*--- Coloring -------------------------*/
 .post
   text-align: justify
