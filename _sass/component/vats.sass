@@ -1,7 +1,7 @@
 .tier--foso
-  display: flex
   align-items: center
   margin-bottom: $s
+  list-style: none
   &--left
   &--right
   figure
@@ -11,6 +11,7 @@
     flex-grow: 1
     margin-right: 1.5*$s+1/4*$s
     transform: rotate(-3deg)
+    float: left
     img
       min-width: 150px
       min-height: 266px
@@ -48,6 +49,7 @@
     figure
       margin-left: 0
       margin-left: 1.5*$s+1/4*$s
+      float: right
       transform: rotate(3deg)
   .recommendation
     margin-top: $s/2
@@ -55,6 +57,12 @@
       font-style: normal
       content: "Set: "
       font-weight: bold
+
+@media screen and (max-width: 480px)
+  .tier--foso
+    figure
+      float: none !important
+      margin: auto !important
 
 .post__title
   font-family: $tertiary-font !important
