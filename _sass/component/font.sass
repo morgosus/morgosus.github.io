@@ -1,10 +1,42 @@
 $font-name: "monofonto"
 $font-path: "/assets/font/monofonto-webfont"
 
+$font-name-b: "LemonMilkshake-dualUpright"
+$font-path-b: "/assets/font/LemonMilkshake-dual-Upright"
+
+$font-name-c: "LemonMilkshake-dual-Regular"
+$font-path-c: "/assets/font/LemonMilkshake-dual-Regular"
+
 @font-face
   font-family: $font-name
   src: url($font-path + '.woff2') format('woff2'), url($font-path + '.woff') format('woff')
   font-weight: normal
   font-style: normal
 
+@font-face
+  font-family: $font-name-b
+  src: url($font-path-b + '.woff2') format('woff2'), url($font-path + '.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: $font-name-c
+  src: url($font-path-c + '.woff2') format('woff2'), url($font-path + '.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+.lemon
+  font-family: $font-name-b !important
+  font-size: $s*2
+  line-height: $s*2
+
+
+
+
+
 $primary-font: $font-name, monofonto
+
+$heading-font: $font-name-b
+
+$tertiary-font: $font-name-b, Impact, $secondary-font
+$tertiary-font-beta: $font-name-c, $font-name-b, Impact, $secondary-font
