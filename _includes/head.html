@@ -18,7 +18,7 @@
 
   {%- feed_meta -%}
 
-  <title itemprop="headline">{{page.title | default: Page}} - {{site.title}}</title>
+  <title itemprop="headline">{{page.title | default: Page}} {% if page.meta.series %}-&nbsp;{{page.meta.series}}&nbsp;{% endif %}- {{site.title}}</title>
   <meta itemprop="" property="og:title" content="{{page.title}} - Toms.click">
   <meta property="twitter:title" content="{{page.title | default: Page}} - Toms.click">
 
