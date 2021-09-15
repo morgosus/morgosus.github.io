@@ -34,14 +34,36 @@
     margin-bottom: $s/2
     &:before
       font-style: normal
-      content: "About: "
+      content: ""
       font-weight: bold
+      background-image: url("/assets/ui/about.png")
+      background-repeat: no-repeat
+      background-size: $font-size
+      background-position: center
+      width: $font-size
+      height: $font-size
+      position: relative
+      top: 2px
+      vertical-align: center
+      display: inline-block
+      margin-right: $s
   .special
     font-style: italic
     &:before
       font-style: normal
-      content: "Special: "
+      content: ""
       font-weight: bold
+      background-image: url("/assets/ui/star.png")
+      background-repeat: no-repeat
+      background-size: $font-size
+      background-position: center
+      width: $font-size
+      height: $font-size
+      position: relative
+      top: 2px
+      vertical-align: center
+      display: inline-block
+      margin-right: $s
   &:nth-of-type(even)
     flex-direction: row-reverse
     .name
@@ -52,11 +74,22 @@
       float: right
       transform: rotate(3deg)
   .recommendation
-    margin-top: $s/2
+    margin-top: $s
     &:before
       font-style: normal
-      content: "Set: "
+      content: ""
       font-weight: bold
+      background-image: url("/assets/ui/shield.png")
+      background-repeat: no-repeat
+      background-size: $font-size
+      background-position: center
+      width: $font-size
+      height: $font-size
+      position: relative
+      top: 2px
+      vertical-align: center
+      display: inline-block
+      margin-right: $s
 
 @media screen and (max-width: 480px)
   .tier--foso
