@@ -37,7 +37,7 @@ The only hitch you'll run into might be the enemy power: 46 335, 90 688, 154 219
 
 There are some unique enemies however, such as the Fire Model Robot, which I've only ever encountered within the hard levels of the Trinity Tower.
 
-!["Skyrim"](/assets/thm/gaming/foso/magics-first-arriva-map.jpg?v=1.0.0)
+!["Skyrim"](/assets/thm/gaming/foso/magics-first-arrival-map.jpg?v=1.0.0)
 ## Let's Check Out the Map!
 Your resources (bread) are limited. Saashi bakes one bread per minute. How many loaves of bread do you have available each day? 24*60/12 = 120, which means, that even if you buy additional bread, you'll have a maximum of 180 guaranteed bread a day.
 
