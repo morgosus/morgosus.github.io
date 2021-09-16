@@ -25,7 +25,7 @@ Please add anything of significance I've missed in the comments :)
 {: .note}
 
 ### Meet Saashi of the Khajit
-> As a scholar of the Khajiit, an cat-like tribe, she was dedicated to exploring and protecting ancient ruins. When she was exploring a Nord ruin as usual, she accidentally triggered a strange trap and was teleported to the world of the wasteland....
+> As a scholar of the Khajiit, a cat-like tribe, she was dedicated to exploring and protecting ancient ruins. When she was exploring a Nord ruin as usual, she accidentally triggered a strange trap and was teleported to the world of the wasteland....
 
 ## Spear and Shield
 
