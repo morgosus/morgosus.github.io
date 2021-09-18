@@ -15,8 +15,6 @@ meta:
   order:            13
   genre:            Gaming & Entertainment
 
-redirect_from: /gaming/fallout-shelter-online/2021/08/27/crossover-doom-terminator-of-sins
-
 layout: post
 ---
 As of 15th September, there are two additional significant mechanics tied to the classroom. Let's take an in-depth look at them because knowledge is power.
