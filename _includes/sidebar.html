@@ -43,6 +43,14 @@
     </div>
 {% endfor %}
 
+<div class="share card--social">
+  <h2 class="share__heading">Check Me Out</h2>
+  <a class="card-link" href="https://martin.toms.click" title="Go to my Resume"><img class="card-link-img" src="/assets/ui/bio.png" alt="Bio logo." /></a>
+  <a class="card-link" href="https://github.com/morgosus" title="Go to my GitHub profile"><img class="card-link-img" src="/assets/ui/github.png" alt="Github logo." /></a>
+  <a class="card-link" href="https://stackoverflow.com/users/8359316/morgosus" title="Go to my Stack Overflow profile"><img class="card-link-img" src="/assets/ui/stackoverflow.png" alt="StackOverflow logo." /></a>
+  <a class="card-link" href="mailto:contact@toms.click" title="Email me."><img class="card-link-img" src="/assets/ui/gmail.png" alt="Email logo." /></a>
+</div>
+
 {%- for post in site.posts -%}
   {%- if post.featured == true and post.title != page.title -%}
     {%- include component/capture-day-posted.html -%}
