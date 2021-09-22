@@ -25,6 +25,7 @@ Please add anything of significance I've missed in the comments :)
 ### Meet Saashi of the Khajit
 > As a scholar of the Khajiit, a cat-like tribe, she was dedicated to exploring and protecting ancient ruins. When she was exploring a Nord ruin as usual, she accidentally triggered a strange trap and was teleported to the world of the wasteland....
 
+![The special quest associated with this event](/assets/thm/gaming/foso/spear-and-shield.jpg?v=1.0.0)
 ## Spear and Shield
 
 This time an incredibly simple special quest for the Blade Hero trinkets and some trinket tokens accompanies the main event. Complete 5 battles within 2 minutes and/or using the Blades Hero himself to earn a star.
@@ -56,6 +57,7 @@ Most of the incidents you'll come across will be pretty usual, and casual outsid
 - I recommend not farming stats until you progress to at least level 2 farms (for example an EXP spot numbered 2 or even better, 3 - one is east next to the merchant)
   - Aim for at least level 10, prioritize upgrading abilities and weapons, as your aim isn't just to survive - but to avoid as much radiation as possible by killing the enemy quickly. Surviving is nice, but it won't help if your max health at the end of an encounter reaches 10%.
 
+![Saashi over a dead fallout creature](/assets/thm/gaming/foso/magics-first-arrival-saashi-dog.jpg?v=1.5.0)
 ### Tavern
 The tavern allows you to choose and rest your dwellers. Make sure to always bring at least one:
 - Healer, there's no radiation healers available - make the most of every life (Carrington). Without a healer you've wasted a "life".
