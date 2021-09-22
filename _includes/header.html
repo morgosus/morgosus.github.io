@@ -1,11 +1,12 @@
 <header class="header">
   <div class="header__wrapper">
   <a class="header__logo" title="Open the home page" rel="author" href='{{- "/" | relative_url -}}' >
-  <img loading="lazy" itemprop="thumbnailUrl" class="header__logo-img" src="/assets/favicon-32.jpg" alt="Logo" />
-  <span class="header__logo-text">{{- site.title | escape -}}</span>
+  <img loading="lazy" itemprop="thumbnailUrl" class="header__logo-img" src="/assets/logo-horizontal.svg" alt="Logo" />
   </a>
   <nav class="nav">
     <a class="nav__link{%if page.path == 'index.markdown'%} nav__link--active{%endif%}" href="/">Home</a><a class="nav__link{%if page.path == 'about.markdown'%} nav__link--active{%endif%}" href="/about">About</a><a class="nav__link{%if page.path == 'programming.markdown'%} nav__link--active{%endif%}" href="/programming">Tech</a><a class="nav__link{%if page.path == 'gaming.markdown'%} nav__link--active{%endif%}" href="/gaming">Gaming</a>
+
+    {%- include component/search.html -%}
   </nav>
   </div>
 </header>
