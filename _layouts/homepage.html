@@ -16,7 +16,22 @@ tipue_search_active: true
             <div class="external posts_card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 
                 {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
+                {%- capture day_posted -%}{{- page.date | date: "%d" -}}{%- endcapture -%}
 
+                {%- if site.minima.date_format != true -%}
+                {%- case day_posted -%}
+                {%- when '01', '21', '31' -%}
+                {%- assign ordinal_format = '%-dst %B %Y' -%}
+                {%- when '02', '22' -%}
+                {%- assign ordinal_format = '%-dnd %B %Y' -%}
+                {%- when '03', '23' -%}
+                {%- assign ordinal_format = '%-drd %B %Y' -%}
+                {%- else -%}
+                {%- assign ordinal_format = '%-dth %B %Y' -%}
+                {%- endcase -%}
+                {%- endif -%}
+
+                {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
                 {%- unless thumbnail.source == "#" -%}
                 <img loading="lazy" itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
                 {%- endunless -%}
