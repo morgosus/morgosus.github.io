@@ -11,8 +11,10 @@
     {%- include header.html -%}
   {%- endunless -%}
 
+
+
   <div class="wrapper wrapper--body">
-    <main class="main theme-{{ page.theme | default: "default" }}" aria-label="Content">{%- include main.html -%}</main>
+    <main class="main theme-{{ page.theme | default: "default" }}" aria-label="Content"><div id="tipue_search_content" CLASS="found"></div>{%- include main.html -%}</main>
     <aside class="sidebar">{%- include sidebar.html -%}</aside>
   </div>
   <template id="cb">

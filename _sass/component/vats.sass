@@ -126,3 +126,45 @@
   background-color: #FFB641
   margin-bottom: $s
   padding: $s/4
+
+
+
+.searchbar
+  margin-left: $s
+  border: none
+  @include sb
+  display: inline
+  &__text
+    font-family: $primary-font
+    color: black
+    border: none
+    max-width: $s*11 + 3px
+    &:focus
+      outline: none
+      &::placeholder
+        color: transparent
+    padding: 0 $s/2
+  &__button
+    overflow: hidden
+    cursor: pointer
+    width: $line-height - $s/4
+    border: none
+    border-left: $s/4 solid $theme
+    outline: 2px solid $theme-secondary
+    height: 100%
+    color: transparent
+    background: no-repeat center
+    background-image: url("/assets/ui/search.svg")
+    &:hover
+      background-color: $theme-secondary
+    &:active
+
+    &:focus
+
+/*TODO: Line up heading and date, author to the left when new line, focus frame on images on hover ---------------------------------------------------*/
+
+.external
+  display: none
+
+.homepage .external
+  display: flex

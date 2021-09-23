@@ -13,10 +13,10 @@
     max-width: $site-width
     flex-wrap: wrap
   &__logo
-    display: flex
-    align-items: center
-    &-img
-      margin-right: $s/4
+    $logo-height: 32px
+    height: $logo-height
+    width: $logo-height/0.25665675543
+
 
 /*--- Coloring -------------------------*/
 .header
@@ -24,9 +24,6 @@
   text-transform: uppercase
   border-bottom: 2px solid $border-color
   max-width: 100%
-  &__logo
-    text-decoration: none
-    color: $color
   .nav
     text-align: right
     &__link

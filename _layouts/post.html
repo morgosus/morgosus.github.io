@@ -1,5 +1,6 @@
 ---
 layout: default
+tipue_search_active: true
 ---
 
 {%- include component/capture-day-posted.html -%}
@@ -80,3 +81,23 @@ layout: default
 </script>
 {%- endif -%}
 <script type="module" src="/js/image-to-figure.min.js" async defer></script>
+
+<div class="external posts_card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+
+  {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
+
+  {%- unless thumbnail.source == "#" -%}
+  <img loading="lazy" itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+  {%- endunless -%}
+  <div class="card__content">
+    <h3 itemprop="name" class="card__content-heading">{% if page.meta.series %}{{ page.meta.series }}: {% endif %}{{ page.title | escape }}</h3>
+    <span class="card__content-meta">{{ page.date | date: date_format }}</span>
+    <div class="card__content-excerpt">
+      {%- if site.show_excerpts -%}
+      {{ page.excerpt | truncate: site.excerpt_length }}
+      {%- endif -%}
+    </div>
+  </div>
+  <span itemprop="position" aria-hidden="true" hidden>{{n}}</span>
+  <a itemprop="url sameAs" class="card__overlay" href="{{ page.url | relative_url }}" title="Go to the post '{{ page.title | escape }}'"></a>
+</div>
