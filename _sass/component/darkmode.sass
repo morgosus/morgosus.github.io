@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark)
-  .post img, .note, .sidebar .card, .sidebar .share, .true, .homepage .card__image, .author, .searchbar, .tipue_search_content_card
+  .post img, .rss, .note, .sidebar .card, .sidebar .share, .true, .homepage .card__image, .author, .searchbar, .tipue_search_content_card
     @include sbDark
 
   .true:hover, .sidebar .card:hover
@@ -20,9 +20,9 @@
     opacity: .75
     &.share__image, &.card-link-img
       opacity: .6
-  .post figure:hover
+  .post figure:hover, .rss:hover, .share:hover
       img
-        opacity: 1
+        opacity: 1 !important
       figcaption
         background-color: #121212
   .header__logo-img
