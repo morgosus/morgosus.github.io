@@ -1,0 +1,39 @@
+---
+layout: default
+tipue_search_active: true
+---
+
+<div class="homepage">
+    {%- if page.title -%}
+    <h1 class="homepage__heading sr">{{ page.title | default: "Homepage" }}</h1>
+    {%- endif -%}
+
+    {{ content }}
+
+    <div class="archive tag-master">
+        <div class="post-list posts">
+            {% for post in site.posts limit: 6 %}
+            <div class="external posts_card card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+
+                {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
+
+                {%- unless thumbnail.source == "#" -%}
+                <img loading="lazy" itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+                {%- endunless -%}
+                <div class="card__content">
+                    <h3 itemprop="name" class="card__content-heading">{% if post.meta.series %}{{ post.meta.series }}: {% endif %}{{ post.title | escape }}</h3>
+                    <span class="card__content-meta">{{ post.date | date: date_format }}</span>
+                    <div class="card__content-excerpt">
+                        {%- if site.show_excerpts -%}
+                        {{ post.excerpt | truncate: site.excerpt_length }}
+                        {%- endif -%}
+                    </div>
+                </div>
+                <span itemprop="position" aria-hidden="true" hidden>{{n}}</span>
+                <a itemprop="url sameAs" class="card__overlay" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'"></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="infinite-spinner"></div>
+</div>
