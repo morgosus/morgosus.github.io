@@ -15,7 +15,6 @@ tipue_search_active: true
 
   <figure class="post__thumbnail-wrapper">
     {% if page.meta.author != 'morgosus' %}<div class="guest">{{Guest}}</div>{% endif %}
-
     <img loading="lazy" itemprop="thumbnailUrl" class="post__thumbnail" src="{{- thumbnail.source -}}" alt="{{- thumbnail.caption -}}"/>
     <figcaption class="post__thumbnail-caption">{{- thumbnail.caption -}}</figcaption>
   </figure>
@@ -31,11 +30,7 @@ tipue_search_active: true
         <span aria-hidden="true" itemprop="accessMode">{{- page.meta.accessMode | default: "visual" -}}</span>
         <span aria-hidden="true" itemprop="accessModeSufficient">{{- page.meta.accessModeSufficient | default: "textual" -}}</span>
 
-        <span aria-hidden="true" itemprop="wordCount">{{- wordCount -}}</span><span itemprop="timeRequired" aria-hidden="true">{{- timeRequired -}}-min</span>&nbsp;
-
-      {%- if page.meta.author -%}
-        {%- include component/author.html -%}
-      {%- endif -%}
+        <span aria-hidden="true" itemprop="wordCount">{{- wordCount -}}</span><span itemprop="timeRequired" aria-hidden="true">{{- timeRequired -}}-min</span>
     </div>
   </div>
   <div class="post__content e-content" itemprop="articleBody">
@@ -87,7 +82,8 @@ tipue_search_active: true
   {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
 
   {%- unless thumbnail.source == "#" -%}
-  <img loading="lazy" itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+  <figure><img loading="lazy" itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+  <div class="focus"></div></figure>
   {%- endunless -%}
   <div class="card__content">
     <h3 itemprop="name" class="card__content-heading">{% if page.meta.series %}{{ page.meta.series }}: {% endif %}{{ page.title | escape }}</h3>

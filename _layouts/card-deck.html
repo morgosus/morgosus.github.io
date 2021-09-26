@@ -34,7 +34,10 @@ categories: gaming
     {%- endif -%}
     <a class="link" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'">
     {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
-    <img class="image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}" />
+      <figure>
+        <img class="image" loading="lazy" itemprop="image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+        <div class="focus"></div>
+      </figure>
     <figcaption class="caption">{% if post.meta.series %}<span class="series">{{ post.meta.series }}</span>{% endif %}<span class="published">{{ post.date | date: ordinal_format }}</span><span class="title">{{ post.title | escape }}</span></figcaption>
 
     </a>

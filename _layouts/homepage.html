@@ -33,7 +33,11 @@ tipue_search_active: true
 
                 {%- assign date_format = site.minima.date_format | default: ordinal_format -%}
                 {%- unless thumbnail.source == "#" -%}
-                <img loading="lazy" itemprop="image" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+
+                <figure>
+                    <img class="card__image" loading="lazy" itemprop="image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+                    <div class="focus"></div>
+                </figure>
                 {%- endunless -%}
                 <div class="card__content">
                     <h3 itemprop="name" class="card__content-heading">{% if post.meta.series %}{{ post.meta.series }}: {% endif %}{{ post.title | escape }}</h3>
