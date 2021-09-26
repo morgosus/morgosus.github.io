@@ -13,7 +13,10 @@
     {%- endif -%}
     {%- unless post.thumbnail == "#" -%}
     {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
-    <img loading="lazy" class="card__image" src="{{thumbnail.source}}" alt="{{thumbnail.caption}}">
+    <figure>
+      <img class="card__image" loading="lazy" itemprop="image" src="{{thumbnail.source}}" alt="{{post.title}}">
+      <div class="focus"></div>
+    </figure>
     {%- endunless -%}
     <div class="card__content">
       <h3 class="card__content-heading">{{post.meta.series-short}}:&nbsp;{{- post.title | escape -}}</h3>
@@ -34,7 +37,10 @@
   {%- endif -%}
 
     {%- unless post.thumbnail == "#" -%}
-      <img loading="lazy" class="card__image" src="{{post.thumbnail.url}}" alt="{{post.title}}">
+      <figure>
+        <img class="card__image" loading="lazy" itemprop="image" src="{{post.thumbnail.url}}" alt="{{post.title}}">
+        <div class="focus"></div>
+      </figure>
     {%- endunless -%}
       <div class="card__content">
         <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
