@@ -17,7 +17,7 @@ tipue_search_active: true
     <h2 class="posts__heading sr">{{ page.list_title | default: "Newest Posts" }}</h2>
       {%- for post in site.posts -%}
         {%- unless post.home == false -%}
-        {%- if page.categories contains "all" or post.categories contains page.categories -%}
+        {%- if post.categories contains page.categories -%}
 
         {% assign n = n | plus:1 %}
 
