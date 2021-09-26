@@ -21,7 +21,7 @@ tipue_search_active: true
   </figure>
 
   <div class="post__header">
-    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="../../../" itemprop="about">{%- if page.meta.series -%}{{- page.meta.series -}}{%- endif -%}</a>: <span itemprop="name headline">{{- page.title | escape -}}</span></h1>
+    <h1 class="post__title p-name" itemprop="name headline"><a class="post__about" href="./" itemprop="about">{%- if page.meta.series -%}{{- page.meta.series -}}{%- endif -%}</a>: <span itemprop="name headline">{{- page.title | escape -}}</span></h1>
 
     <div class="post__meta">
       <time class="post__meta-published" datetime="{{- page.date | date_to_xmlschema -}}" itemprop="datePublished">{{- page.date | date: date_format -}}</time>
