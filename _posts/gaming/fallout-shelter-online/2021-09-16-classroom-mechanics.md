@@ -3,7 +3,7 @@ title:              "Clasroom Mechanics"
 date:               2021-09-16 8:31:11 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout android online doom gacha
+tags:               gaming fallout android online gacha
 
 thumbnail:          foso-9
 comment-section:    40

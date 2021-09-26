@@ -3,7 +3,7 @@ title:              "Crossover: Magic's First Arrival - The Elder Scrolls: Blade
 date:               2021-09-15 11:08:31 +0200
 
 categories:         gaming fallout-shelter-online
-tags:               gaming fallout android online doom gacha
+tags:               gaming fallout android online the-elder-scrolls gacha
 
 thumbnail:          magics-first-arrival
 comment-section:    39
