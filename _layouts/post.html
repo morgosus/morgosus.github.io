@@ -40,8 +40,8 @@ tipue_search_active: true
 
 
   <div itemprop="abstract" aria-hidden="true" hidden>{{- page.excerpt -}}</div>
-
-  {%if author.content%}
+  {% assign author = site.author | where:"alternateName", page.meta.author | first %}
+  {% if author.content %}
   <section class="note author">
     {% if author.thumbnail.source %}
       <img class="thumbnail" src="{{author.thumbnail.source}}" alt="Profile picture of {{author.name}}" />
@@ -57,7 +57,7 @@ tipue_search_active: true
       {% endif %}
     </div>
   </section>
-  {%endif%}
+  {% endif %}
   {%- include component/random-build-number.html -%}
 
   {%- include component/related.html -%}
