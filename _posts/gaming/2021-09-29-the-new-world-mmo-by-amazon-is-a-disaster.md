@@ -10,7 +10,7 @@ comment-section:
 
 meta:
   author:           morgosus
-  series:           new-world
+  series:           New World
   series-short:     NW
   order:            1
   genre:            Gaming & Entertainment
