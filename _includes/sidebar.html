@@ -13,8 +13,8 @@
     {%- endif -%}
     {%- unless post.thumbnail == "#" -%}
     {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
-    <figure>
-      <img class="card__image" loading="lazy" itemprop="image" src="{{thumbnail.source}}" alt="{{post.title}}">
+    <figure class="card__figure">
+      <img class="card__image" loading="lazy" itemprop="image" src="{{thumbnail.source}}" alt="{{post.title}}" />
       <div class="focus"></div>
     </figure>
     {%- endunless -%}
@@ -37,8 +37,8 @@
   {%- endif -%}
 
     {%- unless post.thumbnail == "#" -%}
-      <figure>
-        <img class="card__image" loading="lazy" itemprop="image" src="{{post.thumbnail.url}}" alt="{{post.title}}">
+      <figure class="card__figure">
+        <img class="card__image" loading="lazy" itemprop="image" src="{{post.thumbnail.url}}" alt="{{post.title}}" />
         <div class="focus"></div>
       </figure>
     {%- endunless -%}
@@ -67,7 +67,7 @@
     <div class="card card--sidebar">
     {%- endif -%}
       {%- unless post.thumbnail == "#" -%}
-      <img loading="lazy" class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}">
+      <img loading="lazy" class="card__image" src="{{post.thumbnail}}" alt="{{post.thumbnail-alt}}" />
       {%- endunless -%}
       <div class="card__content">
         <h3 class="card__content-heading">{{- post.title | escape -}}</h3>
