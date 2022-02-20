@@ -1,0 +1,90 @@
+//-------------------------------\\
+//--- Definitions ---------------\\
+//-------------------------------\\
+
+$font-name: "monofonto"
+$font-path: "/assets/font/monofonto-webfont"
+
+$font-name-b: "LemonMilkshake-dualUpright"
+$font-path-b: "/assets/font/LemonMilkshake-dual-Upright"
+
+$font-name-c: "LemonMilkshake-dual-Regular"
+$font-path-c: "/assets/font/LemonMilkshake-dual-Regular"
+
+$font-name-d: "Orbitron"
+$font-path-d: "/assets/font/Orbitron-Regular.ttf"
+
+@font-face
+  font-family: $font-name
+  src: url($font-path + '.woff2') format('woff2'), url($font-path + '.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: $font-name-b
+  src: url($font-path-b + '.woff2') format('woff2'), url($font-path-b + '.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: $font-name-c
+  src: url($font-path-c + '.woff2') format('woff2'), url($font-path-c + '.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: $font-name-d
+  src: url($font-path-d)
+  font-weight: normal
+  font-style: normal
+
+//-------------------------------\\
+//--- Usage ---------------------\\
+//-------------------------------\\
+
+$orbitron: "Orbitron", Impact, -webkit-pictograph, sans-serif
+$monofonto: "Monofonto", monospace
+$lemon: "LemonMilkshake-dualUpright", Impact, -webkit-pictograph, sans-serif
+$base-font: -webkit-pictograph,sans-serif
+
+body
+  font-family: $base-font
+  font-size: $s*1.25
+  line-height: $s*1.5
+
+.header, .footer
+  font-family: $orbitron
+
+.card
+  &__timestamp, &__heading, &__excerpt
+    font-family: $orbitron
+  &__excerpt
+    font-size: $s*0.85
+  &__heading, &__timestamp
+    font-size: $s
+
+.article, .post
+  .headline
+    font-family: $orbitron
+    font-size: $s*1.5
+    line-height: $s*1.75
+  h2, h3, h4, h5, h6
+    font-family: $orbitron
+    font-weight: normal
+  .published
+    font-family: $orbitron
+    font-size: $s
+
+.infinite-spinner, .post .headline
+  font-family: $orbitron
+
+.legal-link, .copyright
+  font-size: $s
+  line-height: $s
+
+
+
+@media screen and (max-width: 480px)
+  .main
+    font-size: $s*0.75
+    line-height: $s*0.85

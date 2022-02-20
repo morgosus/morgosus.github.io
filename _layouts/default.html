@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body class="theme-{{ page.layout | default: 'default' }}">
+
+    {%- include header.html -%}
+    <div class="wrapper">
+      <main class="main"><div id="tipue_search_content" class="found"></div>{{ content }}</main>
+      <aside class="sidebar"><!-- contains articles on article page, featured on homepage -->
+        {%- unless page.layout == "post" -%}
+          {%- include component/featured-listing.html -%}
+        {%- endunless -%}
+        {%- if site.posts.size > 0 and page.layout == "post" -%}
+        {%- for post in site.posts limit: 5 -%}
+          {%- unless post.url == page.url -%}
+            {%- include component/card.html content=post excerpt=false type="square" -%}
+          {%- endunless -%}
+        {%- endfor -%}
+        {%- endif -%}
+        <div class="bg"></div>
+      </aside>
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

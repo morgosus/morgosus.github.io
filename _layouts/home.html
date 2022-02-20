@@ -1,0 +1,20 @@
+---
+layout: default
+tipue_search_active: true
+---
+
+<div class="home">
+  {{ content }}
+
+  <div class="archive tag-master">
+  <div class="post-list posts">
+  {%- for post in site.posts limit: 5 -%}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- include component/card.html content=post dateformat=date_format excerpt=true external=true -%}
+      {%- endfor -%}
+  </div></div>
+
+    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+  <div class="infinite-spinner">Loading more...</div>
+</div>

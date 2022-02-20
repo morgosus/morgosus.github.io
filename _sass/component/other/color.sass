@@ -1,0 +1,51 @@
+//$text: rgba(255,255,255,0.60)
+//$faintText: rgba(255,255,255,0.35)
+//$urlText: rgba(66,128,255,0.60)
+//$redText: #EC4E20
+//$bg1: #232326
+//$bg2: #121212
+
+
+//-------------------------------\\
+//--- Background ----------------\\
+//-------------------------------\\
+body
+  background-color: $bg1
+
+.header, .footer //, .sidebar .bg, .sidebar
+  background-color: $bg2
+
+//-------------------------------\\
+//--- Text ----------------------\\
+//-------------------------------\\
+/* Body Text
+body, .searchbar__text
+  color: $text
+/* Heading
+/* Headline
+a
+  color: $urlText
+
+.legal-link
+  color: #EC4E20
+  text-decoration: none
+
+//-------------------------------\\
+//--- Exceptions and Other ------\\
+//-------------------------------\\
+img
+  //opacity: 0.75
+.logo
+  &__image
+    opacity: 1
+
+.nav, .logo
+  color: inherit
+
+.searchbar__text, .searchbar__button
+  background-color: $faintText
+.searchbar__text
+  background-color: $bg1
+
+.footnote
+  color: $urlText

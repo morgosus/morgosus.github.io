@@ -1,0 +1,3 @@
+{% for post in site.featured %}
+    {%- include component/card.html content=post excerpt=false type="square" -%}
+{% endfor %}

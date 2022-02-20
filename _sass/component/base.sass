@@ -1,0 +1,61 @@
+$gr: 1.61803398875
+
+$s: $gr*10px
+$site-width: 1024px
+
+
+$text: rgba(0,0,0,0.60)
+$faintText: rgba(255,255,255,0.35)
+$urlText: rgba(66,128,255,0.60)
+$redText: #690375
+$bg1: #ffffff
+$bg2: #ffffff
+
+*
+  box-sizing: border-box
+  z-index: 5
+
+html,body
+  min-height: 100vh
+
+body
+  hyphens: auto
+  overflow-x: hidden
+  display: flex
+  flex-direction: column
+
+img
+  max-width: 100%
+
+.wrapper
+  display: flex
+  max-width: $site-width
+  flex-grow: 1
+  width: 100%
+
+.main
+  flex-grow: 1
+
+.footer
+  .wrapper, .legal-links
+    display: flex
+    flex-direction: column
+
+.header
+  position: relative
+  .bg
+    z-index: 4
+    background-color: black
+    width: 15%
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 32% 50%, 68% 50%)
+    &:first-of-type
+      left: 0
+      right: initial
+      clip-path: polygon(100% 0, 0 0, 0% 100%, 32% 50%, 68% 50%)
+
+.rss-subscribe
+  margin-top: $s

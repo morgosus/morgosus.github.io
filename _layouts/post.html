@@ -1,0 +1,28 @@
+---
+layout: default
+tipue_search_active: true
+---
+<article class="article">
+  <img loading="lazy" class="thumbnail" src="{{ page.thumbnail.source }}" alt="{{ page.thumbnail.caption }}" />
+  <h1 class="headline" itemprop="name headline">{{ page.title | escape }}</h1>
+  <time class="published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {{ page.date | date: date_format }}
+  </time>
+  {{ content }}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+
+  <a itemprop="url sameAs" class="external card__link" href="{{ page.url | relative_url }}" title="Go to the post '{{ page.title | escape }}'">
+    <article class="card card--home">
+      <img loading="lazy" class="card__image" src="{{ page.thumbnail.source | relative_url }}" alt="{{ page.thumbnail.caption }}">
+      <h3 class="card__heading">{{ page.title | escape }}</h3>
+      <time class="card__timestamp">{{ page.date | date: date_format }}</time>
+      {% if page.excerpt %}<div class="card__excerpt">{{ page.excerpt | strip_html | strip_newlines | truncate: site.excerpt_length}}</div>{% endif %}
+    </article>
+  </a>
+</article>
+<script type="module" src="/js/image-to-figure.min.js"></script>
+
+

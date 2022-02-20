@@ -1,0 +1,39 @@
+.searchbar
+  display: flex
+  flex-direction: row-reverse
+  align-self: center
+  margin-left: auto
+  margin-right: 0
+  height: 24.27px
+  &__button
+    aspect-ratio: 1/1
+    background-image: url("/assets/tipuesearch/search.png")
+    background-size: 20px
+    background-position: center
+    background-repeat: no-repeat
+    height: 30px
+    width: 30px
+    border: 0
+    cursor: pointer
+    border-radius: 50px
+    align-self: center
+    margin-left: $s
+    //border: $s/8 solid #121212
+    //outline: $s/8 solid black
+    &:hover
+      border: none
+    &:active
+      border: none
+      outline: none
+    border-bottom: dotted 1px gray
+  &__text
+    font-family: $font-name-d
+    border: 0
+    padding: $s/4 $s/2
+    font-size: $s*1.1
+    max-width: $s*10
+    //border: $s/8 solid #121212
+    //outline: $s/8 solid black
+    &:focus
+    &:focus
+      outline: none

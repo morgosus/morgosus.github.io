@@ -1,0 +1,57 @@
+@media screen and (max-width: 1048px)
+  .sidebar .bg
+    display: none
+  .header, .footer
+    padding-left: $s
+    padding-right: $s
+  .main
+    padding: $s
+  .sidebar
+    padding: $s
+    margin-left: auto
+  .card__image
+    transform: scale(1)
+@media screen and (max-width: 960px)
+  body > .wrapper
+    flex-direction: column
+  .sidebar
+    border-left: none
+    border-top: $s/4 solid black
+    min-width: initial
+    max-width: initial
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    .card__link
+      min-width: 30%
+      max-width: 30%
+      margin-right: $s
+      &:nth-of-type(3)
+        margin-right: 0
+
+@media screen and (max-width: 666px)
+  .sidebar .card__link
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    aspect-ratio: 1.62/1
+    margin-right: 0
+  .header .logo:first-of-type, .header .nav:nth-of-type(3)
+    display: none
+  .searchbar
+    max-width: 33vw
+    &__text
+      max-width: 25vw
+
+  .main
+    .card
+      aspect-ratio: 1/1.62
+    .card__heading
+      left: $s/2
+      top: $s/2
+    .card__excerpt
+      left: $s/2
+      right: $s/2
+    .card__timestamp
+      right: $s/2
+      top: $s/2

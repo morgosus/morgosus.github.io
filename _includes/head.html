@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- seo -%}
+
+  {%- include component/random-build-number.html -%}
+
+  {%- feed_meta -%}
+
+  {% include component/favicon.html %}
+
+  <link rel="stylesheet" href="{{- "/assets/main.css?v=" | relative_url | append: randomBuildNumber -}}">
+
+  {% include component/tipue-head.html %}
+
+  <script>const byId = id => document.getElementById(id); const byTag = tag => document.getElementsByTagName(tag);</script>
+
+  <script src="/js/infinite-jekyll.js" async defer></script>
+</head>

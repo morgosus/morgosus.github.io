@@ -1,0 +1,23 @@
+$base-measure-for-border: $s/8 //default: $s/4
+
+$sb: $base-measure-for-border solid black
+
+.header
+  //border-bottom: $sb
+.footer
+  //border-top: $sb
+.sidebar
+  //border-left: $sb
+
+@mixin sb
+  //outline: $base-measure-for-border/2 solid #000000
+  //border: $base-measure-for-border solid #121212
+@mixin sb--cancel
+  outline: none
+  border: none
+
+.card, .article .thumbnail, .post__image, .comparison
+  @include sb
+
+.comparison .post__image-wrapper .post__image
+  @include sb--cancel

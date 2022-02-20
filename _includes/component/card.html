@@ -1,0 +1,12 @@
+{%- if include.content.link.url -%}
+    <a itemprop="url sameAs" class="card__link" href="{{ post.link.url | relative_url }}" title="{{ post.thumbnail.caption }}">
+{%- else -%}
+    <a itemprop="url sameAs" class="card__link" href="{{ post.url | relative_url }}" title="Go to the post '{{ post.title | escape }}'">
+{%- endif -%}
+    <article class="card card--{{ include.type }}">
+        <img loading="lazy" class="card__image" src="{{ include.content.thumbnail.source | relative_url }}" alt="{{ include.content.thumbnail.caption }}">
+        <h3 class="card__heading">{{ include.content.title | escape }}</h3>
+        {% if include.dateformat %}<time class="card__timestamp">{{ include.content.date | date: include.dateformat }}</time>{% endif %}
+        {% if include.excerpt %}<div class="card__excerpt">{{ include.content.excerpt | strip_html | strip_newlines | truncate: site.excerpt_length}}</div>{% endif %}
+    </article>
+</a>

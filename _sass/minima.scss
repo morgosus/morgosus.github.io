@@ -1,0 +1,34 @@
+@import "component/reset/reset";
+
+@import "component/smooth-animations";
+
+@import "component/base";
+
+
+
+@import "component/other/font";
+@import "component/other/color";
+@import "component/other/border";
+@import "component/other/padding";
+
+
+
+@import "component/card";
+@import "component/article";
+
+@import "component/header/logo";
+@import "component/header/searchbar";
+@import "component/header/nav";
+@import "component/main/sidebar";
+@import "component/other/spinner";
+@import "component/other/component";
+
+
+@import "component/other/tipuesearch";
+
+@import "minima/syntax-highlighting";
+
+
+
+@import "component/main/post";
+@import "component/important/responsive.sass";
