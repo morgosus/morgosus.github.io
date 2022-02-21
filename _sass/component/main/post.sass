@@ -1,9 +1,11 @@
 .theme-post .article
   max-width: 720px
+  display: block
   margin: auto
 
 .theme-post > .wrapper
-  flex-direction: column
+  display: block
+  margin: auto
   .sidebar
     max-width: 720px
     border-left: none
@@ -23,3 +25,13 @@
       margin-right: $s
       &:nth-of-type(4)
         margin-right: 0
+
+.relative__item
+  max-width: 50%
+  float: left
+  color: $urlText
+  font-family: $font-name-d
+  margin-bottom: $s
+  text-decoration: none
+  &:first-of-type
+    float: right
