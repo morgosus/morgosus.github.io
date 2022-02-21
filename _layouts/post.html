@@ -15,10 +15,10 @@ tipue_search_active: true
       {%- assign previous_order = page.meta.order | plus: -1 -%}
 
       {%- if post.meta.order == previous_order -%}
-        <a href="{{ post.url | relative_url }}" class="relative__item relative__item--previous" title="'{{post.title}}'">Previous</a>
+        <a href="{{ post.url | relative_url }}" class="relative__item relative__item--previous" title="'{{post.title}}'">❰ Previous</a>
       {%- endif -%}
       {%- if post.meta.order == next_order -%}
-        <a href="{{ post.url | relative_url}}" class="relative__item relative__item--next" title="Go to '{{post.title}}'">Next</a>
+        <a href="{{ post.url | relative_url}}" class="relative__item relative__item--next" title="Go to '{{post.title}}'">Next ❱</a>
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
