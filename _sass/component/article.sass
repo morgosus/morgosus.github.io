@@ -15,6 +15,7 @@
     margin-bottom: $s/4
     text-align: left
   .published
+    display: block
     text-align: left
     margin-bottom: $s*$gr
 
@@ -27,8 +28,7 @@
     .post__image
       width: 100%
     .post__image-caption
-      border-top: 2.0225424859px solid #121212
-      padding: $s/4
+      padding: $s/2
       background-color: rgba(255,255,255,0.60)
       color: $text
       position: absolute
@@ -37,6 +37,7 @@
       right: $s
       font-size: $s
       box-shadow: 0 4px 2px -2px rgba(38, 38, 38, 0.6)
+      clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%, 0 10px)
   .comparison
     display: flex
     margin-bottom: $s
