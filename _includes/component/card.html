@@ -7,6 +7,6 @@
         <img loading="lazy" class="card__image" src="{{ include.content.thumbnail.source | relative_url }}" alt="{{ include.content.thumbnail.caption }}">
         <h3 class="card__heading">{{ include.content.title | escape }}</h3>
         {% if include.dateformat %}<time class="card__timestamp">{{ include.content.date | date: include.dateformat }}</time>{% endif %}
-        {% if include.excerpt %}<div class="card__excerpt">{{include.content.meta.series}}|{{include.content.meta.order}}|{{ include.content.excerpt | strip_html | strip_newlines | truncate: site.excerpt_length}}</div>{% endif %}
+        {% if include.excerpt %}<div class="card__excerpt">{{ include.content.excerpt | strip_html | strip_newlines | truncate: site.excerpt_length}}</div>{% endif %}
     </article>
 </a>
