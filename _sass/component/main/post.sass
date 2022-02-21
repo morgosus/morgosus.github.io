@@ -12,23 +12,27 @@
     min-width: initial
     flex-direction: row
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: center
     padding: $s
     margin: auto
     margin-bottom: $s
     .bg
       display: none
     .card__link
-      min-width: 20%
-      max-width: 20%
+      width: 40%
       margin-right: 0
       margin-top: 0
       font-size: 0.62rem
       line-height: 1rem
+      &:nth-of-type(1)
+        margin-right: $s/2
+      &:nth-of-type(3)
+        margin-top: $s/2
+        margin-right: $s/2
       &:nth-of-type(4)
-        margin-right: 0
+        margin-top: $s/2
     .card__heading
-      top: $s
+      top: 38.1%
 
 .relative__item
   max-width: 50%
