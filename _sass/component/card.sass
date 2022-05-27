@@ -1,72 +1,188 @@
+//.card
+//  position: relative
+//  overflow: hidden
+//  width: 100%
+//  &__link
+//    display: flex
+//    color: inherit
+//  &__image
+//    width: 100%
+//    height: 100%
+//    object-fit: cover
+//    aspect-ratio: 1.62/1
+//  &__heading
+//    //border-top: $s/8 solid #121212
+//    position: absolute
+//    top: $s
+//    left: $s
+//    right: 38.28%
+//    padding: $s*0.6
+//    opacity: 1
+//    background-color: rgba(255,255,255, 0.75)
+//    box-shadow: 0 4px 2px -2px rgba(38,38,38, 0.6)
+//  &__timestamp
+//    //border-top: $s/8 solid #121212
+//    background-color: rgba(255,255,255, 0.75)
+//    position: absolute
+//    top: $s
+//    left: 61.72%
+//    right: $s
+//    padding: $s*0.6
+//    text-align: right
+//    box-shadow: 0 4px 2px -2px rgba(38,38,38, 0.6)
+//  &__excerpt
+//    position: absolute
+//    margin-top: $s
+//    top: 38.28%
+//    left: $s
+//    right: $s
+//    text-align: justify
+//    //border-top: $s/8 solid #121212
+//    padding: $s*0.6
+//    opacity: 1
+//    background-color: rgba(255,255,255, 0.75)
+//    box-shadow: 0 4px 2px -2px rgba(38,38,38, 0.6)
+//
+//.card--square
+//  .card__image
+//    aspect-ratio: 1/1
+//  .card__heading
+//    left: $s
+//    right: $s
+//    top: 38.28%
+//    text-align: center
+//    border-right: unset
+//    //border-top: $s/8 solid #121212
+//    padding-top: 0
+//    padding: $s/2
+//
+//@include cardAnimations
+//
+//.card, .article img, .card--square .card__heading
+//  -webkit-clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px)
+//  clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px)
+//
+//.home .card__heading
+//  -webkit-clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%, 0% 10px)
+//  clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%, 0% 10px)
+//.home .card__timestamp
+//  -webkit-clip-path: polygon(calc(100% - 10px) 0%, 100% 10px, 100% 100%, 0 100%, 0 0)
+//  clip-path: polygon(calc(100% - 10px) 0%, 100% 10px, 100% 100%, 0 100%, 0 0)
+//.home .card__excerpt
+//  clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0 0)
+
+$card-border-color: white
+$black: #000
+
+.o
+  font-family: $orbitron
+.c
+  text-align: center
+
+.bs
+  -moz-box-shadow: 0px 0px 5px $black
+  box-shadow: 0px 0px 5px $black
+.ts
+  text-shadow: 0px 0px 25px $black
+
 .card
   position: relative
-  overflow: hidden
+  max-height: 480px
   width: 100%
-  &__link
-    display: flex
-    color: inherit
-  &__image
+  height: 100%
+  max-width: 100%
+  margin: $s auto
+  display: flex
+  overflow: hidden
+  font-size: $s
+  aspect-ratio: 1.5/1
+  .excerpt
+    background-color: rgba(255,255,255,0.75)
+    position: absolute
+    left: $s
+    top: 100 - 100% / $gr
+    padding: $s
+    text-align: justify
+    color: white
+    color: rgba(0, 0, 0, 0.75)
+    margin: 0 $s*2 0 $s
+  &:first-of-type
+    margin-top: 0
+  &:hover
+    .image
+      transform: scale(1)
+      transition: transform 1s ease-out
+  .title, .timestamp, .bl, .tr, .br, .tl
+    position: absolute
+    color: white
+  .title
+    top: $s
+    left: $s
+    font-family: $base-font
+    color: $card-border-color
+    padding: $s
+    margin-right: $s
+    font-size: $s
+    text-shadow: -1px -1px 0 $black, 0   -1px 0 $black, 1px -1px 0 $black, 1px  0   0 $black, 1px  1px 0 $black, 0    1px 0 $black, -1px  1px 0 $black, -1px  0   0 $black
+  //background-color: rgba(255,255,255,0.75)
+  //color: rgba(0,0,0,0.75)
+  .timestamp
+    bottom: $s
+    right: $s
+    color: $card-border-color
+    font-size: $s
+    padding: $s
+    margin-left: $s
+    text-shadow: -1px -1px 0 $black, 0   -1px 0 $black, 1px -1px 0 $black, 1px  0   0 $black, 1px  1px 0 $black, 0    1px 0 $black, -1px  1px 0 $black, -1px  0   0 $black
+  .image
     width: 100%
     height: 100%
+    aspect-ratio: 1.5/1
     object-fit: cover
-    aspect-ratio: 1.62/1
-  &__heading
-    //border-top: $s/8 solid #121212
+    transform: scale(1.15)
+    transition: transform 1s ease-out
+  .bl, .br, .tr, .tl
+    width: $s
+    height: $s
+    padding: $s*1.5
+  .bl
+    bottom: $s
+    left: $s
+    border-bottom: 1px solid $card-border-color
+    border-left: 1px solid $card-border-color
+    box-shadow: -5px 5px 10px -10px $black, inset 5px -5px 10px -10px $black
+  .br
+    bottom: $s
+    right: $s
+    border-bottom: 1px solid $card-border-color
+    border-right: 1px solid $card-border-color
+    box-shadow: 5px 5px 10px -10px $black, inset -5px -5px 10px -10px $black
     position: absolute
+  .tl
     top: $s
     left: $s
-    right: 38.28%
-    padding: $s*0.6
-    opacity: 1
-    background-color: rgba(255,255,255, 0.75)
-    box-shadow: 0 4px 2px -2px rgba(38,38,38, 0.6)
-  &__timestamp
-    //border-top: $s/8 solid #121212
-    background-color: rgba(255,255,255, 0.75)
-    position: absolute
+    border-top: 1px solid $card-border-color
+    border-left: 1px solid $card-border-color
+    box-shadow: -5px -5px 10px -10px $black, inset 5px 5px 10px -10px $black
+    border-left: 1px solid $card-border-color
+    border-top: 1px solid $card-border-color
+  .tr
     top: $s
-    left: 61.72%
     right: $s
-    padding: $s*0.6
-    text-align: right
-    box-shadow: 0 4px 2px -2px rgba(38,38,38, 0.6)
-  &__excerpt
-    position: absolute
-    margin-top: $s
-    top: 38.28%
-    left: $s
-    right: $s
-    text-align: justify
-    //border-top: $s/8 solid #121212
-    padding: $s*0.6
-    opacity: 1
-    background-color: rgba(255,255,255, 0.75)
-    box-shadow: 0 4px 2px -2px rgba(38,38,38, 0.6)
+    border-top: 1px solid $card-border-color
+    border-right: 1px solid $card-border-color
+    box-shadow: 5px -5px 10px -10px $black, inset -5px 5px 10px -10px $black
+  &--square
+    aspect-ratio: 1/1
+    height: initial
+    .title
+      color: white
+      text-shadow: -1px -1px 0 $black, 0   -1px 0 $black, 1px -1px 0 $black, 1px  0   0 $black, 1px  1px 0 $black, 0    1px 0 $black, -1px  1px 0 $black, -1px  0   0 $black
+.card:not(.card--square)
+  //box-shadow: 0px 0px 5px $black
 
 .card--square
-  .card__image
-    aspect-ratio: 1/1
-  .card__heading
-    left: $s
-    right: $s
-    top: 38.28%
-    text-align: center
-    border-right: unset
-    //border-top: $s/8 solid #121212
-    padding-top: 0
-    padding: $s/2
-
-@include cardAnimations
-
-.card, .article img, .card--square .card__heading
-  -webkit-clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px)
-  clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px)
-
-.home .card__heading
-  -webkit-clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%, 0% 10px)
-  clip-path: polygon(10px 0%, 100% 0, 100% 100%, 0 100%, 0% 10px)
-.home .card__timestamp
-  -webkit-clip-path: polygon(calc(100% - 10px) 0%, 100% 10px, 100% 100%, 0 100%, 0 0)
-  clip-path: polygon(calc(100% - 10px) 0%, 100% 10px, 100% 100%, 0 100%, 0 0)
-.home .card__excerpt
-  clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0 0)
+  .tr, .tl, .bl, .br
+    box-shadow: none
+.card
+  .tr, .tl, .bl, .br, .timestamp

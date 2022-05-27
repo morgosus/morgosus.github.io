@@ -12,6 +12,10 @@
   .card__image
     transform: scale(1)
 @media screen and (max-width: 960px)
+  .header
+    max-width: 720px
+    margin: auto
+    width: 100%
   body > .wrapper
     flex-direction: column
   .sidebar
@@ -44,14 +48,31 @@
       max-width: 25vw
 
   .main
+    .topic
+      font-size: $s/1.5
     .card
-      aspect-ratio: 1/1.62
-    .card__heading
-      left: $s/2
+      aspect-ratio: 1.62/1
+      .title
+        left: $s/2
+        top: $s/2
+        font-size: $s/1.5
+      .excerpt
+        left: 0
+        right: 0
+        font-size: $s/1.5
+        padding: $s/2
+        margin: 0
+      .timestamp
+        right: 0
+        bottom: 0
+        font-size: $s/1.5
+    .tr, .tl, .br, .bl
+      padding: $s/2
+    .tr, .tl
       top: $s/2
-    .card__excerpt
+    .br, .bl
+      bottom: $s/2
+    .tl, .bl
       left: $s/2
+    .tr, .br
       right: $s/2
-    .card__timestamp
-      right: $s/2
-      top: $s/2

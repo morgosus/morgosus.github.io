@@ -8,7 +8,7 @@
 
     {%- include header.html -%}
     <div class="wrapper">
-      <main class="main"><div id="tipue_search_content" class="found"></div>{{ content }}</main>
+      <main class="main"><div id="tipue_search_content" class="found"></div><!--{%- include component/topics.html -%}-->{{ content }}</main>
       <aside class="sidebar"><!-- contains articles on article page, featured on homepage -->
         {%- unless page.layout == "post" -%}
           {%- include component/featured-listing.html -%}
@@ -20,7 +20,6 @@
           {%- endunless -%}
         {%- endfor -%}
         {%- endif -%}
-        <div class="bg"></div>
       </aside>
     </div>
 

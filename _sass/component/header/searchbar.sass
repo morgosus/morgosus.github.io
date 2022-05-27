@@ -5,6 +5,8 @@
   margin-left: auto
   margin-right: 0
   height: 24.27px
+  &::placeholder
+    padding-left: $s
   &__button
     aspect-ratio: 1/1
     background-image: url("/assets/tipuesearch/search.png")
@@ -15,7 +17,6 @@
     width: 30px
     border: 0
     cursor: pointer
-    border-radius: 50px
     align-self: center
     margin-left: $s
     //border: $s/8 solid #121212
@@ -25,15 +26,18 @@
     &:active
       border: none
       outline: none
-    border-bottom: dotted 1px gray
   &__text
     font-family: $font-name-d
     border: 0
     padding: $s/4 $s/2
-    font-size: $s*1.1
     max-width: $s*10
+    font-size: $s/1.5
+    padding-bottom: 1px
     //border: $s/8 solid #121212
     //outline: $s/8 solid black
     &:focus
-    &:focus
       outline: none
+      .searchbar::placeholder
+        color: transparent
+      border-bottom: 1px solid black
+      padding-bottom: 0

@@ -1,5 +1,5 @@
 ---
-title: Fit-Boy for Sense and Versa 3 [Best of 2021]
+title: Fit-Boy for Sense and Versa 3
 thumbnail:
   source: /assets/thm/featured/fit-boy.png
   caption: Go to Fit-Boy by Morgosus
