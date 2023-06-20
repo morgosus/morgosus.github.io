@@ -3,7 +3,6 @@ layout: base
 ---
 
 <main class="main">
-
     <h1 class="visually-hidden">Home</h1>
 
     {% if site.paginate %}
@@ -11,7 +10,6 @@ layout: base
     {% else %}
     {% assign posts = site.posts %}
     {% endif %}
-
 
     {%- if posts.size > 0 -%}
     <section class="featured">
@@ -25,7 +23,7 @@ layout: base
             {%- endunless -%}
             <h3 class="card__heading">{{ post.title | escape }}</h3>
             <p class="card__text">{{ post.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
-            <time class="card__timestamp">{{ post.date | date: date_format }}</time>
+            <time datetime="{{ page.date | date_to_xmlschema }}" class="card__timestamp">{{ post.date | date: date_format }}</time>
             <div class="tr"></div>
             <div class="br"></div>
             <div class="bl"></div>
@@ -56,5 +54,4 @@ layout: base
     {%- endif %}
 
     {%- endif -%}
-
 </main>
