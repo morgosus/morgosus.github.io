@@ -18,16 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+port: 4002
+
+title: Toms.click
+
+author:
+  name: Martin Toms
+  thumbnail: "/assets/martin.svg"
+  sameAs: "https://github.com/morgosus"
+  givenName: Martin
+  familyName: Toms
+  gender: male
+  alternateName: morgosus
+  url: https://martin.toms.click
+  email: martin@toms.click
+  alumniOf:
+    type: CollegeOrUniversity
+    name: Czech University of Life Sciences Prague
+    url: https://en.wikipedia.org/wiki/Czech_University_of_Life_Sciences_Prague
+    startDate: 1906
+
+email: contact@toms.click
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Great content and awesome gaming tips await you (you wouldn’t want to miss that). I always do my best to make sure the writeups here are as informative as they can, to make your visit worthwhile. You’ll find useful blog posts about programming and Fallout Shelter Online, but soon I’ll also be writing about other games.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username: morgosus
+youtube_username: MartinToms
+stackoverflow_username: morgosus
 
 # Build settings
 theme: minima
@@ -53,3 +71,27 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+#SASS
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+    - assets/css
+    - assets/vendor
+  style: compressed
+
+permalink: /:categories/:title
+
+show_excerpts: true
+excerpt_length: 240
+
+collections:
+  thumbnail:
+  author:
+  featured:
+
+feed:
+  categories:
+    - programming
+    - gaming
