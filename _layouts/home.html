@@ -18,13 +18,13 @@ layout: base
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
         {%- for post in posts -%}
-        <div class="card">
+        <a class="card" href="{{ post.url }}">
             {%- unless post.thumbnail == "#" -%}
                 {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
                 <img class="card__image" src="{{ thumbnail.source }}" alt="{{ thumbnail.caption }}">
             {%- endunless -%}
             <h3 class="card__heading">{{ post.title | escape }}</h3>
-            <p class="card__text">{{ post.content | markdownify | strip_html | truncatewords: 25 }}</p>
+            <p class="card__text">{{ post.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
             <time class="card__timestamp">{{ post.date | date: date_format }}</time>
             <div class="tr"></div>
             <div class="br"></div>
@@ -33,7 +33,7 @@ layout: base
             {%- if site.show_excerpts -%}
             {{ post.excerpt }}
             {%- endif -%}
-        </div>
+        </a>
         {%- endfor -%}
     </section>
 
