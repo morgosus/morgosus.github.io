@@ -29,7 +29,7 @@ layout: base
             <div class="bl"></div>
             <div class="tl"></div>
             {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
+                {{ post.excerpt | truncate: site.excerpt_length | strip_html }}
             {%- endif -%}
         </a>
         {%- endfor -%}
