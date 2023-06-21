@@ -81,7 +81,7 @@ sass:
     - assets/vendor
   style: compressed
 
-permalink: /:categories/:title
+permalink: /blog/:categories/:title
 
 show_excerpts: true
 excerpt_length: 240
@@ -90,6 +90,7 @@ collections:
   thumbnail:
   author:
   featured:
+  mod:
 
 feed:
   categories:
