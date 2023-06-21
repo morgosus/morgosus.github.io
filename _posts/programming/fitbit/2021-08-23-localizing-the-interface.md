@@ -14,6 +14,8 @@ meta:
   order:            4
   genre:            Programming
 
+redirect_from: /fitbit/localizing-the-interface
+
 layout: post
 ---
 As we've gone through the most important parts of programming a clock face, let's take a quick look at something useful that's totally optional - translating our interface.

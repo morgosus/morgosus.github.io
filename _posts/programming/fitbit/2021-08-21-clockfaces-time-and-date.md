@@ -14,6 +14,8 @@ meta:
   order:            2
   genre:            Programming
 
+redirect_from: https://www.toms.click/programming/fitbit/clockfaces-time-and-date
+
 layout: post
 ---
 The most essential part of a **clock** face is the time display. Fortunately for us, Fitbit has provided the Clock API. It's a nifty thing that allows you to run code every second/minute or hour.

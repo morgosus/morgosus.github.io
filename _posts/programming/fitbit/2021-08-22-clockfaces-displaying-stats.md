@@ -14,6 +14,8 @@ meta:
   order:            3
   genre:            Programming
 
+redirect_from: /fitbit/clockfaces-displaying-stats
+
 layout: post
 ---
 It only makes sense to include various stats since we're working with a Fitbit device. Stats can be gathered from two primary sources - **sensors** and **user activity**. The main difference is that sensors provide a current value. At the same time, user activity is usually a sum of readings for the day/week.

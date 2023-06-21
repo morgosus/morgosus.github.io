@@ -15,7 +15,9 @@ meta:
   order:            2
   genre:            Gaming & Entertainment
 
-redirect_from: /gaming/fallout-shelter-online/2021/08/13/base-and-resources
+redirect_from:
+  - /gaming/fallout-shelter-online/2021/08/13/base-and-resources
+  - /gaming/fallout-shelter-online/base-and-resources
 
 layout: post
 ---

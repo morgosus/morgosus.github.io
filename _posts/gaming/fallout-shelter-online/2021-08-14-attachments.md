@@ -15,7 +15,9 @@ meta:
   order:            5
   genre:            Gaming & Entertainment
 
-redirect_from: /gaming/fallout-shelter-online/2021/08/14/attachments
+redirect_from:
+  - /gaming/fallout-shelter-online/2021/08/14/attachments
+  - /gaming/fallout-shelter-online/attachments
 
 layout: post
 ---

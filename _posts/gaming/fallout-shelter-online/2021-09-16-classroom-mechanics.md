@@ -15,6 +15,8 @@ meta:
   order:            13
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/classroom-mechanics
+
 layout: post
 ---
 As of 15th September, there are two additional significant mechanics tied to the classroom. Let's take an in-depth look at them because knowledge is power.

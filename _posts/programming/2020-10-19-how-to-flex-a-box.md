@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/how-to-flex-a-box
+
 layout: post
 ---
 Quite a few people have told me that they have no experience with Flexbox, yet they deal with CSS and HTML layouts. It's usually a matter of minutes to explain this particular topic and many people are in awe of how simple, yet efficient this tool is. Flexbox, as you may have already deduced, is a CSS... I guess we could say library.

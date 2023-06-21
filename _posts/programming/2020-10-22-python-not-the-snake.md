@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/python-not-the-snake
+
 layout: post
 ---
 Hiss there! Let's take a look at one of my favorite languages, which, admittedly, I don't use much lately. It's still neat. This will be, as usually, a very short article. I'll mention just the basics, just enough for a person to get to know the language. After installing Python, you may use it to interpret your code, for example in Linux: `file.py`.

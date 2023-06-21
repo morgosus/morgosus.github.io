@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/recursive-ctes
+
 layout: post
 ---
 This is just a quick explanation of the topic on a simple example. It won't deal with optimization, merely wrapping your mind around the concept. CTE (Common Table Expression) is a... hmm.. think of it as a temporary view. You bring in some set of results and then you're able to query it. Recursive CTE just adds recursion to the ploy.

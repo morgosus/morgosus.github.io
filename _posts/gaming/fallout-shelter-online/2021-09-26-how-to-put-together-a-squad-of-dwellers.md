@@ -15,6 +15,8 @@ meta:
   order:            14
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/how-to-put-together-a-squad-of-dwellers
+
 layout: post
 ---
 Team assembly is an essential skill in the late game where a few thousand power isn't significant. There are many details to consider - let's start off by asking a few questions.

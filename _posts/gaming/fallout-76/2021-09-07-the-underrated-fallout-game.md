@@ -15,6 +15,8 @@ meta:
   order:            1
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-76/the-underrated-fallout-game
+
 layout: post
 ---
 I'll talk about some nifty things within the, at least in my eyes, redeemed game. Sure, at its beginning, it was just one of Todd Howard's failed hyped-up cash-grabs. Still, in the past few years, it's really made a rather stunning comeback in terms of playability and features.

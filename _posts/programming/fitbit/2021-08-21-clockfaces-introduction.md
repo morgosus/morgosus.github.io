@@ -14,6 +14,8 @@ meta:
   order:            1
   genre:            Programming
 
+redirect_from: /programming/fitbit/clockfaces-introduction
+
 layout: post
 ---
 In this series, I will dissect and explain creating a clock face for Fitbit Sense and Versa 3. Piece by piece. Now, while I will be using code examples from my app, the principles are more of a general kind. If you follow this series through, you should have a good idea of creating any Fitbit SDK clockface. It's really similar to web development. As the current version is SDK 6.0.0, I will be working under it. However, the code is identical to the previous version.

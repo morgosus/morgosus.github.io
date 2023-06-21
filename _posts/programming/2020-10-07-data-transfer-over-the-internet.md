@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/data-transfer-over-the-internet
+
 layout: post
 ---
 Everyone knows the internet. Does everyone know how it works? Probably not. I'm not talking hardware, that's easy (not really), I'm talking protocols. We'll start with HTTP and make our way through the most frequently used ones.

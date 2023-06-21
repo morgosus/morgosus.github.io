@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/latte-php-template-engine
+
 layout: post
 ---
 Let's check out [Latte](https://latte.nette.org). I'll show you how I used it in my current project, a pretty clear example of how to use it.

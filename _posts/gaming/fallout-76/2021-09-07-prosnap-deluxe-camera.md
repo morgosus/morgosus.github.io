@@ -15,6 +15,8 @@ meta:
   order:            2
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-76/prosnap-deluxe-camera
+
 layout: post
 ---
 

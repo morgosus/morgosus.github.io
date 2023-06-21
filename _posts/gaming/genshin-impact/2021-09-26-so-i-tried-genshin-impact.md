@@ -15,6 +15,8 @@ meta:
   order:            2
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/genshin-impact/so-i-tried-genshin-impact
+
 layout: post
 ---
 Let me just quickly note, that all the pictures posted here are screenshots or photos of the actual Genshin gameplay. I had to say this, because to me, they just look like static anime drawings or something... And that's exactly the vibe this game gives off. You're basically in an anime with cute voices, cute characters and cute magical cartoon-ish landscape.

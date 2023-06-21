@@ -15,6 +15,8 @@ meta:
   order:            1
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/the-new-world-mmo-by-amazon-is-a-disaster
+
 layout: post
 ---
 

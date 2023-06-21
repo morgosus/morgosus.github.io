@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/playing-with-php-curl
+
 layout: post
 ---
 Sometimes you might want to grab a page or two on the web. See, cURL allows you to send a bot of sorts - and it does just that. This 'bot' isn't limited to visiting pages, it can post data or even login and carry a session. I guess you could make a cURL script for logging in and adjusting user settings or something.

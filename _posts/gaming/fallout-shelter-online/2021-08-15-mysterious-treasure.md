@@ -15,7 +15,9 @@ meta:
   order:            6
   genre:            Gaming & Entertainment
 
-redirect_from: /gaming/fallout-shelter-online/2021/08/15/mysterious-treasure
+redirect_from:
+  - /gaming/fallout-shelter-online/2021/08/15/mysterious-treasure
+  - /gaming/fallout-shelter-online/mysterious-treasure
 
 layout: post
 ---

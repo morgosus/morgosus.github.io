@@ -15,6 +15,8 @@ meta:
   order:            12
   genre:            Gaming & Entertainment
 
+redirect_from: /gaming/fallout-shelter-online/crossover-magics-first-arrival
+
 layout: post
 ---
 After an accidental trap trip, a magical explosion of sorts happened. The entire region around Mount Mabel changed. It's also the home of the intelligent Mount Mabel Monster - the red mutated deathclaw. Help the Khajit mage get back home and fix this mess!

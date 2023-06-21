@@ -11,6 +11,8 @@ meta:
   author:           morgosus
   genre:            Programming
 
+redirect_from: /programming/sass-and-scss
+
 layout: post
 ---
 SASS is the ideal preprocessor for CSS. It's a sort of syntax enhancer for it. SASS needs to be compiled into CSS, the 

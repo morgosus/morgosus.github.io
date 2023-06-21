@@ -15,7 +15,9 @@ meta:
   order:            8
   genre:            Gaming & Entertainment
 
-redirect_from: /gaming/fallout-shelter-online/2021/08/26/capital-wasteland
+redirect_from:
+  - /gaming/fallout-shelter-online/2021/08/26/capital-wasteland
+  - /gaming/fallout-shelter-online/capital-wasteland
 
 layout: post
 ---
