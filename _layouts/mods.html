@@ -1,0 +1,17 @@
+---
+layout: base
+---
+<main class="main mods">
+    {% assign mods = site.mod %}
+
+    <h1 class="visually-hidden">Mods</h1>
+    {%- if mods.size > 0 -%}
+
+        {%- for mod in mods -%}
+        <a class="mod" href="{{ mod.link }}">
+            <h2 class="mod__heading">{{ mod.name }}</h2>
+            <img class="mod__image" src="{{ mod.source }}" alt="{{ mod.caption }}">
+        </a>
+        {%- endfor -%}
+    {%- endif -%}
+</main>

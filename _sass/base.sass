@@ -43,6 +43,38 @@ body
   display: flex
   flex-direction: column
 
+// Mods
+.mods
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 $s/$golden-ratio
+.mod
+  margin-bottom: $s/$golden-ratio/2
+  position: relative
+  width: 100%
+  height: 100%
+  aspect-ratio: 1/1
+
+  &__heading
+    position: absolute
+    left: $s/$golden-ratio
+    right: $s/$golden-ratio
+    top: $s/$golden-ratio
+    font-family: Orbitron
+    color: $text-color
+    margin: 0
+    z-index: 6
+    padding: $s/($golden-ratio*$golden-ratio)
+    background-color: rgba(22, 255, 66, 0.7)
+  &__image
+    z-index: 5
+    position: absolute
+    object-fit: cover
+    width: 100%
+    height: 100%
+
 // Post
 
 .post
@@ -233,3 +265,16 @@ $card-data-margin-sides: $s
   .card
     width: 100%
     max-width: 49.75%
+
+
+@media screen and (min-width: 600px)
+  .mod
+    max-width: 49.5%
+
+@media screen and (min-width: 960px)
+  .mod
+    max-width: 33%
+
+@media screen and (min-width: 1280px)
+  .mod
+    max-width: 24.5%
