@@ -1,12 +1,12 @@
 ---
 layout: base
 ---
-<main class="main mods">
+<main class="main">
     {% assign mods = site.mod %}
 
     <h1 class="visually-hidden">Mods</h1>
     {%- if mods.size > 0 -%}
-
+    <div id="mods" class="mods">
         {%- for mod in mods -%}
         <a class="mod" href="{{ mod.link }}">
             <h2 class="mod__heading">{{ mod.name }}</h2>
@@ -14,4 +14,27 @@ layout: base
         </a>
         {%- endfor -%}
     {%- endif -%}
+    </div>
 </main>
+<script>
+window.onload = function() {
+    var wrapper = document.getElementById('mods');
+    var mods = Array.prototype.slice.call(wrapper.getElementsByClassName('mod'));
+mods.forEach(function(element){
+    wrapper.removeChild(element);
+})
+shuffleArray(mods);
+mods.forEach(function(element){
+    wrapper.appendChild(element);
+})
+}
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}
+}
+</script>
