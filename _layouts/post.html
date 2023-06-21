@@ -6,7 +6,7 @@ layout: base
     <header class="post__header">
         {%- unless page.thumbnail == "#" -%}
         {% assign thumbnail = site.thumbnail | where:"name", page.thumbnail | first %}
-        <img class="post__thumbnail" src="{{ thumbnail.source }}" alt="{{ thumbnail.caption }}">
+        <img class="post__thumbnail" src="{{ thumbnail.source }}" alt="{{ thumbnail.caption }}" loading="lazy">
         {%- endunless -%}
 
         <h1 class="post__heading" itemprop="name headline">{{ page.title | escape }}</h1>

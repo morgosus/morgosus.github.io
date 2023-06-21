@@ -10,7 +10,7 @@ layout: base
         {%- for mod in mods -%}
         <a class="mod" href="{{ mod.link }}">
             <h2 class="mod__heading">{{ mod.name }}</h2>
-            <img class="mod__image" src="{{ mod.source }}" alt="{{ mod.caption }}">
+            <img class="mod__image" src="{{ mod.source }}" alt="{{ mod.caption }}" loading="lazy">
         </a>
         {%- endfor -%}
     {%- endif -%}

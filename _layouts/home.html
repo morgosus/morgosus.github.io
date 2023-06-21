@@ -18,7 +18,7 @@ layout: base
         <a class="card" href="{{ post.url }}">
             {%- unless post.thumbnail == "#" -%}
                 {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
-                <img class="card__image" src="{{ thumbnail.source }}" alt="{{ thumbnail.caption }}">
+                <img class="card__image" src="{{ thumbnail.source }}" alt="{{ thumbnail.caption }}" loading="lazy">
             {%- endunless -%}
             <h3 class="card__heading">{{ post.title | escape }}</h3>
             <p class="card__text">{{ post.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
