@@ -16,17 +16,20 @@ layout: base
     {%- endif -%}
     </div>
 </main>
-<script>
+<script type="text/javascript" defer>
 window.onload = function() {
-    const wrapper = document.getElementById('mods');
-    let mods = Array.prototype.slice.call(wrapper.getElementsByClassName('mod'));
-mods.forEach(function(element){
-    wrapper.removeChild(element);
-})
-shuffleArray(mods);
-mods.forEach(function(element){
-    wrapper.appendChild(element);
-})
+    const container = document.getElementById('mods');
+
+    let mods = Array.prototype.slice.call(container.getElementsByClassName('mod'));
+    mods.forEach(function(element){
+        container.removeChild(element);
+    })
+
+    shuffleArray(mods);
+
+    mods.forEach(function(element){
+        container.appendChild(element);
+    })
 }
 
 function shuffleArray(array) {
@@ -35,6 +38,6 @@ function shuffleArray(array) {
     const temp = array[i];
     array[i] = array[j];
     array[j] = temp;
-}
+    }
 }
 </script>
