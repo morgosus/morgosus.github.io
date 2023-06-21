@@ -51,6 +51,9 @@ stackoverflow_username: morgosus
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
