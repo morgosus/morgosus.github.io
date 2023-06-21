@@ -2,7 +2,6 @@
 layout: page
 title: Cookie Policy
 ---
-##  Cookie Policy: Why Are Cookie Banners a Thing?
 Alas, the European Union decided it's necessary. From that point on, every website that uses cookies must have a cookie banner.
 
 Do note that this banner will be back after six months or if you delete your cookies, compliments of our

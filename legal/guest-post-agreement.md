@@ -2,8 +2,6 @@
 layout: page
 title: Guest Post Agreement
 ---
-## Guest Post Agreement
-
 Thank you for showing interest in writing a guest post for us. We’re glad you’re here.
 
 Please take a moment to review this entire page as it explains the guidelines, the submission process, and other important details.

@@ -2,8 +2,6 @@
 layout: page
 title: Disclaimer
 ---
-## Disclaimer
-
 This disclaimer (“Disclaimer”) sets forth the general guidelines, disclosures, and terms of your use of the toms.click website (“Website” or “Service”) and any of its related products and services (collectively, “Services”). This Disclaimer is a legally binding agreement between you (“User”, “you” or “your”) and this Website operator (“Operator”, “we”, “us” or “our”). If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms “User”, “you” or “your” shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services. By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Disclaimer. You acknowledge that this Disclaimer is a contract between you and the Operator, even though it is electronic and is not physically signed by you, and it governs your use of the Website and Services.
 
 ### Representation
