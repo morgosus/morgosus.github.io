@@ -1,5 +1,5 @@
 ---
-name: Pokeball - A Pokemon themed Grenade and a Simple Companion Trader
+name: Pokeball Grenade
 caption: Pokeball
 source: /assets/mod/pokeball-grenade.webp
 link: https://www.nexusmods.com/fallout4/mods/71345

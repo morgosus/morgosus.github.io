@@ -1,5 +1,5 @@
 ---
-name: Recruit Father Gabe as Companion - Voiced Ghoul Priest
+name: Father Gabe Companion
 caption: Father Gabe
 source: /assets/mod/father-gabe-companion.webp
 link: https://www.nexusmods.com/fallout4/mods/70549

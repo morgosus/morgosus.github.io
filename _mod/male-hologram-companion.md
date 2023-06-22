@@ -1,5 +1,5 @@
 ---
-name: Hologram Companion Inspired by New Vegas (Sierra Madre)
+name: Hologram Companion
 caption: Yellow Hologram
 source: /assets/mod/male-hologram-companion.webp
 link: https://www.nexusmods.com/fallout4/mods/71818
