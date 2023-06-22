@@ -11,6 +11,9 @@ layout: base
         <a class="mod" href="{{ mod.link }}">
             <h2 class="mod__heading">{{ mod.name }}</h2>
             <img class="mod__image" src="{{ mod.source }}" alt="{{ mod.caption }}" loading="lazy">
+            {%- if mod.status -%}
+                <div class="mod__status">{{ mod.status }}</div>
+            {%- endif -%}
         </a>
         {%- endfor -%}
     {%- endif -%}
