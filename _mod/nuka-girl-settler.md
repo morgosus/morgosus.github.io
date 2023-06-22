@@ -1,6 +1,6 @@
 ---
 name: Nuka-Cola Corporation - Nuka-Girl - Settler Hero
 caption: Nuka-Girl
-source: /assets/mod/nuka-girl-settler.png
+source: /assets/mod/nuka-girl-settler.webp
 link: https://www.nexusmods.com/fallout4/mods/65057
 ---

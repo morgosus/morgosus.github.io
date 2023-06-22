@@ -1,6 +1,6 @@
 ---
 name: Red Rocket Protectron - Paint for Automatron
 caption: Red Rocket Protectron
-source: /assets/mod/red-rocket-protectron-paint.png
+source: /assets/mod/red-rocket-protectron-paint.webp
 link: https://www.nexusmods.com/fallout4/mods/67457
 ---

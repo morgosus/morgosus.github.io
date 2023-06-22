@@ -1,6 +1,6 @@
 ---
 name: Pickman is a settler
 caption: Pickman standing guard at Vault 88
-source: /assets/mod/pickman-is-a-settler.jpeg
+source: /assets/mod/pickman-is-a-settler.webp
 link: https://www.nexusmods.com/fallout4/mods/63344
 ---
