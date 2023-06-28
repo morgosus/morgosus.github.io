@@ -1,0 +1,41 @@
+.about
+  padding: $s/$golden-ratio
+  margin: auto
+  max-width: 720px
+  &__heading
+    font-family: $heading-font
+    margin-bottom: $s/$golden-ratio
+  &__text
+    text-align: justify
+  &__section
+    &-heading
+      font-family: $heading-font
+      margin-top: $s/$golden-ratio
+.about__item
+  display: flex
+  flex-direction: column
+  margin-top: $s/$golden-ratio
+  &-heading
+    font-family: Monospace
+  &-subheading
+    font-family: Monospace
+  &-tags
+    font-family: Monospace
+    max-width: 100%
+    list-style: none
+    padding-left: 0
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    line-height: 100%
+  &-tag
+    margin-bottom: $s/($golden-ratio*$golden-ratio)
+    padding: $s/($golden-ratio*$golden-ratio) $s/($golden-ratio)
+    background-color: $primary-button-color
+    color: $bg-color
+    line-height: 100%
+
+
+
+

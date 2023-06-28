@@ -1,0 +1,43 @@
+---
+layout: base
+---
+<article class="about">
+
+    <h1 class="about__heading">{{ page.title | escape }}</h1>
+
+
+    <h2 class="about__section-heading">Introduction</h2>
+
+    <div class="about__text">
+        {{ content }}
+    </div>
+
+    <section class="about__section">
+
+        {% for section in page.sections %}
+        <h2 class="about__section-heading">{{ section.name }}</h2>
+            {% for data in section.data %}
+
+                <div class="about__item">
+                <h3 class="about__item-heading">{{ data.date }} | {{ data.name }}</h3>
+                <div class="about__item-subheading">{{ data.heading }}, {{ data.subheading }}</div>
+                {%- if data.tags -%}
+                <ul class="about__item-tags">
+                    {% for tag in data.tags %}
+                    <li class="about__item-tag">{{ tag }}</li>
+                    {% endfor %}
+                </ul>
+                {%- endif -%}
+            </div>
+            {% endfor %}
+        {% endfor %}
+    </section>
+
+    <section class="about__skills">
+
+    </section>
+
+    <section class="about__certifications">
+
+    </section>
+</article>
