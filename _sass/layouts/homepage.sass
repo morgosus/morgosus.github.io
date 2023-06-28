@@ -1,0 +1,96 @@
+.hero, .sub-hero
+  background-color: $accent-color
+  color: $bg-color
+  width: 100%
+  padding: $s*$golden-ratio 0
+  &__heading
+    text-align: center
+    font-family: $heading-font
+    margin-bottom: $s/$golden-ratio
+    line-height: 1em*$golden-ratio
+  &__text
+    max-width: 720px
+    text-align: justify
+    margin: auto
+    padding: 0 $s/$golden-ratio
+
+.sub-hero
+  background-color: $bg-color
+  color: $text-color
+  padding: 0
+  margin: $s*$golden-ratio auto
+  &__heading
+  &__text
+    margin: auto
+    text-align: justify
+    padding: 0 $s/$golden-ratio
+
+.homepage__lists
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  max-width: 720px
+  margin: auto
+  padding: 0 $s/$golden-ratio
+  margin-bottom: $s*$golden-ratio
+.homepage__list-left, .homepage__list-right
+  padding-left: 0
+  margin: 0
+  list-style: none
+.homepage__list-item
+  &:first-of-type
+    font-weight: bold
+    font-family: $heading-font
+.homepage__list-right > .homepage__list-item
+  text-align: right
+
+.project
+  display: flex
+  flex-direction: column
+  padding: 0 $s/$golden-ratio
+  max-width: 720px
+  margin: auto
+  margin-bottom: $s*$golden-ratio
+  &__data, &__media, &__call-to-action
+    display: flex
+    flex-direction: row
+  &__data
+    flex-direction: column
+    &-thumbnail
+      background-color: $accent-color
+      object-fit: cover
+    &-right
+      &-heading
+        font-family: $heading-font
+        font-size: 1.25rem
+        margin-top: $s/$golden-ratio
+      &-text
+        text-align: justify
+        margin: $s/$golden-ratio 0 0
+
+  &__media
+    margin-top: $s/$golden-ratio
+    &-image
+      background-color: $accent-color
+      width: 25%
+  &__call-to-action
+    margin-top: $s/$golden-ratio
+    justify-content: space-between
+  &__button
+    padding-left: 0
+    padding-right: 0
+    width: 47.5%
+    &--single
+      margin-left: auto
+
+@media screen and (min-width: 600px)
+  .project
+    &__data
+      flex-direction: row
+      &-thumbnail
+        width: 38.2%
+        margin-right: $s/$golden-ratio
+      &-right
+        &-heading
+          margin-top: 0
+          text-align-last: justify

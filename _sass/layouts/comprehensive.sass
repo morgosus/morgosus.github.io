@@ -1,0 +1,38 @@
+
+*
+  box-sizing: border-box
+body
+  font-size: 1em
+  background-color: $bg-color
+  color: $text-color
+  font-family: sans-serif
+  line-height: 1.25em * $golden-ratio
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+.visually-hidden
+  position: absolute
+  position: absolute !important
+  width: 1px !important
+  height: 1px !important
+  padding: 0 !important
+  margin: -1px !important
+  overflow: hidden !important
+  clip: rect(0,0,0,0) !important
+  white-space: nowrap !important
+  border: 0 !important
+
+.button
+  text-align: center
+  background-color: $primary-button-color !important
+  color: $bg-color !important
+  padding: $s/$golden-ratio $s*$golden-ratio
+  border-radius: 5px
+  justify-self: flex-end
+  text-decoration: none
+  cursor: pointer
+  font-family: $heading-font
+  &:hover
+    color: $text-color !important
+    text-shadow: -1px -1px 0 $bg-color, 0 -1px 0 $bg-color, 1px -1px 0 $bg-color, 1px 0 0 $bg-color, 1px 1px 0 $bg-color, 0 1px 0 $bg-color, -1px 1px 0 $bg-color, -1px 0 0 $bg-color

@@ -1,0 +1,37 @@
+.post
+  margin: auto
+  display: flex
+  flex-direction: column
+  max-width: 720px
+  width: 100%
+  text-align: justify
+  h1, h2, h3, h4, h5, h6
+    font-family: $heading-font
+    text-align: left
+    font-size: 2em
+    line-height: 2em
+    margin: 0
+  &__header
+  &__thumbnail
+    width: 100%
+    object-fit: cover
+  &__heading
+  &__meta
+    font-family: $heading-font
+    text-align: left
+  &__date-published
+  &__date-modified
+  &__author
+  &__content
+    img
+      width: 100%
+    .comparison
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      img
+        width: 49.5%
+    blockquote
+      margin-left: 0
+      padding-left: $s
+      border-left: solid $text-color $s/($golden-ratio*$golden-ratio*$golden-ratio)
