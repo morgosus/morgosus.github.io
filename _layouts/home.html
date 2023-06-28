@@ -2,55 +2,76 @@
 layout: base
 ---
 <main class="main">
-    <h1 class="visually-hidden">Blog</h1>
+    <h1 class="visually-hidden">Homepage</h1>
 
-    {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-    {% else %}
-    {% assign posts = site.posts %}
-    {% endif %}
+    <div class="hero">
+        <h1 class="hero__heading">Unleashing Creative Ventures!</h1>
+        <p class="hero__text">Welcome to my domain! I'm Martin Toms, a creative enthusiast passionate about crafting unique experiences. Step inside my domain <i>(pun intended)</i> and discover the realm of my imagination.</p>
+    </div>
 
-    {%- if posts.size > 0 -%}
-    <section class="featured">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
-        {%- for post in posts -%}
-        <a class="card" href="{{ post.url }}">
-            {%- unless post.thumbnail == "#" -%}
-                {% assign thumbnail = site.thumbnail | where:"name", post.thumbnail | first %}
-                <img class="card__image" src="{{ thumbnail.source }}" alt="{{ thumbnail.caption }}" loading="lazy">
-            {%- endunless -%}
-            <h3 class="card__heading">{{ post.title | escape }}</h3>
-            <p class="card__text">{{ post.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
-            <time datetime="{{ page.date | date_to_xmlschema }}" class="card__timestamp">{{ post.date | date: date_format }}</time>
-            <div class="tr"></div>
-            <div class="br"></div>
-            <div class="bl"></div>
-            <div class="tl"></div>
-            {%- if site.show_excerpts -%}
-                {{ post.excerpt | truncate: site.excerpt_length | strip_html }}
-            {%- endif -%}
-        </a>
-        {%- endfor -%}
+    <section class="sub-hero">
+        <h2 class="sub-hero__heading">Let's be pragmatic for a moment!</h2>
+        <p class="sub-hero__text">Essentially, this website serves as a comprehensive platform featuring a collection of links and an archived blog. You'll find the most interesting projects right on this page. The mods page conveniently provides links to my Fallout 4 mods along with their current statuses. In the blog section, you'll have access to my previous writings related to my Fallout Shelter Online guild, as well as a selection of programming articles. Lastly, the about section offers a comprehensive version of my resume, providing an opportunity for those curious to learn more about yours truly.</p>
     </section>
 
-    {% if site.paginate %}
-    <div class="pager">
-        <ul class="pagination">
-            {%- if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-            {%- else %}
-            <li><div class="pager-edge">•</div></li>
-            {%- endif %}
-            <li><div class="current-page">{{ paginator.page }}</div></li>
-            {%- if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-            {%- else %}
-            <li><div class="pager-edge">•</div></li>
-            {%- endif %}
+    <section class="homepage__lists">
+        <ul class="homepage__list-left">
+            <li class="homepage__list-item">What To Expect From My Mods?</li>
+            <li class="homepage__list-item">Lore-Friendliness</li>
+            <li class="homepage__list-item">Companions</li>
+            <li class="homepage__list-item">Immersion</li>
+            <li class="homepage__list-item">Settlers</li>
         </ul>
-    </div>
-    {%- endif %}
+        <ul class="homepage__list-right">
+            <li class="homepage__list-item">What Drives Me To Do Things?</li>
+            <li class="homepage__list-item">Theologian's Soul</li>
+            <li class="homepage__list-item">Passionate Heart</li>
+            <li class="homepage__list-item">Pragmatic Mind</li>
+            <li class="homepage__list-item">Eye of Sauron</li>
+        </ul>
+    </section>
 
-    {%- endif -%}
+    <section class="project">
+        <div class="project__data">
+            <img class="project__data-thumbnail" src="/assets/static/fitboy.webp" alt="Drawn image of a Fallout-themed Fitbit watchface" loading="lazy" />
+            <div class="project__data-right">
+                <h2 class="project__data-right-heading">Fit-Boy for Fitbit Sense and Versa</h2>
+                <p class="project__data-right-text">A clock face for Fitbit Sense, modeled after the legendary Pip-Boy from the Fallout Series by Fallout Series by Bethesda. Built using the Fitbit Studio and Fitbit OS Simulator.</p>
+            </div>
+        </div>
+        <div class="project__media">
+            <img class="project__media-image" src="/assets/static/fit-boy-1.webp" alt="Main screen - Fallout 4 colors" loading="lazy" />
+            <img class="project__media-image" src="/assets/static/fit-boy-2.webp" alt="Main screen - New Vegas colors" loading="lazy" />
+            <img class="project__media-image" src="/assets/static/fit-boy-3.webp" alt="Charging screen - New Vegas colors" loading="lazy" />
+            <img class="project__media-image" src="/assets/static/fit-boy-4.webp" alt="Charging screen - Red colors" loading="lazy" />
+        </div>
+        <div class="project__call-to-action">
+            <a class="project__button button" href="https://gallery.fitbit.com/details/2d38820d-91d8-47a7-947f-0d8a12fa1cbe">Fitbit Gallery</a>
+            <a class="project__button button" href="https://www.toms.click/fit-boy/">Read More</a>
+        </div>
+    </section>
+
+
+    <section class="project">
+        <div class="project__data">
+            <img class="project__data-thumbnail" src="/assets/static/travel.webp" alt="Drawn image of a Fallout-themed Fitbit watchface" loading="lazy" />
+            <div class="project__data-right">
+                <h2 class="project__data-right-heading">EXPLORING THE CZECH REPUBLIC</h2>
+                <p class="project__data-right-text">My travel portfolio from Spring and Summer 2021. It contains a lot of photos of various landmarks and towns.</p>
+            </div>
+        </div>
+        <div class="project__call-to-action">
+            <a class="project__button project__button--single button" href="https://www.toms.click/fit-boy/">Visit</a>
+        </div>
+    </section>
+
+    YouTube | Travel
+    <div>
+        <div class="homepage__left"></div>
+        <aside class="homepage__right">
+            <a href="https://thesis.toms.click" title="Go to Thesis">
+                <img src="/assets/static/thesis.png" alt="Drawn image of an academic hat on top of an open book" loading="lazy" />
+            </a>
+        </aside>
+    </div>
 </main>

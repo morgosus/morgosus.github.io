@@ -9,11 +9,18 @@ $bg-color: #fbfdfe
 $accent-color: #040401
 $primary-button-color: #5d0e4a
 $secondary-button-color: #ffffff
+
 *
   box-sizing: border-box
 body
   font-size: 1em
+  background-color: $bg-color
+  color: $text-color
+  font-family: sans-serif
   line-height: 1.25em * $golden-ratio
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
 
 .visually-hidden
   position: absolute
@@ -27,13 +34,19 @@ body
   white-space: nowrap !important
   border: 0 !important
 
-
-
-
-
-// Temporary
-body
-
+.button
+  text-align: center
+  background-color: $primary-button-color !important
+  color: $bg-color !important
+  padding: $s/$golden-ratio $s*$golden-ratio
+  border-radius: 5px
+  justify-self: flex-end
+  text-decoration: none
+  cursor: pointer
+  font-family: Orbitron
+  &:hover
+    color: $text-color !important
+    text-shadow: -1px -1px 0 $bg-color, 0 -1px 0 $bg-color, 1px -1px 0 $bg-color, 1px 0 0 $bg-color, 1px 1px 0 $bg-color, 0 1px 0 $bg-color, -1px 1px 0 $bg-color, -1px 0 0 $bg-color
 
 // --- Layouts
 
@@ -42,6 +55,107 @@ body
 .base
   display: flex
   flex-direction: column
+  &__wrapper--home
+    display: flex
+    flex-direction: row
+
+// Homepage
+.hero, .sub-hero
+  background-color: $accent-color
+  color: $bg-color
+  width: 100%
+  padding: $s*$golden-ratio 0
+  &__heading
+    text-align: center
+    font-family: Orbitron
+    margin-bottom: $s/$golden-ratio
+    line-height: 1em*$golden-ratio
+  &__text
+    max-width: 720px
+    text-align: justify
+    margin: auto
+    padding: 0 $s/$golden-ratio
+
+.sub-hero
+  background-color: $bg-color
+  color: $text-color
+  padding: 0
+  margin: $s*$golden-ratio auto
+  &__heading
+  &__text
+    margin: auto
+    text-align: justify
+    padding: 0 $s/$golden-ratio
+
+.homepage__lists
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  max-width: 720px
+  margin: auto
+  padding: 0 $s/$golden-ratio
+  margin-bottom: $s*$golden-ratio
+.homepage__list-left, .homepage__list-right
+  padding-left: 0
+  margin: 0
+  list-style: none
+.homepage__list-item
+  &:first-of-type
+    font-weight: bold
+    font-family: Orbitron
+.homepage__list-right > .homepage__list-item
+  text-align: right
+
+.project
+  display: flex
+  flex-direction: column
+  padding: 0 $s/$golden-ratio
+  max-width: 720px
+  margin: auto
+  margin-bottom: $s*$golden-ratio
+  &__data, &__media, &__call-to-action
+    display: flex
+    flex-direction: row
+  &__data
+    flex-direction: column
+    &-thumbnail
+      background-color: $accent-color
+      object-fit: cover
+    &-right
+      &-heading
+        font-family: Orbitron
+        font-size: 1.25rem
+        margin-top: $s/$golden-ratio
+      &-text
+        text-align: justify
+        margin: $s/$golden-ratio 0 0
+
+  &__media
+    margin-top: $s/$golden-ratio
+    &-image
+      background-color: $accent-color
+      width: 25%
+  &__call-to-action
+    margin-top: $s/$golden-ratio
+    justify-content: space-between
+  &__button
+    padding-left: 0
+    padding-right: 0
+    width: 47.5%
+    &--single
+      margin-left: auto
+
+@media screen and (min-width: 600px)
+  .project
+    &__data
+      flex-direction: row
+      &-thumbnail
+        width: 38.2%
+        margin-right: $s/$golden-ratio
+      &-right
+        &-heading
+          margin-top: 0
+          text-align-last: justify
 
 // Mods
 .mods
@@ -151,7 +265,7 @@ body
 .header
   display: flex
   flex-direction: row
-  padding: $s/2
+  padding: $s
 
 .logo
   display: flex
@@ -172,6 +286,7 @@ body
 .navigation
   flex-grow: 1
   font-family: Orbitron
+  width: 100%
   &__list
     display: flex
     flex-direction: row
@@ -180,16 +295,21 @@ body
     padding-left: 0
     align-items: center
   &__item
-    padding-left: $s
+    margin-left: $s
   &__link
     text-decoration: none
     color: inherit
+  &__item--button
+    margin-left: auto
+    margin-right: 0
+
 
 // -- Footer
 
 .footer
-  padding: $s
+  padding: $s/$golden-ratio
   &__list
+    margin: 0
     list-style: none
     padding-left: 0
   &__item, &__copyright
@@ -200,13 +320,12 @@ body
 // -- Main
 
 .main
+  width: 100%
 .featured
   display: flex
   flex-direction: column
   flex-wrap: nowrap
   padding: 0 $s/$golden-ratio
-.products
-
 $viewfinder-line-length: $s*2
 $card-data-margin-ends: $s/($golden-ratio)
 $card-data-margin-sides: $s
