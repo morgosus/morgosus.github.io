@@ -6,3 +6,4 @@ vendor
 /.idea/modules.xml
 /.idea/toms.click.iml
 /.idea/.gitignore
+/.idea/watcherTasks.xml
