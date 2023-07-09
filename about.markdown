@@ -7,12 +7,12 @@ sections:
     layout: general
     data:
     - name: Czech
-      heading: Bachelor of Informatics
-      subheading: Systems Engineering and Informatics
+      heading: 
+      subheading: 
       date: Native
     - name: English
-      heading: Bachelor of Informatics
-      subheading: Systems Engineering and Informatics
+      heading: 
+      subheading: 
       date: C2
   - name: Education
     layout: general
